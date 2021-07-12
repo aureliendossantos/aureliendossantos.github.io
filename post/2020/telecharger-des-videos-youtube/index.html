@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="fr-fr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Grâce à youtube-dl, un outil en lignes de commande.'><title>Télécharger des vidéos YouTube en un clin d&#39;œil</title>
+
+<link rel='canonical' href='https://aureliendossantos.github.io/post/2020/telecharger-des-videos-youtube/'>
+
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='Télécharger des vidéos YouTube en un clin d&#39;œil'>
+<meta property='og:description' content='Grâce à youtube-dl, un outil en lignes de commande.'>
+<meta property='og:url' content='https://aureliendossantos.github.io/post/2020/telecharger-des-videos-youtube/'>
+<meta property='og:site_name' content='Aurélien Dos Santos'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2020-08-19T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2020-08-19T00:00:00&#43;00:00'/><meta property='og:image' content='https://aureliendossantos.github.io/post/2020/telecharger-des-videos-youtube/cover.png' />
+<meta name="twitter:title" content="Télécharger des vidéos YouTube en un clin d&#39;œil">
+<meta name="twitter:description" content="Grâce à youtube-dl, un outil en lignes de commande."><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://aureliendossantos.github.io/post/2020/telecharger-des-videos-youtube/cover.png' />
+    </head>
+    <body class="
+    article-page 
+">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex 
+    
+        on-phone--column extended
+    
+">
+    
+        <aside class="sidebar left-sidebar sticky">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Afficher le menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header class="site-info">
+        
+            <figure class="site-avatar">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hubaa55b40c630d6a580ad6f256fa87ee5_191607_300x0_resize_q75_linear.jpg" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+
+                
+                    <span class="emoji">💭</span>
+                
+            </figure>
+        
+        <h1 class="site-name"><a href="https://aureliendossantos.github.io/">Aurélien Dos Santos</a></h1>
+        <h2 class="site-description">Bonjour, je suis Aurélien et vous êtes sur mon blog.</h2>
+    </header>
+
+    <ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Accueil</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/about/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>A propos</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/archives/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Explorer</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/recherche/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Recherche</span>
+            </a>
+        </li>
+        
+
+        
+            <li id="dark-mode-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <span>Mode sombre</span>
+            </li>
+        
+    </ol>
+</aside>
+
+    
+<main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/post/2020/telecharger-des-videos-youtube/">
+                <img src="/post/2020/telecharger-des-videos-youtube/cover_hua0e4a9c77eff58e7409b74f8d9c1a756_72887_788x0_resize_q75_h2_linear_2.webp"
+                        width="788" 
+                        height="331" 
+                        loading="lazy"
+                        alt="Image de couverture du post Télécharger des vidéos YouTube en un clin d&#39;œil" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/article/" >
+                Article
+            </a>
+        
+            <a href="/categories/tutoriel/" >
+                Tutoriel
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/post/2020/telecharger-des-videos-youtube/">Télécharger des vidéos YouTube en un clin d&#39;œil</a>
+    </h2>
+
+    
+    <h3 class="article-subtitle">
+        Grâce à youtube-dl, un outil en lignes de commande.
+    </h3>
+    <footer class="article-time">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <time class="article-time--published">
+            19 août 2020  ·  4 min</time>
+    </footer></div>
+</header>
+
+    <section class="article-content">
+    <p>Pour illustrer mes vidéos, je dois récupérer beaucoup d&rsquo;illustrations de jeux vidéo que je trouve sur YouTube. Si vous êtes vidéaste et ne connaissez pas les outils de programmeur, vous êtes sans doute passé à côté d&rsquo;une astuce très pratique pour le faire efficacement !</p>
+<p>Pour télécharger des dizaines, voire des centaines de vidéos, utiliser les sites du type &ldquo;YouTube Downloader&rdquo; serait très fastidieux et il n&rsquo;est pas garanti qu&rsquo;ils donnent la plus haute qualité possible. J&rsquo;ai également vu des vidéastes filmer leur écran avec OBS pendant qu&rsquo;ils regardent la vidéo sur YouTube, mais franchement, je ne trouve pas ça terrible ! Encore une fois, ce n&rsquo;est pas un bon moyen pour récupérer la qualité d&rsquo;origine.</p>
+<p>Laissez-moi plutôt vous présenter youtube-dl, un outil en ligne de commande très puissant qui vous permet de télécharger rapidement les vidéos de beaucoup de sites. Cela demande 5 minutes de préparation qui vaudront, vous le verrez, sacrément le coup.</p>
+<h2 id="installer-youtube-dl">Installer youtube-dl</h2>
+<blockquote>
+<p>Ce guide est écrit pour Windows 10 mais le programme existe aussi sur Mac et Linux.</p>
+</blockquote>
+<p>youtube-dl s&rsquo;utilise dans l&rsquo;invite de commandes (aussi appelé terminal). Créez un dossier où vous stockerez tous les programmes à utiliser dans le terminal : je l&rsquo;ai personnellement placé à la racine de mon disque, à l&rsquo;adresse <code>C:\cmd-bins</code>.</p>
+<p>Téléchargez <a class="link" href="http://ytdl-org.github.io/youtube-dl/download.html"  target="_blank" rel="noopener"
+    >l&rsquo;exe de youtube-dl</a> dans ce dossier.</p>
+<blockquote>
+<p>Facultatif : placez également <code>ffmpeg.exe</code> que vous trouverez dans <a class="link" href="https://www.gyan.dev/ffmpeg/builds/ffmpeg-git-full.7z"  target="_blank" rel="noopener"
+    >cette archive</a> dans le dossier <code>cmd-bins</code>. C&rsquo;est un outil pratique et puissant dont youtube-dl se servira pour fusionner des pistes vidéo et audio téléchargées séparément, ce qui est parfois nécessaire pour obtenir la meilleure qualité possible.</p>
+</blockquote>
+<p>Il ne se passera rien si vous ouvrez directement <code>youtube-dl.exe</code> car il doit être utilisé depuis le terminal, et pour cela, vous devez l’ajouter à votre Path. Ouvrez les Paramètres système avancés, puis cliquez sur Variables d’environnement.</p>
+<p>
+
+
+
+
+
+<figure style="flex-grow: 257; flex-basis: 617px">
+		<a href="/post/2020/telecharger-des-videos-youtube/variables-d-environnement.png" data-size="707x275"><picture>
+				
+				<img
+					src="/post/2020/telecharger-des-videos-youtube/variables-d-environnement.png"
+					width="707"
+					height="275"
+					loading="lazy"
+					decoding="async"
+					alt="Paramètres système"
+				/>
+			</picture>
+		</a>
+		
+	</figure></p>
+<p>Dans Variables utilisateur ou Variables système, sélectionnez la ligne Path et cliquez sur Modifier. Ajoutez une ligne contenant <code>C:\cmd-bins</code> ou le chemin vers le dossier contenant youtube-dl s&rsquo;il est différent chez vous. Et voilà, c&rsquo;est installé !</p>
+<h2 id="configurer-youtube-dl">Configurer youtube-dl</h2>
+<p>Dans le chemin de l&rsquo;explorateur de fichiers, tapez <code>%appdata%</code> pour atteindre le dossier <code>AppData</code> de votre compte, puis créez un dossier <code>youtube-dl</code> avec à l&rsquo;intérieur un fichier <code>config.txt</code>.</p>
+<p>
+
+
+
+
+
+<figure style="flex-grow: 437; flex-basis: 1049px">
+		<a href="/post/2020/telecharger-des-videos-youtube/config-txt.png" data-size="494x113"><picture>
+				
+				<img
+					src="/post/2020/telecharger-des-videos-youtube/config-txt.png"
+					width="494"
+					height="113"
+					loading="lazy"
+					decoding="async"
+					alt="Emplacement du fichier config.txt"
+				/>
+			</picture>
+		</a>
+		
+	</figure></p>
+<p>Nous allons y préciser les paramètres que youtube-dl doit utiliser par défaut, afin de ne pas les réécrire à chaque fois. Le paramètre <code>-o</code> indique l&rsquo;emplacement et le nom du fichier, et le paramètre <code>-f</code> indique la qualité vidéo désirée. Voici le contenu de mon propre fichier <code>config.txt</code> :</p>
+<pre><code>-o &quot;D:/Documents/Montage video/Game Dev Alliance/youtube-dl/%(title)s.%(ext)s&quot;
+-f bestvideo[ext=mp4]+bestaudio/best
+</code></pre><p>Ici, le nom du fichier est simplement <code>%(title)s</code>, c&rsquo;est-à-dire le nom de la vidéo YouTube, puis j&rsquo;indique de mettre la bonne extension avec <code>%(ext)s</code> (c&rsquo;est important !).</p>
+<p>Le paramètre <code>-f</code> demande à télécharger la meilleure qualité vidéo disponible au format MP4 (car c&rsquo;est ce qui fonctionne le mieux pour mon logiciel de montage) et de l&rsquo;accompagner du meilleur fichier audio possible. <code>/best</code> indique que s&rsquo;il n&rsquo;existe pas de version MP4, on télécharge simplement la meilleure qualité possible dans n&rsquo;importe quel format.</p>
+<p>Sauvegardez le fichier puis ouvrez l&rsquo;invite de commandes en tapant <code>cmd</code> dans la barre de Windows. Pour télécharger <a class="link" href="https://www.youtube.com/watch?v=nfWlot6h_JM"  target="_blank" rel="noopener"
+    >ce clip de Taylor Swift</a>, écrivez simplement :</p>
+<pre><code>youtube-dl https://www.youtube.com/watch?v=nfWlot6h_JM
+</code></pre><figure>
+    <video src="youtube-dl-terminal.mp4" muted autoplay loop controls poster="" alt="En un clin d&#39;œil, je vous dis !" ></video>
+    
+    <figcaption>
+        <p>
+        En un clin d&#39;œil, je vous dis !
+        </p>
+    </figcaption>
+    
+</figure>
+
+<p>Vous pouvez aussi écrire le lien d&rsquo;une playlist ou d&rsquo;une chaîne YouTube pour télécharger plusieurs vidéos d&rsquo;un seul coup ! Mais ce n&rsquo;est pas tout : le programme fonctionne avec Vimeo et probablement <a class="link" href="http://ytdl-org.github.io/youtube-dl/supportedsites.html"  target="_blank" rel="noopener"
+    >n&rsquo;importe quel site auquel vous pouvez penser</a>.</p>
+<p>Pour aller <em>toujours plus vite</em>, j&rsquo;ai bricolé <a class="link" href="yt.cmd" >ce petit outil</a> (à télécharger dans le même dossier que youtube-dl) avec ma compréhension très limitée de Batch, qui me donne les deux raccourcis suivants dans le terminal :</p>
+<pre><code>yt https://www.youtube.com/watch?v=nfWlot6h_JM
+</code></pre><p>Ceci télécharge la vidéo d&rsquo;après les paramètres de <code>config.txt</code>, donc dans la meilleure qualité possible.</p>
+<pre><code>yt https://www.youtube.com/watch?v=nfWlot6h_JM 1080
+</code></pre><p>Ceci télécharge la vidéo en 1080p au maximum. Pratique lorsque la vidéo est disponible en 4K mais que je n&rsquo;en ai pas besoin, car cela peut ralentir mon logiciel de montage !</p>
+<p>Avec un raccourci vers le terminal, je peux dégainer cet outil et télécharger une vidéo qui me plaît en une fraction de seconde ! J&rsquo;espère que cette astuce vous aidera autant que moi.</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Sous licence CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+    
+</article>
+
+    <aside class="related-contents--wrapper">
+    
+    
+        <h2 class="section-title">Contenus liés</h2>
+        <div class="related-contents">
+            <div class="flex article-list--tile">
+                
+                    
+<article class="has-image">
+    <a href="/post/2021/creer-un-site-avec-hugo/">
+        
+        
+            <div class="article-image">
+                <img src="/post/2021/creer-un-site-avec-hugo/halgatewood-unsplash.fa910669466197c9a28d3f757b6c9592_hu61c57f73b54c7c75eb152c7c1b9fb82d_303669_250x150_fill_q75_linear_smart1.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy" 
+                        data-key="" 
+                        data-hash="md5-&#43;pEGaUZhl8mijT91e2yVkg==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Créer un portfolio ou un blog sans programmer avec Hugo</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="has-image">
+    <a href="/post/2021/vous-ne-devriez-pas-utiliser-le-gif/">
+        
+        
+            <div class="article-image">
+                <img src="/post/2021/vous-ne-devriez-pas-utiliser-le-gif/cover.1b7b2f968182607e30093a20caf14363_hucbf1e6f87a467dfb5c4236726ecda0ea_1826916_250x150_fill_linear_smart1_2.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy" 
+                        data-key="" 
+                        data-hash="md5-G3svloGCYH4wCTogyvFDYw==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Vous ne devriez pas utiliser le GIF — il a été remplacé par la vidéo</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="has-image">
+    <a href="/post/2018/magicavoxel/">
+        
+        
+            <div class="article-image">
+                <img src="/post/2018/magicavoxel/2IAoFHn.60a69185912608552a5a7186a41e4be4_hu1149fc994693da2f32946fe98f43b5b5_87137_250x150_fill_linear_smart1_2.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy" 
+                        data-key="" 
+                        data-hash="md5-YKaRhZEmCFUqWnGGpB5L5A==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Créer et partager des scènes en 3D avec MagicaVoxel</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="has-image">
+    <a href="/post/2021/destiny-introduction-analyse/">
+        
+        
+            <div class="article-image">
+                <img src="/post/2021/destiny-introduction-analyse/mur-cosmodrome.76168c2faa4d4571170a6ba0eb3893a8_hu5601b8757630ba3c4506515c18437ba6_312675_250x150_fill_q75_linear_smart1.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy" 
+                        data-key="" 
+                        data-hash="md5-dhaML6pNRXEXCmug6ziTqA==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">L&#39;introduction de Destiny : analyse du level design</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="has-image">
+    <a href="/post/2020/les-peurs-des-cr%C3%A9ateurs-et-cr%C3%A9atrices-d%C3%A9butantes/">
+        
+        
+            <div class="article-image">
+                <img src="/post/2020/les-peurs-des-cr%C3%A9ateurs-et-cr%C3%A9atrices-d%C3%A9butantes/banner.5bbdfdbaf99fed7ec42c8e7c5a0f94d8_hu54a2e4e4c3eb9674e382dfa3e86bfe32_316550_250x150_fill_q75_linear_smart1.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy" 
+                        data-key="" 
+                        data-hash="md5-W739uvmf7X7ELI58Wg&#43;U2A==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Les peurs des créateurs et créatrices en herbe</h2>
+        </div>
+    </a>
+</article>
+                
+            </div>
+        </div>
+    
+</aside>
+
+     
+     
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2021 Aurélien Dos Santos
+    </section>
+    
+    <section class="powerby">
+        Généré avec <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Thème <a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="2.2.0">Stack</a> conçu par <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
+            >
+
+            </main>
+    
+
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
+                defer="false"
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

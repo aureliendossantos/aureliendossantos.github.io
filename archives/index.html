@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="fr-fr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content=''><title>Explorer</title>
+
+<link rel='canonical' href='https://aureliendossantos.github.io/archives/'>
+
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='Explorer'>
+<meta property='og:description' content=''>
+<meta property='og:url' content='https://aureliendossantos.github.io/archives/'>
+<meta property='og:site_name' content='Aurélien Dos Santos'>
+<meta property='og:type' content='article'><meta property='article:section' content='' /><meta property='article:published_time' content='2019-05-28T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2019-05-28T00:00:00&#43;00:00'/>
+<meta name="twitter:title" content="Explorer">
+<meta name="twitter:description" content="">
+    </head>
+    <body class="template-archives">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Afficher le menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header class="site-info">
+        
+            <figure class="site-avatar">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hubaa55b40c630d6a580ad6f256fa87ee5_191607_300x0_resize_q75_linear.jpg" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+
+                
+                    <span class="emoji">💭</span>
+                
+            </figure>
+        
+        <h1 class="site-name"><a href="https://aureliendossantos.github.io/">Aurélien Dos Santos</a></h1>
+        <h2 class="site-description">Bonjour, je suis Aurélien et vous êtes sur mon blog.</h2>
+    </header>
+
+    <ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Accueil</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/about/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>A propos</span>
+            </a>
+        </li>
+        
+        
+
+        <li  class='current' >
+            <a href='/archives/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Explorer</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/recherche/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Recherche</span>
+            </a>
+        </li>
+        
+
+        
+            <li id="dark-mode-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <span>Mode sombre</span>
+            </li>
+        
+    </ol>
+</aside>
+<main class="main full-width">
+    <h2 class="section-title">Categories</h2>
+    <div class="subsection-list">
+        <div class="article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/categories/article/">
+        
+        
+            <div class="article-image">
+                <img src="/categories/article/van-gogh.5bbdfdbaf99fed7ec42c8e7c5a0f94d8_hu54a2e4e4c3eb9674e382dfa3e86bfe32_316550_250x150_fill_q75_linear_smart1.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy" 
+                        data-key="" 
+                        data-hash="md5-W739uvmf7X7ELI58Wg&#43;U2A==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Article</h2>
+        </div>
+    </a>
+</article>
+            
+                
+<article class="has-image">
+    <a href="/categories/micro-blog/">
+        
+        
+            <div class="article-image">
+                <img src="/categories/micro-blog/cover.9afeee1e0a1b6728b2564ecc9a74dad0_huf293a74d8f685033bd5570070af1ec18_283046_250x150_fill_q75_linear_smart1.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy" 
+                        data-key="" 
+                        data-hash="md5-mv7uHgobZyiyVk7MmnTa0A==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Micro-blog</h2>
+        </div>
+    </a>
+</article>
+            
+                
+<article class="has-image">
+    <a href="/categories/formations/">
+        
+        
+            <div class="article-image">
+                <img src="/categories/formations/cover.816b867169c20ec0c1888e9b841d1e4a_hu7ee165d7ea9a9bb590208cfecd5d60cd_220422_250x150_fill_linear_smart1_2.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy" 
+                        data-key="" 
+                        data-hash="md5-gWuGcWnCDsDBiI6bhB0eSg==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Formations</h2>
+        </div>
+    </a>
+</article>
+            
+                
+<article class="has-image">
+    <a href="/categories/tutoriel/">
+        
+        
+            <div class="article-image">
+                <img src="/categories/tutoriel/cover.868c637f92332c19d9c66d790f99f682_hua0e4a9c77eff58e7409b74f8d9c1a756_72887_250x150_fill_linear_smart1_2.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy" 
+                        data-key="" 
+                        data-hash="md5-hoxjf5IzLBnZxm15D5n2gg==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Tutoriel</h2>
+        </div>
+    </a>
+</article>
+            
+                
+<article class="has-image">
+    <a href="/categories/photos/">
+        
+        
+            <div class="article-image">
+                <img src="/categories/photos/cover.a94da83223d7fd3bcc2ad65fe3cbce0a_hu158e9de6e26f56dfe5fa1fc726868cae_2595985_250x150_fill_q75_linear_smart1.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy" 
+                        data-key="" 
+                        data-hash="md5-qU2oMiPX/TvMKtZf48vOCg==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Photos</h2>
+        </div>
+    </a>
+</article>
+            
+        </div>
+    </div>
+    
+
+    
+    
+    
+
+    
+    
+    <div class="archives-group" id="2021">
+        <h2 class="archives-date section-title"><a href="/archives/#2021">2021</a></h2>
+        <div class="article-list--compact">
+            
+                <article>
+    <a href="/post/2021/creer-un-site-avec-hugo/">
+        <div class="article-details">
+            <h2 class="article-title">Créer un portfolio ou un blog sans programmer avec Hugo</h2>
+            <footer class="article-time">
+                <time datetime='2021-07-01T00:35:02&#43;02:00'>01 Jul 2021</time>
+            </footer>
+        </div>
+            <div class="article-image">
+                <img src="/post/2021/creer-un-site-avec-hugo/halgatewood-unsplash_hu61c57f73b54c7c75eb152c7c1b9fb82d_303669_120x120_fill_q75_linear_smart1.jpg" 
+                        width="120"
+                        height="120" 
+                        loading="lazy">
+                
+            </div>
+        
+    </a>
+</article>
+            
+                <article>
+    <a href="/post/2021/destiny-introduction-analyse/">
+        <div class="article-details">
+            <h2 class="article-title">L&#39;introduction de Destiny : analyse du level design</h2>
+            <footer class="article-time">
+                <time datetime='2021-04-02T00:00:00Z'>02 Apr 2021</time>
+            </footer>
+        </div>
+            <div class="article-image">
+                <img src="/post/2021/destiny-introduction-analyse/mur-cosmodrome_hu5601b8757630ba3c4506515c18437ba6_312675_120x120_fill_q75_linear_smart1.jpg" 
+                        width="120"
+                        height="120" 
+                        loading="lazy">
+                
+            </div>
+        
+    </a>
+</article>
+            
+                <article>
+    <a href="/post/2021/vous-ne-devriez-pas-utiliser-le-gif/">
+        <div class="article-details">
+            <h2 class="article-title">Vous ne devriez pas utiliser le GIF — il a été remplacé par la vidéo</h2>
+            <footer class="article-time">
+                <time datetime='2021-03-24T00:00:00Z'>24 Mar 2021</time>
+            </footer>
+        </div>
+            <div class="article-image">
+                <img src="/post/2021/vous-ne-devriez-pas-utiliser-le-gif/cover_hucbf1e6f87a467dfb5c4236726ecda0ea_1826916_120x120_fill_linear_smart1_2.png" 
+                        width="120"
+                        height="120" 
+                        loading="lazy">
+                
+            </div>
+        
+    </a>
+</article>
+            
+        </div>
+    </div>
+    
+    
+    <div class="archives-group" id="2020">
+        <h2 class="archives-date section-title"><a href="/archives/#2020">2020</a></h2>
+        <div class="article-list--compact">
+            
+                <article>
+    <a href="/post/2020/fairedesjeux.fr/">
+        <div class="article-details">
+            <h2 class="article-title">FaireDesJeux.fr, le site de formations gratuites</h2>
+            <footer class="article-time">
+                <time datetime='2020-09-05T00:00:00Z'>05 Sep 2020</time>
+            </footer>
+        </div>
+            <div class="article-image">
+                <img src="/post/2020/fairedesjeux.fr/cover_hud9dacef26d758ee2baa88fff991e3156_284471_120x120_fill_linear_smart1_2.png" 
+                        width="120"
+                        height="120" 
+                        loading="lazy">
+                
+            </div>
+        
+    </a>
+</article>
+            
+                <article>
+    <a href="/post/2020/telecharger-des-videos-youtube/">
+        <div class="article-details">
+            <h2 class="article-title">Télécharger des vidéos YouTube en un clin d&#39;œil</h2>
+            <footer class="article-time">
+                <time datetime='2020-08-19T00:00:00Z'>19 Aug 2020</time>
+            </footer>
+        </div>
+            <div class="article-image">
+                <img src="/post/2020/telecharger-des-videos-youtube/cover_hua0e4a9c77eff58e7409b74f8d9c1a756_72887_120x120_fill_linear_smart1_2.png" 
+                        width="120"
+                        height="120" 
+                        loading="lazy">
+                
+            </div>
+        
+    </a>
+</article>
+            
+                <article>
+    <a href="/photos/2020/mon-quartier/">
+        <div class="article-details">
+            <h2 class="article-title">Mon quartier</h2>
+            <footer class="article-time">
+                <time datetime='2020-07-20T22:00:00Z'>20 Jul 2020</time>
+            </footer>
+        </div>
+            <div class="article-image">
+                <img src="/photos/2020/mon-quartier/1-Pano_hu158e9de6e26f56dfe5fa1fc726868cae_2595985_120x120_fill_q75_linear_smart1.jpg" 
+                        width="120"
+                        height="120" 
+                        loading="lazy">
+                
+            </div>
+        
+    </a>
+</article>
+            
+                <article>
+    <a href="/photos/2020/immeuble-en-construction/">
+        <div class="article-details">
+            <h2 class="article-title">Immeuble en construction</h2>
+            <footer class="article-time">
+                <time datetime='2020-07-20T21:00:00Z'>20 Jul 2020</time>
+            </footer>
+        </div>
+            <div class="article-image">
+                <img src="/photos/2020/immeuble-en-construction/003-Pano_hubb7f7a3e4a316e64b2a239fb1b85dfc6_1786205_120x120_fill_q75_linear_smart1.jpg" 
+                        width="120"
+                        height="120" 
+                        loading="lazy">
+                
+            </div>
+        
+    </a>
+</article>
+            
+                <article>
+    <a href="/post/2020/les-peurs-des-cr%C3%A9ateurs-et-cr%C3%A9atrices-d%C3%A9butantes/">
+        <div class="article-details">
+            <h2 class="article-title">Les peurs des créateurs et créatrices en herbe</h2>
+            <footer class="article-time">
+                <time datetime='2020-07-19T00:00:00Z'>19 Jul 2020</time>
+            </footer>
+        </div>
+            <div class="article-image">
+                <img src="/post/2020/les-peurs-des-cr%C3%A9ateurs-et-cr%C3%A9atrices-d%C3%A9butantes/banner_hu54a2e4e4c3eb9674e382dfa3e86bfe32_316550_120x120_fill_q75_linear_smart1.jpg" 
+                        width="120"
+                        height="120" 
+                        loading="lazy">
+                
+            </div>
+        
+    </a>
+</article>
+            
+        </div>
+    </div>
+    
+    
+    <div class="archives-group" id="2019">
+        <h2 class="archives-date section-title"><a href="/archives/#2019">2019</a></h2>
+        <div class="article-list--compact">
+            
+                <article>
+    <a href="/post/2019/livre-de-cayde-6/">
+        <div class="article-details">
+            <h2 class="article-title">Le livre de Cayde-6</h2>
+            <footer class="article-time">
+                <time datetime='2019-12-22T00:00:00Z'>22 Dec 2019</time>
+            </footer>
+        </div>
+            <div class="article-image">
+                <img src="/post/2019/livre-de-cayde-6/1_huba8cb3931aa4a07e0978c3c5de693f63_362499_120x120_fill_q75_linear_smart1.jpg" 
+                        width="120"
+                        height="120" 
+                        loading="lazy">
+                
+            </div>
+        
+    </a>
+</article>
+            
+        </div>
+    </div>
+    
+    
+    <div class="archives-group" id="2018">
+        <h2 class="archives-date section-title"><a href="/archives/#2018">2018</a></h2>
+        <div class="article-list--compact">
+            
+                <article>
+    <a href="/post/2018/quitter-la-barque/">
+        <div class="article-details">
+            <h2 class="article-title">Quitter la barque</h2>
+            <footer class="article-time">
+                <time datetime='2018-07-04T00:00:00Z'>04 Jul 2018</time>
+            </footer>
+        </div>
+            <div class="article-image">
+                <img src="/post/2018/quitter-la-barque/1_huf39c21edd7db4bc1dfac23a70b2f1d79_366003_120x120_fill_q75_linear_smart1.jpg" 
+                        width="120"
+                        height="120" 
+                        loading="lazy">
+                
+            </div>
+        
+    </a>
+</article>
+            
+                <article>
+    <a href="/post/2018/conseils-rapides-premier-film/">
+        <div class="article-details">
+            <h2 class="article-title">Conseils express pour réaliser ses premiers films</h2>
+            <footer class="article-time">
+                <time datetime='2018-05-16T00:00:00Z'>16 May 2018</time>
+            </footer>
+        </div>
+            <div class="article-image">
+                <img src="/post/2018/conseils-rapides-premier-film/unsplash-rachel-greenhousephoto_hu19617d7f455154d8e62459e01836a143_214231_120x120_fill_q75_linear_smart1.jpg" 
+                        width="120"
+                        height="120" 
+                        loading="lazy">
+                
+            </div>
+        
+    </a>
+</article>
+            
+                <article>
+    <a href="/post/2018/magicavoxel/">
+        <div class="article-details">
+            <h2 class="article-title">Créer et partager des scènes en 3D avec MagicaVoxel</h2>
+            <footer class="article-time">
+                <time datetime='2018-05-09T15:27:43Z'>09 May 2018</time>
+            </footer>
+        </div>
+            <div class="article-image">
+                <img src="/post/2018/magicavoxel/2IAoFHn_hu1149fc994693da2f32946fe98f43b5b5_87137_120x120_fill_linear_smart1_2.png" 
+                        width="120"
+                        height="120" 
+                        loading="lazy">
+                
+            </div>
+        
+    </a>
+</article>
+            
+                <article>
+    <a href="/post/2018/nouveau-design-du-wiki/">
+        <div class="article-details">
+            <h2 class="article-title">Nouveau design du wiki</h2>
+            <footer class="article-time">
+                <time datetime='2018-04-30T00:00:00Z'>30 Apr 2018</time>
+            </footer>
+        </div>
+    </a>
+</article>
+            
+                <article>
+    <a href="/post/2018/sortie-du-forum/">
+        <div class="article-details">
+            <h2 class="article-title">Sortie du forum et de l&#39;Encyclopédie</h2>
+            <footer class="article-time">
+                <time datetime='2018-03-16T00:00:00Z'>16 Mar 2018</time>
+            </footer>
+        </div>
+            <div class="article-image">
+                <img src="/post/2018/sortie-du-forum/1_hu61543cc24b62654a63e1d38db1bd9a67_137772_120x120_fill_linear_smart1_2.png" 
+                        width="120"
+                        height="120" 
+                        loading="lazy">
+                
+            </div>
+        
+    </a>
+</article>
+            
+        </div>
+    </div>
+    
+    
+    <div class="archives-group" id="2017">
+        <h2 class="archives-date section-title"><a href="/archives/#2017">2017</a></h2>
+        <div class="article-list--compact">
+            
+                <article>
+    <a href="/post/2017/tiger/">
+        <div class="article-details">
+            <h2 class="article-title">Tiger</h2>
+            <footer class="article-time">
+                <time datetime='2017-10-01T00:00:00Z'>01 Oct 2017</time>
+            </footer>
+        </div>
+            <div class="article-image">
+                <img src="/post/2017/tiger/1_hu304909eca1fac781d4cac8a986dd1043_47059_120x120_fill_q75_linear_smart1.jpg" 
+                        width="120"
+                        height="120" 
+                        loading="lazy">
+                
+            </div>
+        
+    </a>
+</article>
+            
+                <article>
+    <a href="/photos/2017/exploration-entre-amis/">
+        <div class="article-details">
+            <h2 class="article-title">Exploration entre amis</h2>
+            <footer class="article-time">
+                <time datetime='2017-05-23T00:00:00Z'>23 May 2017</time>
+            </footer>
+        </div>
+            <div class="article-image">
+                <img src="/photos/2017/exploration-entre-amis/97-Pano_hub51c59c14defd3d33571360b4583a6b3_859686_120x120_fill_q75_linear_smart1.jpg" 
+                        width="120"
+                        height="120" 
+                        loading="lazy">
+                
+            </div>
+        
+    </a>
+</article>
+            
+                <article>
+    <a href="/post/2017/la-magie-de-tetris/">
+        <div class="article-details">
+            <h2 class="article-title">La magie de Tetris</h2>
+            <footer class="article-time">
+                <time datetime='2017-05-10T00:00:00Z'>10 May 2017</time>
+            </footer>
+        </div>
+            <div class="article-image">
+                <img src="/post/2017/la-magie-de-tetris/cover_hu24396b716293f02191945360a2a44b60_291385_120x120_fill_q75_linear_smart1.jpg" 
+                        width="120"
+                        height="120" 
+                        loading="lazy">
+                
+            </div>
+        
+    </a>
+</article>
+            
+                <article>
+    <a href="/photos/2017/gourette/">
+        <div class="article-details">
+            <h2 class="article-title">Gourette</h2>
+            <footer class="article-time">
+                <time datetime='2017-05-03T00:00:00Z'>03 May 2017</time>
+            </footer>
+        </div>
+            <div class="article-image">
+                <img src="/photos/2017/gourette/f_hu6dc279a51136c7fe662f5d2a3c962dd5_2385501_120x120_fill_linear_smart1_2.png" 
+                        width="120"
+                        height="120" 
+                        loading="lazy">
+                
+            </div>
+        
+    </a>
+</article>
+            
+        </div>
+    </div>
+    
+    
+    <div class="archives-group" id="2015">
+        <h2 class="archives-date section-title"><a href="/archives/#2015">2015</a></h2>
+        <div class="article-list--compact">
+            
+                <article>
+    <a href="/post/2015/sinarun-trailer/">
+        <div class="article-details">
+            <h2 class="article-title">Trailer de SinaRun</h2>
+            <footer class="article-time">
+                <time datetime='2015-10-19T00:00:00Z'>19 Oct 2015</time>
+            </footer>
+        </div>
+            <div class="article-image">
+                <img src="/post/2015/sinarun-trailer/cover_hu6943f1aad60315e76067e0fbb8d2575f_143719_120x120_fill_q75_linear_smart1.jpg" 
+                        width="120"
+                        height="120" 
+                        loading="lazy">
+                
+            </div>
+        
+    </a>
+</article>
+            
+                <article>
+    <a href="/photos/2015/parking/">
+        <div class="article-details">
+            <h2 class="article-title">Parking</h2>
+            <footer class="article-time">
+                <time datetime='2015-05-08T00:00:00Z'>08 May 2015</time>
+            </footer>
+        </div>
+            <div class="article-image">
+                <img src="/photos/2015/parking/1_hu92cd64bd100f1654360555457d18c6cb_300696_120x120_fill_q75_linear_smart1.JPG" 
+                        width="120"
+                        height="120" 
+                        loading="lazy">
+                
+            </div>
+        
+    </a>
+</article>
+            
+                <article>
+    <a href="/photos/2015/exploration-urbaine/">
+        <div class="article-details">
+            <h2 class="article-title">Bâtiment abandonné</h2>
+            <footer class="article-time">
+                <time datetime='2015-03-26T00:00:00Z'>26 Mar 2015</time>
+            </footer>
+        </div>
+            <div class="article-image">
+                <img src="/photos/2015/exploration-urbaine/9-Pano_hu56288441b1fb3f86030c7e7d7549361b_5140515_120x120_fill_q75_linear_smart1.JPG" 
+                        width="120"
+                        height="120" 
+                        loading="lazy">
+                
+            </div>
+        
+    </a>
+</article>
+            
+        </div>
+    </div>
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2021 Aurélien Dos Santos
+    </section>
+    
+    <section class="powerby">
+        Généré avec <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Thème <a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="2.2.0">Stack</a> conçu par <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
+                defer="false"
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

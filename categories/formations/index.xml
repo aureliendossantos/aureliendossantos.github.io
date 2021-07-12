@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Formations on Aurélien Dos Santos</title>
+    <link>https://aureliendossantos.github.io/categories/formations/</link>
+    <description>Recent content in Formations on Aurélien Dos Santos</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Sun, 27 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://aureliendossantos.github.io/categories/formations/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Programmer des mini-jeux rétro avec PICO-8</title>
+      <link>https://aureliendossantos.github.io/formation/programmer-des-jeux-pico-8/</link>
+      <pubDate>Sun, 27 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://aureliendossantos.github.io/formation/programmer-des-jeux-pico-8/</guid>
+      <description>Page en construction
+ PICO-8 Fantasy Console
+Contenu de la formation  Premiers pas : les fonctions principales, lancer son jeu et le publier Créer un shooter spatial : tirer des projectiles sur des ennemis, animer les explosions, afficher un score Créer un jeu d&amp;rsquo;aventure : se déplacer sur une carte, gérer la caméra, interagir avec des objets, afficher des dialogues Astuces avancées (à l&amp;rsquo;écrit uniquement) : mettre en place des outils pour développer efficacement, programmer des déplacements dépendant de forces physiques, manipuler la mémoire  En vidéo https://www.</description>
+    </item>
+    
+    <item>
+      <title>Écrire des visual novels avec Ren&#39;Py</title>
+      <link>https://aureliendossantos.github.io/formation/ecrire-des-visual-novels-renpy/</link>
+      <pubDate>Tue, 19 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://aureliendossantos.github.io/formation/ecrire-des-visual-novels-renpy/</guid>
+      <description>Page en construction
+ Ren&amp;rsquo;Py 7.4.3
+Contenu de la formation En vidéo https://www.youtube.com/playlist?list=PLHKUrXMrDS5uqhCaspVB4jFDkkHrkFUBV
+En version écrite Créer des visual novels avec Ren&amp;rsquo;Py !
+Pour aller plus loin Questions fréquentes sur Ren&amp;rsquo;Py
+Sites et communautés</description>
+    </item>
+    
+    <item>
+      <title>Créer des jeux d&#39;aventure sans coder avec RPG Maker</title>
+      <link>https://aureliendossantos.github.io/formation/creer-des-jeux-rpg-maker/</link>
+      <pubDate>Mon, 07 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://aureliendossantos.github.io/formation/creer-des-jeux-rpg-maker/</guid>
+      <description>Page en construction
+ https://www.youtube.com/playlist?list=PLHKUrXMrDS5ttOdEh5tNuEi96Vv&amp;ndash;TVLE
+Pour aller plus loin Portail de RPG Maker</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="fr-fr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Aussi étrange que cela puisse paraître, j&#39;ai fini ma toute première partie de Tetris la semaine dernière.'><title>La magie de Tetris</title>
+
+<link rel='canonical' href='https://aureliendossantos.github.io/post/2017/la-magie-de-tetris/'>
+
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='La magie de Tetris'>
+<meta property='og:description' content='Aussi étrange que cela puisse paraître, j&#39;ai fini ma toute première partie de Tetris la semaine dernière.'>
+<meta property='og:url' content='https://aureliendossantos.github.io/post/2017/la-magie-de-tetris/'>
+<meta property='og:site_name' content='Aurélien Dos Santos'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Jeux' /><meta property='article:tag' content='Review' /><meta property='article:published_time' content='2017-05-10T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2017-05-10T00:00:00&#43;00:00'/><meta property='og:image' content='https://aureliendossantos.github.io/post/2017/la-magie-de-tetris/cover.jpg' />
+<meta name="twitter:title" content="La magie de Tetris">
+<meta name="twitter:description" content="Aussi étrange que cela puisse paraître, j&#39;ai fini ma toute première partie de Tetris la semaine dernière."><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://aureliendossantos.github.io/post/2017/la-magie-de-tetris/cover.jpg' />
+    </head>
+    <body class="
+    article-page 
+">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex 
+    
+        on-phone--column extended
+    
+">
+    
+        <aside class="sidebar left-sidebar sticky">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Afficher le menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header class="site-info">
+        
+            <figure class="site-avatar">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hubaa55b40c630d6a580ad6f256fa87ee5_191607_300x0_resize_q75_linear.jpg" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+
+                
+                    <span class="emoji">💭</span>
+                
+            </figure>
+        
+        <h1 class="site-name"><a href="https://aureliendossantos.github.io/">Aurélien Dos Santos</a></h1>
+        <h2 class="site-description">Bonjour, je suis Aurélien et vous êtes sur mon blog.</h2>
+    </header>
+
+    <ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Accueil</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/about/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>A propos</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/archives/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Explorer</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/recherche/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Recherche</span>
+            </a>
+        </li>
+        
+
+        
+            <li id="dark-mode-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <span>Mode sombre</span>
+            </li>
+        
+    </ol>
+</aside>
+
+    
+<main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/post/2017/la-magie-de-tetris/">
+                <img src="/post/2017/la-magie-de-tetris/cover_hu24396b716293f02191945360a2a44b60_291385_1295x0_resize_q75_h2_linear.webp"
+                        width="1295" 
+                        height="537" 
+                        loading="lazy"
+                        alt="Image de couverture du post La magie de Tetris" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/article/" >
+                Article
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/post/2017/la-magie-de-tetris/">La magie de Tetris</a>
+    </h2>
+
+    
+    <h3 class="article-subtitle">
+        Aussi étrange que cela puisse paraître, j&#39;ai fini ma toute première partie de Tetris la semaine dernière.
+    </h3>
+    <footer class="article-time">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <time class="article-time--published">
+            10 mai 2017  ·  4 min</time>
+    </footer></div>
+</header>
+
+    <section class="article-content">
+    <p>Et ce grâce à Puyo Puyo Tetris ! C&rsquo;est un jeu qui mélange deux jeux. Il y a d&rsquo;un côté Puyo Puyo, où l&rsquo;on doit assembler des couleurs qui tombent du haut de l&rsquo;écran, et bien sûr, le fameux Tetris sur lequel je vais me focaliser dans cet article.</p>
+<figure><img src="2.jpg"
+         alt="Dans Puyo Puyo Tetris, les joueurs des deux bords peuvent s&amp;rsquo;affronter en même temps."/><figcaption>
+            <p>Dans Puyo Puyo Tetris, les joueurs des deux bords peuvent s&rsquo;affronter en même temps.</p>
+        </figcaption>
+</figure>
+
+<p>Tetris est un phénomène particulier. Bien que tout le monde autour de moi le connaisse, et bien que je sois un <em>gamer</em> aguerri, je ne l&rsquo;ai jamais essayé. L&rsquo;univers Tetris me paraît très rebutant : soit tu trouves un jeu Flash tout pété ou un free to play mobile pas maniable pour un sou, soit il y a des versions payantes sur console ou PC, mais avec une direction artistique bien peu inspirée, souvent très sombre et fonctionnelle. Bref, c&rsquo;est la déprime.</p>
+<p>C&rsquo;est alors que le fringuant Puyo Puyo Tetris entre dans la place, paré de son esthétique kawaii. Si des petits personnages colorés qui poussent des cris aigus n&rsquo;ont rien d&rsquo;original, au moins il y a un style bien exécuté, et ça le rend fort attachant.</p>
+<p>Tout en conservant les règles du Tetris moderne (avec le L1 pour garder une forme en réserve), le jeu renaît avec une intensité nouvelle. Les effets sonores et visuels sont excellents : faire un Tetris c&rsquo;est MASSIF et EXPLOSIF. C&rsquo;est le grain de folie dont j&rsquo;avais besoin pour franchir le pas et donner une chance à ce jeu le temps d&rsquo;une partie entière. Et c&rsquo;est là que j&rsquo;ai découvert, bien après tout le monde, <strong>la magie de Tetris</strong>.</p>
+<figure><img src="3.jpg"
+         alt="Les personnages lancent des punchlines à chaque fois que vous réussissez un coup."/><figcaption>
+            <p>Les personnages lancent des punchlines à chaque fois que vous réussissez un coup.</p>
+        </figcaption>
+</figure>
+
+<p>Aujourd&rsquo;hui, la démarche qu&rsquo;on a bien souvent en créant un jeu, c&rsquo;est de choisir un genre qui existe déjà et d&rsquo;y ajouter ses propres règles par dessus, en améliorer l&rsquo;habillage&hellip; pour se différencier du concurrent sorti juste avant. Tetris, lui, s&rsquo;éloigne du jeu vidéo pour trouver ses inspirations.</p>
+<p>L&rsquo;écrasante majorité des jeux de l&rsquo;époque exploraient déjà les domaines du sport, de la simulation ou des actes de violence en tous genres. Les objectifs étaient déjà bien codifiés : survivre aux ennemis, sauver la princesse&hellip; Et non, ça n&rsquo;a pas beaucoup changé aujourd&rsquo;hui. Heureusement, il n&rsquo;y a pas besoin d&rsquo;apprécier cet univers <em>gamer</em> pour jouer à Tetris : les tetrominos sont de simples formes qui s&rsquo;assemblent. Point. C&rsquo;est universel, et aucun habillage n&rsquo;essaie de cacher les règles du jeu, qui sont représentés dans leur forme la plus pure.</p>
+<p>C&rsquo;est sans doute pourquoi c&rsquo;est le seul jeu sur ma PS4 qui peut rassembler des amis geeks, non-geeks, et même ma famille. N&rsquo;importe qui peut s&rsquo;amuser (pour peu que l&rsquo;écart de <em>skill</em> ne soit pas trop grand) et je trouve que c&rsquo;est un miracle. De façon tout aussi miraculeuse, le jeu reste pertinent sur le marché actuel, et ce presque sans avoir touché aux règles établies en 1984.</p>
+<p>Bien sûr, la version 2017 de Puyo Puyo Tetris apporte un nouveau confort de jeu et des effets satisfaisants. Mais ce n&rsquo;est qu&rsquo;un détail : lorsque cette belle parure sera démodée dans 5 ans, on pourra toujours sortir une version aux visuels plus modernes et avec les mêmes règles, pour continuer à faire vivre le jeu aussi longtemps qu&rsquo;on puisse l&rsquo;imaginer.</p>
+<figure><img src="1.jpg"
+         alt="Plusieurs modes mélangent Tetris et Puyo, mais je finis toujours par revenir au pur versus Tetris."/><figcaption>
+            <p>Plusieurs modes mélangent Tetris et Puyo, mais je finis toujours par revenir au pur versus Tetris.</p>
+        </figcaption>
+</figure>
+
+<p>Tetris est addictif. C&rsquo;était le cas lors de sa sortie, et ça l&rsquo;est toujours aujourd&rsquo;hui. Pourtant, on n&rsquo;y trouve pas de contenu ajouté au fil du temps, pas de <em>level up</em>, pas de <em>loot</em> aléatoire. L&rsquo;écran de jeu est toujours le même, nos options aussi, et quand on bouge une pièce, on sait toujours exactement où elle va finir. C&rsquo;est toujours le même jeu, extrêmement prévisible&hellip; Non, bien sûr que non.</p>
+<p>La zone de jeu n&rsquo;est pas vraiment toujours la même, j&rsquo;ai menti. A chaque forme posée, on fait évoluer le terrain auquel on doit s&rsquo;adapter : nous sommes notre propre level designer dans un niveau qui change constamment, et c&rsquo;est pour cela que chaque partie apporte son lot de tension, que le jeu se renouvelle est reste aussi rafraîchissant. Et c&rsquo;est aussi pourquoi les développeurs n&rsquo;ont pas besoin d&rsquo;ajouter eux-mêmes du nouveau contenu.</p>
+<p>Aujourd&rsquo;hui, la façon la plus populaire de faire évoluer nos jeux est de les étendre, les complexifier indéfiniment. Tetris, dont on s&rsquo;émerveille qu&rsquo;il fonctionne en restant aussi simple, nous envoie peut-être le message que l&rsquo;on fonce dans une mauvaise direction. Continuer à itérer de la même façon, encore et encore, sur nos concepts de RPG et de FPS, ça peut être tout à fait honorable, mais ce n&rsquo;est probablement pas comme ça que se produisent les jeux légendaires et intemporels.</p>
+<p>En tout cas, c&rsquo;est comme ça que je le vois.</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/jeux/">Jeux</a>
+        
+            <a href="/tags/review/">Review</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Sous licence CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+    
+</article>
+
+    <aside class="related-contents--wrapper">
+    
+    
+        <h2 class="section-title">Contenus liés</h2>
+        <div class="related-contents">
+            <div class="flex article-list--tile">
+                
+                    
+<article class="has-image">
+    <a href="/post/2021/destiny-introduction-analyse/">
+        
+        
+            <div class="article-image">
+                <img src="/post/2021/destiny-introduction-analyse/mur-cosmodrome.76168c2faa4d4571170a6ba0eb3893a8_hu5601b8757630ba3c4506515c18437ba6_312675_250x150_fill_q75_linear_smart1.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy" 
+                        data-key="" 
+                        data-hash="md5-dhaML6pNRXEXCmug6ziTqA==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">L&#39;introduction de Destiny : analyse du level design</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="has-image">
+    <a href="/post/2019/livre-de-cayde-6/">
+        
+        
+            <div class="article-image">
+                <img src="/post/2019/livre-de-cayde-6/1.1a7b96fc9f623c180078258f02b9559d_huba8cb3931aa4a07e0978c3c5de693f63_362499_250x150_fill_q75_linear_smart1.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy" 
+                        data-key="" 
+                        data-hash="md5-GnuW/J9iPBgAeCWPArlVnQ==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Le livre de Cayde-6</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="has-image">
+    <a href="/post/2021/creer-un-site-avec-hugo/">
+        
+        
+            <div class="article-image">
+                <img src="/post/2021/creer-un-site-avec-hugo/halgatewood-unsplash.fa910669466197c9a28d3f757b6c9592_hu61c57f73b54c7c75eb152c7c1b9fb82d_303669_250x150_fill_q75_linear_smart1.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy" 
+                        data-key="" 
+                        data-hash="md5-&#43;pEGaUZhl8mijT91e2yVkg==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Créer un portfolio ou un blog sans programmer avec Hugo</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="has-image">
+    <a href="/post/2021/vous-ne-devriez-pas-utiliser-le-gif/">
+        
+        
+            <div class="article-image">
+                <img src="/post/2021/vous-ne-devriez-pas-utiliser-le-gif/cover.1b7b2f968182607e30093a20caf14363_hucbf1e6f87a467dfb5c4236726ecda0ea_1826916_250x150_fill_linear_smart1_2.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy" 
+                        data-key="" 
+                        data-hash="md5-G3svloGCYH4wCTogyvFDYw==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Vous ne devriez pas utiliser le GIF — il a été remplacé par la vidéo</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="has-image">
+    <a href="/post/2020/telecharger-des-videos-youtube/">
+        
+        
+            <div class="article-image">
+                <img src="/post/2020/telecharger-des-videos-youtube/cover.868c637f92332c19d9c66d790f99f682_hua0e4a9c77eff58e7409b74f8d9c1a756_72887_250x150_fill_linear_smart1_2.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy" 
+                        data-key="" 
+                        data-hash="md5-hoxjf5IzLBnZxm15D5n2gg==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Télécharger des vidéos YouTube en un clin d&#39;œil</h2>
+        </div>
+    </a>
+</article>
+                
+            </div>
+        </div>
+    
+</aside>
+
+     
+     
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2021 Aurélien Dos Santos
+    </section>
+    
+    <section class="powerby">
+        Généré avec <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Thème <a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="2.2.0">Stack</a> conçu par <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
+            >
+
+            </main>
+    
+
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
+                defer="false"
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

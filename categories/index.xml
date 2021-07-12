@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Aurélien Dos Santos</title>
+    <link>https://aureliendossantos.github.io/categories/</link>
+    <description>Recent content in Categories on Aurélien Dos Santos</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Thu, 01 Jul 2021 00:35:02 +0200</lastBuildDate><atom:link href="https://aureliendossantos.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Article</title>
+      <link>https://aureliendossantos.github.io/categories/article/</link>
+      <pubDate>Thu, 01 Jul 2021 00:35:02 +0200</pubDate>
+      
+      <guid>https://aureliendossantos.github.io/categories/article/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Micro-blog</title>
+      <link>https://aureliendossantos.github.io/categories/micro-blog/</link>
+      <pubDate>Sat, 05 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://aureliendossantos.github.io/categories/micro-blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Formations</title>
+      <link>https://aureliendossantos.github.io/categories/formations/</link>
+      <pubDate>Sun, 27 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://aureliendossantos.github.io/categories/formations/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tutoriel</title>
+      <link>https://aureliendossantos.github.io/categories/tutoriel/</link>
+      <pubDate>Thu, 01 Jul 2021 00:35:02 +0200</pubDate>
+      
+      <guid>https://aureliendossantos.github.io/categories/tutoriel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Photos</title>
+      <link>https://aureliendossantos.github.io/categories/photos/</link>
+      <pubDate>Mon, 20 Jul 2020 22:00:00 +0000</pubDate>
+      
+      <guid>https://aureliendossantos.github.io/categories/photos/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
