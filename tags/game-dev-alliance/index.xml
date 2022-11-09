@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Game Dev Alliance on Aurélien Dos Santos</title>
+    <link>https://aureliendossantos.github.io/tags/game-dev-alliance/</link>
+    <description>Recent content in Game Dev Alliance on Aurélien Dos Santos</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Sat, 05 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://aureliendossantos.github.io/tags/game-dev-alliance/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FaireDesJeux.fr, le site de formations gratuites</title>
+      <link>https://aureliendossantos.github.io/post/2020/fairedesjeux.fr/</link>
+      <pubDate>Sat, 05 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://aureliendossantos.github.io/post/2020/fairedesjeux.fr/</guid>
+      <description>Après deux ans à faire vivre le wiki de Game Dev Alliance, nous avons constaté que le format encyclopédique nous enfermait et ne répondait pas aux attentes de la communauté. Les débutants cherchent plutôt des tutoriels guidés, mais il peut être difficile de savoir vers qui se tourner face aux formations payantes qui fleurissent sur des sites douteux, surtout en français.
+Notre réponse à cela est FaireDesJeux.fr, un site qui n&amp;rsquo;en est qu&amp;rsquo;à ses débuts mais sur lequel nous avons l&amp;rsquo;ambition de proposer des formations gratuites dans tous les aspects de la création de jeux, tout en apprenant aux lecteurs et lectrices à s&amp;rsquo;autonomiser une fois les bases acquises.</description>
+    </item>
+    
+  </channel>
+</rss>

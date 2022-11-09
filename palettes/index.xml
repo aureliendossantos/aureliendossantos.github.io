@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Palettes on Aurélien Dos Santos</title>
+    <link>https://aureliendossantos.github.io/palettes/</link>
+    <description>Recent content in Palettes on Aurélien Dos Santos</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Tue, 21 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://aureliendossantos.github.io/palettes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>green</title>
+      <link>https://aureliendossantos.github.io/palettes/green/</link>
+      <pubDate>Tue, 21 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://aureliendossantos.github.io/palettes/green/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>whiteboard</title>
+      <link>https://aureliendossantos.github.io/palettes/whiteboard/</link>
+      <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://aureliendossantos.github.io/palettes/whiteboard/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>guidebook</title>
+      <link>https://aureliendossantos.github.io/palettes/guidebook/</link>
+      <pubDate>Thu, 01 Jul 2021 00:35:02 +0200</pubDate>
+      
+      <guid>https://aureliendossantos.github.io/palettes/guidebook/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>notebook</title>
+      <link>https://aureliendossantos.github.io/palettes/notebook/</link>
+      <pubDate>Fri, 02 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://aureliendossantos.github.io/palettes/notebook/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>default</title>
+      <link>https://aureliendossantos.github.io/palettes/default/</link>
+      <pubDate>Thu, 12 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://aureliendossantos.github.io/palettes/default/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>brown</title>
+      <link>https://aureliendossantos.github.io/palettes/brown/</link>
+      <pubDate>Mon, 20 Jul 2020 22:00:00 +0000</pubDate>
+      
+      <guid>https://aureliendossantos.github.io/palettes/brown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>black</title>
+      <link>https://aureliendossantos.github.io/palettes/black/</link>
+      <pubDate>Mon, 20 Jul 2020 21:00:00 +0000</pubDate>
+      
+      <guid>https://aureliendossantos.github.io/palettes/black/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>darkgrey</title>
+      <link>https://aureliendossantos.github.io/palettes/darkgrey/</link>
+      <pubDate>Fri, 08 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://aureliendossantos.github.io/palettes/darkgrey/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>blue</title>
+      <link>https://aureliendossantos.github.io/palettes/blue/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://aureliendossantos.github.io/palettes/blue/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

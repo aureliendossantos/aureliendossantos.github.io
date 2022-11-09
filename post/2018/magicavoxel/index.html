@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Aurélien Dos Santos">
+<title>Créer et partager des scènes en 3D avec MagicaVoxel</title>
+
+<link rel="stylesheet" href="/style.index.min.e9231004b2f882017b7eaad4a7e35e6b79983149d090e712682229a2b294828a.css" integrity="sha256-6SMQBLL4ggF7fqrUp&#43;Nea3mYMUnQkOcSaCIporKUgoo=">
+
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Nunito:wght@700&display=swap');
+        body {
+            background-color: #f9f9f9;
+            font-family: 'Lato', sans-serif;
+        }
+        article, .header-contents {
+            color: #333333;
+            font-size: 17px;
+            line-height: 1.6;
+        }
+        blockquote, .note {
+            font-family: 'Lato', monospace;
+            color: #5c80c4;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Nunito', sans-serif;
+        }
+        .byline, .subtitle, figcaption, .sidenote {
+            color: #686868;
+        }
+        hr {
+            border-color: #686868;
+        }
+    </style>
+    
+
+<body>
+    <div class="single">
+        <header>
+            <div class="header-contents">
+                <h1 class="title">Créer et partager des scènes en 3D avec MagicaVoxel</h1>
+                <p class="subtitle">MagicaVoxel est un éditeur de scènes en voxel très simple d&#39;utilisation. Vous pouvez ensuite exporter vos créations et les partager en ligne sur des sites comme Sketchfab.</p>
+                <p class="byline">:date_long &ndash; <a href="/">Aurélien Dos Santos</a></p>
+            </div>
+        </header>
+        <article>
+
+        <div class="note">
+    Ce tutoriel est né de la collaboration de plusieurs membres du forum RPG Maker Alliance, à l&rsquo;occasion d&rsquo;un « challenge de la semaine » sur MagicaVoxel. Lorsque nous avons fermé le forum en 2019, ce tutoriel est alors devenu inaccessible. Je n&rsquo;en suis pas l&rsquo;auteur, mais il me paraît bon de le remettre en ligne quelque part !
+</div>
+
+<p>La modélisation 3D vous semble sans doute hors d&rsquo;atteinte, réservée aux pros et aux étudiant·e·s dans ce domaine. Pourtant, certains logiciels gratuits vous permettent de bricoler facilement une petite scène en 3D afin de mettre un premier pas dans ce vaste domaine&hellip; C&rsquo;est le cas, entre autres, de MagicaVoxel !</p>
+<p>Ce logiciel gratuit, disponible sur Mac et Windows (mais tournant très bien sur Linux via Wine ou PlayOnLinux), permet de créer des objets en voxels (des cubes, l&rsquo;équivalent de pixels en 3D) et de les assembler. Son interface ergonomique et ses outils simples en font un logiciel accessible et amusant pour les débutant·e·s.</p>
+<p><a href="https://ephtracy.github.io/">Site officiel de MagicaVoxel</a></p>
+<p><a href="https://www.youtube.com/watch?v=U-0n383c27E">En savoir plus sur les voxels</a></p>
+<h2 id="débuter-sur-magicavoxel">Débuter sur MagicaVoxel</h2>
+<p><em>Ecrit par Nev</em></p>
+<p>Si mon petit pitch vous a convaincu, vous avez sans doute téléchargé et lancé MagicaVoxel. Vous devriez vous trouver devant un écran similaire à celui-ci. Faisons ensemble un petit tour du propriétaire&hellip;</p>
+<p>
+
+
+
+
+
+<figure style="flex-grow: 177; flex-basis: 426px">
+		<a href="/post/2018/magicavoxel/2IAoFHn.png" target="_blank" data-size="1920x1080"><picture>
+				
+				<img
+					src="/post/2018/magicavoxel/2IAoFHn.png"
+					width="1920"
+					height="1080"
+					loading="lazy"
+					decoding="async"
+					alt="&nbsp;"
+				/>
+			</picture>
+		</a>
+		
+	</figure></p>
+<ul>
+<li>
+<p>En <strong>vert</strong> : Se trouvent vos fichiers. Vous pouvez créer un nouveau document, ouvrir les anciens, les supprimer, les exporter vers d&rsquo;autres logiciels&hellip; Et regarder les dizaines d&rsquo;exemples déjà inclus dans le logiciel !</p>
+</li>
+<li>
+<p>En <strong>bleu</strong> : Il s&rsquo;agit du nom de votre document, à sa droite se trouve un petit carré (ici gris) sur lequel vous devez cliquer pour enregistrer votre travail. Si vous n&rsquo;avez pas enregistré les dernières modifications, le carré sera rouge-orangé (pensez à sauvegarder régulièrement !!!)</p>
+</li>
+<li>
+<p>En <strong>jaune</strong> : Très utile au début, il s&rsquo;agit du nom de l&rsquo;outil que vous survolez / des actions que vous pouvez faire actuellement. Si vous avez un doute concernant un bouton, survolez le avec votre souris et le logiciel vous indiquera son utilité.</p>
+</li>
+<li>
+<p>En <strong>violet</strong> : Il s&rsquo;agit de vos palettes de couleurs. MagicaVoxel vous en propose par défaut mais vous pouvez créer les votres via les boutons en bas et le sélecteur de couleurs. Rappelez-vous que vous peignez un voxel en entier, vous ne pouvez pas appliquer une couleur différente sur chacune de ses faces&hellip;</p>
+</li>
+<li>
+<p>En <strong>rouge</strong> : Vos principaux outils. A gauche vous trouverez trois modes, Attach (pour ajouter des voxels) Erase (pour en supprimer) et Paint (pour en peindre), qui se combine avec six pinceaux, L (ligne) C (cercle) P (patterns) V (voxel) F (face) B (carré). A droite vous trouverez l&rsquo;option &ldquo;retour arrière&rdquo; (CTRL + Z) et l&rsquo;option &ldquo;restaurer&rdquo; ainsi que plusieurs outils plus spécifiques (Tels que des outils de symétries, de rotation, de sélection&hellip;)</p>
+</li>
+<li>
+<p>En <strong>kaki</strong> : Il s&rsquo;agit des options de caméra, à droite vous pouvez régler le type de vue (Libre, isométrique&hellip;) et recentrer la caméra sur votre objet. A gauche vous pouvez régler la grille, le fond, surligner les bordures&hellip; En haut à gauche vous pouvez gérer la définition de l&rsquo;apercu, ce qui sera utile plus tard dans le rendu.</p>
+</li>
+</ul>
+<p>Cela fait beaucoup de choses à enregistrer, mais je vous assure que le design est fait pour que ce soit simple. N&rsquo;hésitez pas à jouer avec les options que je vous ai présentées afin de les apprivoiser avant de passer à la suite.</p>
+<h2 id="composition-ou-mode-world">Composition ou mode World</h2>
+<p>
+
+
+
+
+
+<figure style="flex-grow: 133; flex-basis: 319px">
+		<a href="/post/2018/magicavoxel/A3MNpKg.png" target="_blank" data-size="1090x818"><picture>
+				
+				<img
+					src="/post/2018/magicavoxel/A3MNpKg.png"
+					width="1090"
+					height="818"
+					loading="lazy"
+					decoding="async"
+					alt="&nbsp;"
+				/>
+			</picture>
+		</a>
+		
+	</figure></p>
+<p>Vous êtes fier de votre premier objet et vous souhaitez créer une composition avec plusieurs objets ? Appuyez sur le bouton &ldquo;world&rdquo; (le bouton &ldquo;edit&rdquo; pour revenir à l&rsquo;édition d&rsquo;un bloc de la composition sera au même endroit)</p>
+<p>
+
+
+
+
+
+<figure style="flex-grow: 177; flex-basis: 426px">
+		<a href="/post/2018/magicavoxel/tBtERvJ.png" target="_blank" data-size="1920x1080"><picture>
+				
+				<img
+					src="/post/2018/magicavoxel/tBtERvJ.png"
+					width="1920"
+					height="1080"
+					loading="lazy"
+					decoding="async"
+					alt="&nbsp;"
+				/>
+			</picture>
+		</a>
+		
+	</figure></p>
+<p>Vous voilà dans le mode &ldquo;world&rdquo; , vous pouvez bouger chaque objet séparément grâce aux outils à gauche en <strong>rouge</strong> sur les X Y et Z (Les flèches que vous voyez au centre l&rsquo;écran). Vous pouvez dédoubler, supprimer et tourner vos objets à votre guises, et bien plus encore, avec les outils à droite de l&rsquo;écran en <strong>vert</strong>.</p>
+<p>En <strong>brun</strong> à droite le gestionnaire des calques, qui sert principalement si vous souhaitez faire des animations, ce que je vous déconseille quand vous débutez avec le logiciel !</p>
+<p>
+
+
+
+
+
+<figure style="flex-grow: 177; flex-basis: 426px">
+		<a href="/post/2018/magicavoxel/mefSAWR.png" target="_blank" data-size="1920x1080"><picture>
+				
+				<img
+					src="/post/2018/magicavoxel/mefSAWR.png"
+					width="1920"
+					height="1080"
+					loading="lazy"
+					decoding="async"
+					alt="&nbsp;"
+				/>
+			</picture>
+		</a>
+		
+	</figure></p>
+<p>A noter également l&rsquo;existence d&rsquo;un système de &ldquo;groupe&rdquo;, qui permet de gérer plus facilement une composition trop complexe. Par exemple ici tout les blocs d&rsquo;eau on été regroupés en un seul groupe, qui me permet de les déplacer tous ensemble !</p>
+<p>Pour faire un groupe sélectionnez plusieurs objets en maintenant &ldquo;Maj&rdquo; et en cliquant sur les objets désirés, puis en appuyant sur l&rsquo;outil &ldquo;group object&rdquo; (En <strong>Rose</strong> sur l&rsquo;exemple) . Vous pouvez ensuite rentrer dans le groupe (pour en éditer chaque objets membre) en cliquant sur le groupe puis sur &ldquo;Enter group&rdquo; (En <strong>vert</strong>) , pour en ressortir cliquez sur &ldquo;Leave groupe&rdquo; (En <strong>rouge</strong>). Pour désassembler un groupe, sélectionnez le et cliquez sur &ldquo;Ungroup object&rdquo; (En <strong>bleu</strong>).</p>
+<h2 id="rendu-et-matériaux">Rendu et matériaux</h2>
+<p><em>Ecrit par Imanor</em></p>
+<p>
+
+
+
+
+
+<figure style="flex-grow: 186; flex-basis: 448px">
+		<a href="/post/2018/magicavoxel/LEuSQW7.png" target="_blank" data-size="1920x1027"><picture>
+				
+				<img
+					src="/post/2018/magicavoxel/LEuSQW7.png"
+					width="1920"
+					height="1027"
+					loading="lazy"
+					decoding="async"
+					alt="&nbsp;"
+				/>
+			</picture>
+		</a>
+		
+	</figure></p>
+<p>Après avoir créé votre scène, il est temps de passer au rendu. C’est l’étape où vous allez attribuer les materiaux à vos éléments et où votre ordinateur va calculer la lumière dans votre scène afin de sortir une image finale. Pour y accéder, il suffit de cliquer sur l’onglet “Render” en haut de l’espace de travail. Ce nouvel espace est accompagné d’outils différents, cependant vous pouvez toujours déplacer la caméra de la même manière que dans l’onglet “Model” !</p>
+<p>En haut, vous pourrez définir la taille de votre image finale, ainsi que la qualité de votre rendu. Plus la valeur est haute, plus le rendu sera propre. Cependant une valeur plus haute que celle par défaut augmentera le temps de rendu de votre image. Bien entendu, plus votre ordinateur est puissant et plus les temps de rendu seront rapides !</p>
+<p>A gauche, c’est ici que vous vous pourrez régler la lumière et l’éclairage de votre scène.</p>
+<ul>
+<li>Les 6 premières valeurs définissent le nombre de lightbounces, c’est à dire le nombre de fois où la lumière va rebondir sur les surfaces. Plus cette valeure est haute, plus la lumière dans votre scène sera précise et réaliste. Cependant il faudra plus de temps à votre ordinateur pour calculer l’image.</li>
+<li>“Sun” vous permet de changer la position du “soleil”, à savoir la source d’éclairage de votre scène.</li>
+<li>“Area” définit la taille de votre source de lumière. Plus elle est petite, plus elle sera concentrée rendant les ombres dans votre scènes très nets. A l’inverse, une valeur plus haute rendra les ombres plus diffuses. Attention, ce réglage ne doit pas être confondu avec “l’intensité” du Sun ! Une Area plus grande ne voudra pas dire que la lumière sera plus forte.</li>
+<li>Sun [k] vous permet justement de régler l’intensité du Sun ainsi que ça couleur.</li>
+<li>Sky [K] vous permet de régler l’intensité de votre ciel. Vous pouvez également changer sa couleur, ce qui aura également pour effet de teinter les ombres dans votre scène.</li>
+<li>Enfin, Fog [k] vous permet de rajouter du brouillard dans votre scène. Vous pourrez ensuiter modifier son intensité et sa couleur de la même manière que pour les réglages précédents.</li>
+</ul>
+<p>A droite se trouvent les réglages de materiaux, c’est à dire la matière que vous allez donner à vos objets. Vous avez le choix entre modifier le materiaux de tous vous éléments (All) ou de selectionner un élement en particulier (Sel) en maintenant la touche Alt et en cliquant sur l’élement que vous voulez modifier dans votre espace de travail. Sachez que dans ce mode, vous modifierez le matériaux de tous les voxels de cette même couleur dans votre scène.</p>
+<ul>
+<li>Diffuse : c’est votre matériaux de base.</li>
+<li>Metal : c’est ici que vous allez pouvoir gérer les propriété réfléchissantes de votre élément. L’option Metal définira à quel point votre matériau sera réfléchissant.</li>
+</ul>
+<p>
+
+
+
+
+
+<figure style="flex-grow: 186; flex-basis: 448px">
+		<a href="/post/2018/magicavoxel/bTH0FhL.png" target="_blank" data-size="1920x1027"><picture>
+				
+				<img
+					src="/post/2018/magicavoxel/bTH0FhL.png"
+					width="1920"
+					height="1027"
+					loading="lazy"
+					decoding="async"
+					alt="&nbsp;"
+				/>
+			</picture>
+		</a>
+		
+	</figure></p>
+<p>La roughness (ici l’option “Rough”) va définir la “qualité” de votre réflexion. Plus la valeur est basse et plus votre réflexion sera parfaite, comme un miroir.</p>
+<p>
+
+
+
+
+
+<figure style="flex-grow: 186; flex-basis: 448px">
+		<a href="/post/2018/magicavoxel/BUhlfqL.png" target="_blank" data-size="1920x1027"><picture>
+				
+				<img
+					src="/post/2018/magicavoxel/BUhlfqL.png"
+					width="1920"
+					height="1027"
+					loading="lazy"
+					decoding="async"
+					alt="&nbsp;"
+				/>
+			</picture>
+		</a>
+		
+	</figure></p>
+<p>Au contraire une roughness élevée donnera un aspect mat à votre surface.</p>
+<p>
+
+
+
+
+
+<figure style="flex-grow: 186; flex-basis: 448px">
+		<a href="/post/2018/magicavoxel/vAS4Agg.png" target="_blank" data-size="1920x1027"><picture>
+				
+				<img
+					src="/post/2018/magicavoxel/vAS4Agg.png"
+					width="1920"
+					height="1027"
+					loading="lazy"
+					decoding="async"
+					alt="&nbsp;"
+				/>
+			</picture>
+		</a>
+		
+	</figure></p>
+<p>Enfin, le paramètre “Specular” définit l’intensité de votre réflexion. Si vous cliquez sur le bouton “P”, votre matériau aura alors un aspect “plastique” au lieu d’avoir l’air métallique. Ce mode vous permet d’avoir des reflets sur votre élément tout en gardant sa couleur !</p>
+<p>Dans Glass, vous allez pouvoir donner de la transparence à votre élément. Le paramètre Glass définira à quel point votre objet est transparent</p>
+<p>
+
+
+
+
+
+<figure style="flex-grow: 186; flex-basis: 448px">
+		<a href="/post/2018/magicavoxel/DxO3wSq.png" target="_blank" data-size="1920x1027"><picture>
+				
+				<img
+					src="/post/2018/magicavoxel/DxO3wSq.png"
+					width="1920"
+					height="1027"
+					loading="lazy"
+					decoding="async"
+					alt="&nbsp;"
+				/>
+			</picture>
+		</a>
+		
+	</figure></p>
+<p>Rough ici agit de la même façon que dans “Metal”</p>
+<p>Refract vous permet de définir l’indice de réfraction (de transparence) de votre objet, c’est à dire à quel point la lumière va être déviée en traversant celui-ci. Un indice de refraction au minimum sigifie que la lumière ne sera pas déviée, rendant donc votre objet “invisible”.</p>
+<p>
+
+
+
+
+
+<figure style="flex-grow: 186; flex-basis: 448px">
+		<a href="/post/2018/magicavoxel/OTjlTai.png" target="_blank" data-size="1920x1027"><picture>
+				
+				<img
+					src="/post/2018/magicavoxel/OTjlTai.png"
+					width="1920"
+					height="1027"
+					loading="lazy"
+					decoding="async"
+					alt="&nbsp;"
+				/>
+			</picture>
+		</a>
+		
+	</figure></p>
+<p>Une valeur élevée signifie que la lumière sera fortement déviée en traversant l’objet, lui donnant un aspect plus “crystal”.</p>
+<p>
+
+
+
+
+
+<figure style="flex-grow: 186; flex-basis: 448px">
+		<a href="/post/2018/magicavoxel/l1NCSbR.png" target="_blank" data-size="1920x1027"><picture>
+				
+				<img
+					src="/post/2018/magicavoxel/l1NCSbR.png"
+					width="1920"
+					height="1027"
+					loading="lazy"
+					decoding="async"
+					alt="&nbsp;"
+				/>
+			</picture>
+		</a>
+		
+	</figure></p>
+<p>Attenuate vous permet d&rsquo;atténuer la transparence de votre élément. Cela aura pour effet de redonner un peu de la couleur de l’objet à sa transparence.</p>
+<p>Enfin, Emission permettra à votre élément d’émettre de la lumière !</p>
+<p>Emit définit à quel point votre élément sera “allumé”.</p>
+<p>
+
+
+
+
+
+<figure style="flex-grow: 186; flex-basis: 448px">
+		<a href="/post/2018/magicavoxel/BSvYDeP.png" target="_blank" data-size="1920x1027"><picture>
+				
+				<img
+					src="/post/2018/magicavoxel/BSvYDeP.png"
+					width="1920"
+					height="1027"
+					loading="lazy"
+					decoding="async"
+					alt="&nbsp;"
+				/>
+			</picture>
+		</a>
+		
+	</figure></p>
+<p>Ce réglage s’utilise en complément du réglage Power qui définit à quel point votre élément illuminera ses alentours.</p>
+<p>
+
+
+
+
+
+<figure style="flex-grow: 186; flex-basis: 448px">
+		<a href="/post/2018/magicavoxel/jlG6uxA.png" target="_blank" data-size="1920x1027"><picture>
+				
+				<img
+					src="/post/2018/magicavoxel/jlG6uxA.png"
+					width="1920"
+					height="1027"
+					loading="lazy"
+					decoding="async"
+					alt="&nbsp;"
+				/>
+			</picture>
+		</a>
+		
+	</figure></p>
+<p>A noter que la couleur de la lumière sera celle du voxel. Egalement il est conseillé d’activer l’option “GI” (en haut à droite de l’espace de travail) si vous décidez d’utiliser l’emission. Cela permettra à votre ordinateur de calculer la lumière indirecte dans votre scène, en plus de la lumière directe. Cependant cette option peut-être assez gourmande et rallongera le temps de rendu de votre image.</p>
+<p>Si tout cela vous fait peur, ne vous inquiétez pas ! Il vous suffit de prendre le temps d’expérimenter avec les différents réglages quelques minutes pour comprendre le principe, ce n’est vraiment pas très compliqué !</p>
+<h2 id="mettre-en-ligne-un-modèle-sur-sketchfab">Mettre en ligne un modèle sur Sketchfab</h2>
+<p><em><a href="https://blog.sketchfab.com/publishing-voxel-designs-from-magicavoxel-to-sketchfab/">Traduit</a> par Ezekiel_Koening</em></p>
+<h3 id="exporter-votre-modèle">Exporter votre modèle</h3>
+<p>Votre scène voxel est prête et il est temps pour vous de la partager ! Tout d’abord il va falloir l’exporter dans un format « mesh ». Le .obj est le format le plus couramment utilisé et sera parfaitement bien importé dans sketchfab. Choisissez le dossier d’enregistrement. MagicaVoxel va alors créer un .obj, un .mtl et un texture.png.</p>
+<p>
+
+
+
+
+
+<figure style="flex-grow: 182; flex-basis: 438px">
+		<a href="/post/2018/magicavoxel/2f4530ae74260ea2c05d8f59cdd6117b7d408430-1.jpg" target="_blank" data-size="1920x1050"><picture>
+				
+				<img
+					src="/post/2018/magicavoxel/2f4530ae74260ea2c05d8f59cdd6117b7d408430-1.jpg"
+					width="1920"
+					height="1050"
+					loading="lazy"
+					decoding="async"
+					alt="&nbsp;"
+				/>
+			</picture>
+		</a>
+		
+	</figure></p>
+<h3 id="importer-votre-modèle-dans-sketchfab">Importer votre modèle dans Sketchfab</h3>
+<p>Appuyez sur « Upload » dans Sketchfab et sélectionnez vos trois fichiers (le .obj, le .mtl et le .png). Cliquez ensuite sur « Continue ».</p>
+<p>
+
+
+
+
+
+<figure style="flex-grow: 176; flex-basis: 423px">
+		<a href="/post/2018/magicavoxel/bc6d13b984f9f1a96c822d5ef516fed28d649323-1.jpg" target="_blank" data-size="1557x882"><picture>
+				
+				<img
+					src="/post/2018/magicavoxel/bc6d13b984f9f1a96c822d5ef516fed28d649323-1.jpg"
+					width="1557"
+					height="882"
+					loading="lazy"
+					decoding="async"
+					alt="&nbsp;"
+				/>
+			</picture>
+		</a>
+		
+	</figure></p>
+<p>Après un court instant, votre modèle devrait apparaître. Complétez les informations (facultatif) puis cliquez sur « Continue ».</p>
+<p>
+
+
+
+
+
+<figure style="flex-grow: 105; flex-basis: 253px">
+		<a href="/post/2018/magicavoxel/cb16769ac1721f0cfd0786e0f6f5327afdc828e2-1.jpg" target="_blank" data-size="770x728"><picture>
+				
+				<img
+					src="/post/2018/magicavoxel/cb16769ac1721f0cfd0786e0f6f5327afdc828e2-1.jpg"
+					width="770"
+					height="728"
+					loading="lazy"
+					decoding="async"
+					alt="&nbsp;"
+				/>
+			</picture>
+		</a>
+		
+	</figure></p>
+<p>Vous pouvez désormais voir votre modèle, le faire tourner, etc.</p>
+<h3 id="paramètres-de-sketchfab">Paramètres de Sketchfab</h3>
+<p>Tout ça c’est très cool ! Mais est-ce que ça pourrait pas être encore mieux ? Il est temps de s’amuser un peu avec les propriétés (settings) de sketchfab ! Nous allons voir différents onglets disponibles dans les « 3D settings » de sketchfab :</p>
+<h4 id="scène">Scène</h4>
+<p>
+
+
+
+
+
+<figure style="flex-grow: 198; flex-basis: 477px">
+		<a href="/post/2018/magicavoxel/7fded345843556a521dc0858a49989a9f665d50e-1.jpg" target="_blank" data-size="1916x964"><picture>
+				
+				<img
+					src="/post/2018/magicavoxel/7fded345843556a521dc0858a49989a9f665d50e-1.jpg"
+					width="1916"
+					height="964"
+					loading="lazy"
+					decoding="async"
+					alt="&nbsp;"
+				/>
+			</picture>
+		</a>
+		
+	</figure></p>
+<p>Dans l’onglet « Scene » vous pouvez changez des propriétés générales.</p>
+<ul>
+<li>Camera Field of View : une valeur intéressante avec laquelle jouer. 0° donne une vue orthogonale, ce qui va bien avec les voxels.</li>
+<li>Renderer : un réglage important ! Pour les voxels « Classic » est le plus approprié. Note : « PBR » signifie « Physically based rendering » ce qui donne un rendu réaliste mais qui demande beaucoup de textures et ne fonctionne donc pas vraiment avec les voxels. Matcap n’est pas très important non plus pour ce que nous voulons faire. Ici mieux vaut utiliser « Classic » qui donne un rendu simplifié.</li>
+<li>Shading : « Lit » donne un rendu avec des ombres. « Shadeless » ne vous donnera que des couleurs plates. Nous allons donc prendre « Lit » pour avoir de jolies ombres en temps réel.</li>
+</ul>
+<p>Tant que nous y sommes, nous pouvons régler le point de pivot de notre scène en double cliquant n’importe où dans la scène.</p>
+<p>Nous reviendrons à cet onglet « Scene » plus tard pour le reste des réglages.</p>
+<h4 id="eclairage">Eclairage</h4>
+<p>« Lights » est sur Off pour le moment, donc mettez le sur On ! Vous pouvez sélectionner et éditer les sources de lumières dans l’onglet ou directement dans votre scène.</p>
+<p>« Attached to camera » fait en sorte que les lumières suivent la rotation de la caméra.</p>
+<p>
+
+
+
+
+
+<figure style="flex-grow: 199; flex-basis: 479px">
+		<a href="/post/2018/magicavoxel/742b88c7ca335d3ecbd60647c6c80386eda0c26e-1.jpg" target="_blank" data-size="1920x962"><picture>
+				
+				<img
+					src="/post/2018/magicavoxel/742b88c7ca335d3ecbd60647c6c80386eda0c26e-1.jpg"
+					width="1920"
+					height="962"
+					loading="lazy"
+					decoding="async"
+					alt="&nbsp;"
+				/>
+			</picture>
+		</a>
+		
+	</figure></p>
+<p>Si vous voyez des glitches au niveau des ombres, vérifiez si « Shadow bias » est bien réglé sur sa valeur par défaut, 0.005, et non pas 0.</p>
+<ul>
+<li>« Environment » est l’illumination globale de la scène. Une image à 360° est utilisée pour simuler l’éclairage réaliste d’un environnement. Choisissez un environnement qui correspond à votre scène dans le menu déroulant.</li>
+<li>Vous pouvez baisser l’intensité vu qu’on a précédemment ajouté des sources de lumière dans la scène. Réglez à 0 pour avoir des ombres accentuées, ou à 35 pour une très grosse exposition.</li>
+<li>Décochez « Replace background » pour avoir un background gris (choisissez le background dans l’onglet « Scene »).</li>
+</ul>
+<h4 id="matériaux">Matériaux</h4>
+<p>Pour un material basique comme nous voulons le faire, vous pouvez tout mettre sur Off à part « Diffuse » (« Diffuse est la couleur du material qui est contenue dans le texture.png qu’on a importé un peu plus tôt). Baissez le réglage si les couleurs vous semblent trop brillantes.</p>
+<p>
+
+
+
+
+
+<figure style="flex-grow: 199; flex-basis: 478px">
+		<a href="/post/2018/magicavoxel/acb5cb119e482f6f7b76781ca892b707765e94cf-1.jpg" target="_blank" data-size="1915x960"><picture>
+				
+				<img
+					src="/post/2018/magicavoxel/acb5cb119e482f6f7b76781ca892b707765e94cf-1.jpg"
+					width="1915"
+					height="960"
+					loading="lazy"
+					decoding="async"
+					alt="&nbsp;"
+				/>
+			</picture>
+		</a>
+		
+	</figure></p>
+<p>MagicaVoxel permet d’utiliser des materials émissifs, mais seulement dans sa fenêtre de rendu dédiée. Pour ajouter un effet d’emission dans sketchfab, ouvrez votre texture.png dans Photoshop ou Gimp. Ajoutez un nouveau calque et peignez en noir par dessus toute la texture, sauf sur les couleurs que vous voulez émissives.</p>
+<p>
+
+
+
+
+
+<figure style="flex-grow: 386; flex-basis: 927px">
+		<a href="/post/2018/magicavoxel/0a39b9b7dc7c622a0727c27b6e9e40d44e95f07c-1.jpg" target="_blank" data-size="1314x340"><picture>
+				
+				<img
+					src="/post/2018/magicavoxel/0a39b9b7dc7c622a0727c27b6e9e40d44e95f07c-1.jpg"
+					width="1314"
+					height="340"
+					loading="lazy"
+					decoding="async"
+					alt="&nbsp;"
+				/>
+			</picture>
+		</a>
+		
+	</figure></p>
+<p>Puis, dans Sketchfab, ouvrez votre texture modifiée dans la case « emission » et augmentez la valeur. Ne vous inquiétez pas, ce sera bien mieux lorsqu’on rajoutera<br>
+un effet de bloom (voir à post-processing).</p>
+<h4 id="annotations">Annotations</h4>
+<p>Vous pouvez créer des annotations dans votre scène afin d’ajouter un peu de storytelling, ou juste expliquer quelques détails. Double-cliquez n’importe où pour ajouter une annotation.</p>
+<p>Conseil : Essayez de créer des annotations qui soient visibles des précédentes. Comme ça les gens n’auront pas à chercher partout dans votre scène pour les trouver. Mais si vous voulez, vous pouvez cacher quelques easter eggs !</p>
+<p>
+
+
+
+
+
+<figure style="flex-grow: 199; flex-basis: 479px">
+		<a href="/post/2018/magicavoxel/e41b98d750d04927e218b5e7068a7cd0350b06f5-1.jpg" target="_blank" data-size="1915x958"><picture>
+				
+				<img
+					src="/post/2018/magicavoxel/e41b98d750d04927e218b5e7068a7cd0350b06f5-1.jpg"
+					width="1915"
+					height="958"
+					loading="lazy"
+					decoding="async"
+					alt="&nbsp;"
+				/>
+			</picture>
+		</a>
+		
+	</figure></p>
+<h4 id="post-processing">Post-processing</h4>
+<p>
+
+
+
+
+
+<figure style="flex-grow: 198; flex-basis: 476px">
+		<a href="/post/2018/magicavoxel/24e64f8fd8c7e15caadee521f18bc50c4bb221b7-1.jpg" target="_blank" data-size="1917x965"><picture>
+				
+				<img
+					src="/post/2018/magicavoxel/24e64f8fd8c7e15caadee521f18bc50c4bb221b7-1.jpg"
+					width="1917"
+					height="965"
+					loading="lazy"
+					decoding="async"
+					alt="&nbsp;"
+				/>
+			</picture>
+		</a>
+		
+	</figure></p>
+<p>C’est à cet endroit que vous allez vraiment pouvoir mettre en valeur votre scène ! Quelques réglages sont vraiment utiles :</p>
+<ul>
+<li>Sharpness : fonctionne très bien sur des scènes larges, trouvez la bonne valeur pour que votre scène soit naturelle.</li>
+<li>Bloom : A utiliser avec parcimonie, mais essentiel pour vos materials émissifs ! Mettez le seuil assez bas pour que ça ne s’applique qu’aux materials vraiment brillants. Intensité et Radius parlent d’eux-mêmes.</li>
+<li>Tone mapping : jouez avec ce réglage pour donner une ambiance particulière à votre scène. Vous pouvez même la rendre en noir et blanc si vous baissez le seuil de saturation tout en bas !</li>
+<li>Color balance : à utiliser avec modération. Ajustez les couleurs, par exemple, des sources de lumières dans votre scène : rouge pour du feu, bleu pour des néons, vert ou jaune pour des extérieurs, etc.</li>
+</ul>
+<h3 id="partagez-">Partagez !</h3>
+<p>Votre scène est enfin prête ! Cliquez sur « Save view » pour sauvegarder la miniature de votre modèle 3D et la position initiale de la caméra. Votre modèle est prêt à être partagé. Vous pouvez désormais l’intégrer sur beaucoup de plateformes, dont Facebook, ArtStation, LinkedIn et plein d’autres !</p>
+<h2 id="inspirations">Inspirations</h2>
+<p>Voici quelques exemples pour vous inspirer :</p>
+<p><a href="https://sketchfab.com/models/f6354fc949bf44308246a8eb96d613c8">Voxel Room</a></p>
+<p><a href="https://sketchfab.com/models/ddcc0debe1734789a5f0f4946cb3a12b">The Cart Before the Ponies</a></p>
+<p><a href="https://sketchfab.com/models/e7c7c7c5e8f74f54a0a35f54c6d6c1f2">Voxel Bedroom</a></p>
+<p><a href="https://sketchfab.com/models/1c19e901b8f747b1929cbd5e337bcfe5">Streets of Lisbon</a></p>
+<p><a href="https://sketchfab.com/models/1157d7305b5a488a94f72ea150b08074">Vintage Vinyl Records Store</a></p>
+<p>Quelques chaînes Youtube sur le sujet :</p>
+<p><a href="https://www.youtube.com/watch?v=Oh_pkLHVW8o">https://www.youtube.com/watch?v=Oh_pkLHVW8o</a></p>
+<p><a href="https://www.youtube.com/watch?v=RVXI6J0EpK0">https://www.youtube.com/watch?v=RVXI6J0EpK0</a></p>
+<p><a href="https://www.youtube.com/watch?v=yKO1Q5QRZic">https://www.youtube.com/watch?v=yKO1Q5QRZic</a></p>
+<p>Et quelques chefs-d’œuvre pour rêver un peu :</p>
+<p>
+
+
+
+
+
+<figure style="flex-grow: 140; flex-basis: 338px">
+		<a href="/post/2018/magicavoxel/yannick-castaing-snap2017-12-21-23-19-59.jpg" target="_blank" data-size="1458x1035"><picture>
+				
+				<img
+					src="/post/2018/magicavoxel/yannick-castaing-snap2017-12-21-23-19-59.jpg"
+					width="1458"
+					height="1035"
+					loading="lazy"
+					decoding="async"
+					alt="&nbsp;"
+				/>
+			</picture>
+		</a>
+		
+	</figure></p>
+<p>
+
+
+
+
+
+<figure style="flex-grow: 177; flex-basis: 426px">
+		<a href="/post/2018/magicavoxel/GKLbaNh.jpg" target="_blank" data-size="3217x1809"><picture>
+				
+				<img
+					src="/post/2018/magicavoxel/GKLbaNh.jpg"
+					width="3217"
+					height="1809"
+					loading="lazy"
+					decoding="async"
+					alt="&nbsp;"
+				/>
+			</picture>
+		</a>
+		
+	</figure></p>
+<p>
+
+
+
+
+
+<figure style="flex-grow: 133; flex-basis: 320px">
+		<a href="/post/2018/magicavoxel/Rb5Aqvg.jpg" target="_blank" data-size="1200x900"><picture>
+				
+				<img
+					src="/post/2018/magicavoxel/Rb5Aqvg.jpg"
+					width="1200"
+					height="900"
+					loading="lazy"
+					decoding="async"
+					alt="&nbsp;"
+				/>
+			</picture>
+		</a>
+		
+	</figure></p>
+<p>
+
+
+
+
+
+<figure style="flex-grow: 160; flex-basis: 384px">
+		<a href="/post/2018/magicavoxel/qCb5WRm.png" target="_blank" data-size="1200x750"><picture>
+				
+				<img
+					src="/post/2018/magicavoxel/qCb5WRm.png"
+					width="1200"
+					height="750"
+					loading="lazy"
+					decoding="async"
+					alt="&nbsp;"
+				/>
+			</picture>
+		</a>
+		
+	</figure></p>
+<p>Merci d&rsquo;avoir lu ce tutoriel, en espérant voir vos belles créations !</p>
+
+
+        <p style="margin-top: 3em;">◂ <a href="/">Retour à l'accueil</a></p>
+        </article>
+    </div>
+<footer>
+    
+</footer>
+<script src="/custom.js"></script>
+</body>
+</html>

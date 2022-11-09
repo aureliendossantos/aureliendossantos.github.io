@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Aurélien Dos Santos">
+<title>Utiliser Lua dans Visual Studio Code</title>
+
+<link rel="stylesheet" href="/style.index.min.e9231004b2f882017b7eaad4a7e35e6b79983149d090e712682229a2b294828a.css" integrity="sha256-6SMQBLL4ggF7fqrUp&#43;Nea3mYMUnQkOcSaCIporKUgoo=">
+
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap');
+        body {
+            background-color: #fff;
+            font-family: 'Space Grotesk', 'Noto Sans', sans-serif;
+        }
+        article, .header-contents {
+            color: #404040;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+        blockquote, .note {
+            font-family: 'Space Grotesk', monospace;
+            color: #c45c7f;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        .byline, .subtitle, figcaption, .sidenote {
+            color: #686868;
+        }
+        hr {
+            border-color: #686868;
+        }
+    </style>
+    
+
+<body>
+    <div class="single">
+        <header>
+            <div class="header-contents">
+                <h1 class="title">Utiliser Lua dans Visual Studio Code</h1>
+                <p class="subtitle">Faites vos premiers pas dans la programmation avec Lua, un langage clair et facile à apprendre.</p>
+                <p class="byline">:date_long &ndash; <a href="/">Aurélien Dos Santos</a></p>
+            </div>
+        </header>
+        <article>
+
+        <p>Lua est un langage de programmation intéressant pour débuter et écrire ses premières lignes de code, en raison de son style neutre et très lisible. Lua est d&rsquo;ailleurs souvent utilisé dans le jeu vidéo (World of Warcraft, Roblox&hellip;) en tant que langage de script, car il est simple d&rsquo;utilisation et pensé pour être intégré facilement à un programme.</p>
+<p>
+
+
+
+
+
+  
+
+<figure style="flex-grow: 100; flex-basis: 240px">
+		<a href="/post/2021/utiliser-lua-dans-visual-studio-code/lua-logo.png" target="_blank" data-size="240x240"><picture>
+				
+				<img
+					src="/post/2021/utiliser-lua-dans-visual-studio-code/lua-logo.png"
+					width="240"
+					height="240"
+					loading="lazy"
+					decoding="async"
+					alt="La lune symbolise Lua (qui veut dire « lune » en portugais) car il est pensé pour être le langage satellite d&amp;rsquo;un programme."
+				/>
+			</picture>
+		</a>
+		
+		<figcaption>La lune symbolise Lua (qui veut dire « lune » en portugais) car il est pensé pour être le langage satellite d&rsquo;un programme.</figcaption>
+		
+	</figure></p>
+<p>Dans cet article, je vais vous expliquer comment installer Lua sur votre ordinateur et l&rsquo;utiliser pour écrire vos propres scripts !</p>
+<h2 id="installer-lua">Installer Lua</h2>
+<p>Comme pour beaucoup d&rsquo;outils informatiques, l&rsquo;installation de Lua est un peu plus longue sur Windows que sur Mac ou Linux ; mais n&rsquo;ayez crainte ! je vais vous guider pas à pas.</p>
+
+
+<div class="tab">
+    
+        
+        <button class="tablinks" data-tabset="installer" onclick="changeTab(event, 'installer', 'Windows')">Windows</button>
+        
+        <button class="tablinks" data-tabset="installer" onclick="changeTab(event, 'installer', 'Mac')">Mac</button>
+        
+        <button class="tablinks" data-tabset="installer" onclick="changeTab(event, 'installer', 'Linux')">Linux</button>
+        
+    
+</div>
+
+
+    
+        <div class="tabcontent" data-tabset="installer" id="Windows">
+        <h3 id="télécharger-lua">Télécharger Lua</h3>
+<ol>
+<li>
+<p>Créez un dossier facilement accessible dans lequel vous pourrez placer tous vos programmes à utiliser dans le terminal, par exemple à l&rsquo;emplacement <code>C:\bin</code>.</p>
+</li>
+<li>
+<p>Téléchargez Lua sur <a href="http://luabinaries.sourceforge.net/download.html">luabinaries.sourceforge.net</a>. Choisissez la version la plus récente pour Windows x64, qui devrait s&rsquo;appeller <code>lua-x.x.x_Win64_bin.zip</code>. Déplacez les fichiers à l&rsquo;intérieur du zip dans votre dossier <code>C:\bin</code>.</p>
+<p>
+
+
+
+
+
+<figure style="flex-grow: 221; flex-basis: 531px">
+		<a href="/post/2021/utiliser-lua-dans-visual-studio-code/dossier-bin.png" target="_blank" data-size="711x321"><picture>
+				
+				<img
+					src="/post/2021/utiliser-lua-dans-visual-studio-code/dossier-bin.png"
+					width="711"
+					height="321"
+					loading="lazy"
+					decoding="async"
+					alt="&nbsp;"
+				/>
+			</picture>
+		</a>
+		
+	</figure></p>
+</li>
+</ol>
+<p>Vous devriez obtenir ce résultat. Comme j&rsquo;ai téléchargé la version 5.4, Lua s&rsquo;appelle <code>lua54.exe</code>, mais peut-être que le nombre sera différent pour vous.</p>
+<h3 id="ajouter-lua-au-path">Ajouter Lua au Path</h3>
+<p>Pour que le terminal puisse accéder à Lua, nous devons ajouter le dossier <code>bin</code> au Path :</p>
+<ol>
+<li>
+<p>Ouvrez les <strong>Paramètres système avancés</strong>, puis cliquez sur <strong>Variables d’environnement</strong>.</p>
+<p>
+
+
+
+
+
+<figure style="flex-grow: 257; flex-basis: 617px">
+		<a href="/post/2021/utiliser-lua-dans-visual-studio-code/variables-d-environnement.png" target="_blank" data-size="707x275"><picture>
+				
+				<img
+					src="/post/2021/utiliser-lua-dans-visual-studio-code/variables-d-environnement.png"
+					width="707"
+					height="275"
+					loading="lazy"
+					decoding="async"
+					alt="&nbsp;"
+				/>
+			</picture>
+		</a>
+		
+	</figure></p>
+</li>
+<li>
+<p>Dans l’espace <strong>Variables système</strong>, sélectionnez la ligne <strong>Path</strong> et cliquez sur <strong>Modifier</strong>.</p>
+<p>
+
+
+
+
+
+<figure style="flex-grow: 252; flex-basis: 607px">
+		<a href="/post/2021/utiliser-lua-dans-visual-studio-code/modifier-path.png" target="_blank" data-size="592x234"><picture>
+				
+				<img
+					src="/post/2021/utiliser-lua-dans-visual-studio-code/modifier-path.png"
+					width="592"
+					height="234"
+					loading="lazy"
+					decoding="async"
+					alt="&nbsp;"
+				/>
+			</picture>
+		</a>
+		
+	</figure></p>
+</li>
+<li>
+<p>Dans une nouvelle ligne, renseignez le dossier dans lequel vous avez placé Lua.</p>
+<p>
+
+
+
+
+
+<figure style="flex-grow: 305; flex-basis: 732px">
+		<a href="/post/2021/utiliser-lua-dans-visual-studio-code/ajouter-dossier.png" target="_blank" data-size="525x172"><picture>
+				
+				<img
+					src="/post/2021/utiliser-lua-dans-visual-studio-code/ajouter-dossier.png"
+					width="525"
+					height="172"
+					loading="lazy"
+					decoding="async"
+					alt="&nbsp;"
+				/>
+			</picture>
+		</a>
+		
+	</figure></p>
+</li>
+<li>
+<p>Lua est maintenant disponible dans le terminal ! Recherchez <code>cmd</code> pour y accéder rapidement.</p>
+<p>
+
+
+
+
+
+<figure style="flex-grow: 100; flex-basis: 240px">
+		<a href="/post/2021/utiliser-lua-dans-visual-studio-code/ouvrir-cmd.png" target="_blank" data-size="275x275"><picture>
+				
+				<img
+					src="/post/2021/utiliser-lua-dans-visual-studio-code/ouvrir-cmd.png"
+					width="275"
+					height="275"
+					loading="lazy"
+					decoding="async"
+					alt="&nbsp;"
+				/>
+			</picture>
+		</a>
+		
+	</figure></p>
+</li>
+</ol>
+
+        </div>
+    
+        <div class="tabcontent" data-tabset="installer" id="Mac">
+        <h3 id="installer-homebrew">Installer Homebrew</h3>
+<p>Nous allons installer le gestionnaire de paquets <a href="https://brew.sh/index_fr">Homebrew</a> : c&rsquo;est un programme qui vous permettra d&rsquo;installer facilement Lua et la plupart des outils de développement informatique, donc ça vous sera sûrement très utile à l&rsquo;avenir. Ouvrez le Terminal, copiez la commande suivante et appuyez sur Entrée :</p>
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">/bin/bash -c <span class="s2">&#34;</span><span class="k">$(</span>curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span class="k">)</span><span class="s2">&#34;</span>
+</code></pre></div><p>Cela téléchargera automatiquement les &ldquo;<em>Command Line Tools for XCode</em>&rdquo;, des composants officiels d&rsquo;Apple permettant d&rsquo;utiliser des outils dans le terminal. Cela peut prendre un moment si votre connection est lente, donc si vous préférez, vous pouvez aussi télécharger les <em>Command Line Tools</em> par vous-même sur <a href="https://developer.apple.com/download/all/?q=command%20line%20tools">developer.apple.com</a> avant d&rsquo;installer Homebrew.</p>
+<h3 id="installer-lua">Installer Lua</h3>
+<p>Quand l&rsquo;installation d&rsquo;Homebrew est terminée, écrivez la commande <code>brew install lua</code>. Et voilà, c&rsquo;est terminé !</p>
+
+        </div>
+    
+        <div class="tabcontent" data-tabset="installer" id="Linux">
+        <p>Sur Debian/Ubuntu : <code>sudo apt-get install lua5.4</code></p>
+<p>Sur Arch Linux et Fedora, le paquet s&rsquo;appelle simplement <code>lua</code>.</p>
+<p>Vous pouvez ensuite vérifier l&rsquo;installation avec :</p>
+<pre><code>lua -v
+</code></pre>
+        </div>
+    
+
+
+<h2 id="utiliser-lua-dans-le-terminal">Utiliser Lua dans le terminal</h2>
+<p>Sur Mac et Linux, écrivez simplement <code>lua</code> et faites Entrée. Sur Windows, si votre fichier s&rsquo;appelait <code>lua54.exe</code>, écrivez la commande <code>lua54</code>.</p>
+<p>Vous êtes désormais dans Lua et pouvez écrire des commandes dans le langage ! Pour sortir de Lua, vous pouvez faire Ctrl+C, ou bien taper la commande <code>os.exit()</code>, ou bien tout simplement fermer la fenêtre.</p>
+<p>
+
+
+
+
+
+  
+
+<figure style="flex-grow: 229; flex-basis: 550px">
+		<a href="/post/2021/utiliser-lua-dans-visual-studio-code/terminal-windows.png" target="_blank" data-size="691x301"><picture>
+				
+				<img
+					src="/post/2021/utiliser-lua-dans-visual-studio-code/terminal-windows.png"
+					width="691"
+					height="301"
+					loading="lazy"
+					decoding="async"
+					alt="Lua dans le terminal de Windows"
+				/>
+			</picture>
+		</a>
+		
+		<figcaption>Lua dans le terminal de Windows</figcaption>
+		
+	</figure></p>
+<h3 id="lire-des-fichiers-de-script">Lire des fichiers de script</h3>
+<p>Plutôt que de taper les commandes une à une dans le terminal, vous pouvez créer un fichier de script pour enregistrer votre création et la réutiliser plus tard. En utilisant un éditeur de texte tel que le Bloc-notes ou Visual Studio Code, créez un fichier <code>hello.lua</code> et écrivez un petit programme à l&rsquo;intérieur :</p>
+<div class="highlight"><pre class="chroma"><code class="language-lua" data-lang="lua"><span class="n">io.write</span><span class="p">(</span><span class="s2">&#34;Quel est votre nom ? &#34;</span><span class="p">)</span>
+<span class="n">nom</span> <span class="o">=</span> <span class="n">io.read</span><span class="p">()</span>
+<span class="n">io.write</span><span class="p">(</span><span class="s2">&#34;Ravi de vous rencontrer &#34;</span><span class="p">,</span> <span class="n">nom</span><span class="p">,</span> <span class="s2">&#34; !&#34;</span><span class="p">)</span>
+</code></pre></div><p>Nous devons ensuite ouvrir ce dossier dans le terminal pour lire le fichier. Deux méthodes s&rsquo;offrent à vous :</p>
+<ul>
+<li>Dans le terminal, naviguez manuellement dans le bon dossier :
+<ul>
+<li>Utilisez <code>ls</code> (Mac et Linux) ou <code>dir</code> (Windows) pour voir le contenu du dossier actuel ;</li>
+<li><code>cd Documents</code> pour entrer dans le dossier Documents ;</li>
+<li><code>cd ..</code> pour remonter d&rsquo;un dossier.</li>
+</ul>
+</li>
+<li>Activez l&rsquo;option pour faire <strong>Clic droit dans un dossier</strong> &gt; <strong>Ouvrir dans le terminal</strong> :
+<ul>
+<li>Sur Windows 10, ouvrez le Microsoft Store et installez Windows Terminal. Vous pouvez maintenant faire un clic droit dans un dossier.</li>
+<li>Sur Mac, allez dans <strong>Préférences système</strong> &gt; <strong>Clavier</strong> &gt; <strong>Raccourcis clavier</strong> &gt; <strong>Services</strong> et cochez <strong>Nouveau terminal dans un dossier</strong>.</li>
+</ul>
+</li>
+</ul>
+<p>Vous pouvez maintenant lancer votre programme avec <code>lua54 hello.lua</code> ou <code>lua hello.lua</code> :</p>
+<p>
+
+
+
+
+
+<figure style="flex-grow: 164; flex-basis: 395px">
+		<a href="/post/2021/utiliser-lua-dans-visual-studio-code/hello-lua-windows.png" target="_blank" data-size="796x483"><picture>
+				
+				<img
+					src="/post/2021/utiliser-lua-dans-visual-studio-code/hello-lua-windows.png"
+					width="796"
+					height="483"
+					loading="lazy"
+					decoding="async"
+					alt="&nbsp;"
+				/>
+			</picture>
+		</a>
+		
+	</figure></p>
+<p>Vous savez maintenant comment écrire un petit programme et l&rsquo;exécuter dans le terminal. Ce qui serait encore plus pratique, c&rsquo;est de tout avoir au même endroit : pouvoir écrire son script et le lancer avec un simple raccourci, dans la même fenêtre. C&rsquo;est ce que nous allons mettre en place avec Visual Studio Code.</p>
+<h2 id="utiliser-lua-dans-visual-studio-code">Utiliser Lua dans Visual Studio Code</h2>
+<p>VS Code est un éditeur de code gratuit et très populaire, ayant l&rsquo;avantage d&rsquo;être facile à comprendre et très modulable. Il existe bien sûr d&rsquo;autres éditeurs gratuits, mais la marche à suivre serait un peu différente pour chacun d&rsquo;entre eux.</p>
+<ol>
+<li>
+<p>Téléchargez <a href="https://code.visualstudio.com/">Visual Studio Code</a>.</p>
+</li>
+<li>
+<p>Dans vos Documents, créez un dossier que vous appellerez par exemple <code>scripts-lua</code>. Ouvrez le dossier dans Visual Studio Code par le moyen de votre choix :</p>
+<ul>
+<li>Clic droit sur le dossier &gt; <strong>Ouvrir avec Code</strong></li>
+<li>Depuis VS Code : <strong>Fichier</strong> &gt; <strong>Ouvrir un dossier</strong></li>
+<li>Avec le terminal : <code>code scripts-lua</code></li>
+</ul>
+</li>
+<li>
+<p>Dans le panneau de gauche, créez un fichier appelé <code>hello.lua</code>. A vrai dire, appelez-le comme vous voulez tant qu&rsquo;il se finit en <code>.lua</code>.</p>
+</li>
+</ol>
+<p>
+
+
+
+
+
+<figure style="flex-grow: 193; flex-basis: 463px">
+		<a href="/post/2021/utiliser-lua-dans-visual-studio-code/vscode-nouveau-fichier.png" target="_blank" data-size="560x290"><picture>
+				
+				<img
+					src="/post/2021/utiliser-lua-dans-visual-studio-code/vscode-nouveau-fichier.png"
+					width="560"
+					height="290"
+					loading="lazy"
+					decoding="async"
+					alt="&nbsp;"
+				/>
+			</picture>
+		</a>
+		
+	</figure></p>
+<p>Maintenant, nous allons configurer VS Code pour que quand on appuie sur un bouton, notre script s&rsquo;exécute et le résultat s&rsquo;affiche dans la fenêtre.</p>
+<p>Ouvrez le menu <strong>Terminal</strong> &gt; <strong>Exécuter la tâche de build</strong>. Comme nous n&rsquo;avons pas encore créé de tâche, il va nous proposer de le faire.</p>
+<p>
+
+
+
+
+
+  
+
+<figure style="flex-grow: 898; flex-basis: 2156px">
+		<a href="/post/2021/utiliser-lua-dans-visual-studio-code/vscode-task1.png" target="_blank" data-size="602x67"><picture>
+				
+				<img
+					src="/post/2021/utiliser-lua-dans-visual-studio-code/vscode-task1.png"
+					width="602"
+					height="67"
+					loading="lazy"
+					decoding="async"
+					alt="Cliquez sur Configurer la tâche de génération&amp;hellip;"
+				/>
+			</picture>
+		</a>
+		
+		<figcaption>Cliquez sur <strong>Configurer la tâche de génération&hellip;</strong></figcaption>
+		
+	</figure></p>
+<p>
+
+
+
+
+
+  
+
+<figure style="flex-grow: 452; flex-basis: 1086px">
+		<a href="/post/2021/utiliser-lua-dans-visual-studio-code/vscode-task2.png" target="_blank" data-size="602x133"><picture>
+				
+				<img
+					src="/post/2021/utiliser-lua-dans-visual-studio-code/vscode-task2.png"
+					width="602"
+					height="133"
+					loading="lazy"
+					decoding="async"
+					alt="Cliquez sur Créer le fichier tasks.json."
+				/>
+			</picture>
+		</a>
+		
+		<figcaption>Cliquez sur <strong>Créer le fichier tasks.json</strong>.</figcaption>
+		
+	</figure></p>
+<p>
+
+
+
+
+
+  
+
+<figure style="flex-grow: 452; flex-basis: 1086px">
+		<a href="/post/2021/utiliser-lua-dans-visual-studio-code/vscode-task3.png" target="_blank" data-size="602x133"><picture>
+				
+				<img
+					src="/post/2021/utiliser-lua-dans-visual-studio-code/vscode-task3.png"
+					width="602"
+					height="133"
+					loading="lazy"
+					decoding="async"
+					alt="Ici, cliquez sur Others."
+				/>
+			</picture>
+		</a>
+		
+		<figcaption>Ici, cliquez sur <strong>Others</strong>.</figcaption>
+		
+	</figure></p>
+<p>VS Code a créé un dossier caché <code>.vscode</code> et un fichier <code>tasks.json</code> qui contiendra la configuration de notre tâche. Effacez tout ce qu&rsquo;il contient pour le remplacer par ceci :</p>
+
+
+<div class="tab">
+    
+        
+        <button class="tablinks" data-tabset="terminal" onclick="changeTab(event, 'terminal', 'Pour Windows')">Pour Windows</button>
+        
+        <button class="tablinks" data-tabset="terminal" onclick="changeTab(event, 'terminal', 'Pour Mac et Linux')">Pour Mac et Linux</button>
+        
+    
+</div>
+
+
+    
+        <div class="tabcontent" data-tabset="terminal" id="Pour Windows">
+        <div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+    <span class="nt">&#34;version&#34;</span><span class="p">:</span> <span class="s2">&#34;2.0.0&#34;</span><span class="p">,</span>
+    <span class="nt">&#34;tasks&#34;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="nt">&#34;label&#34;</span><span class="p">:</span> <span class="s2">&#34;Lancer Lua&#34;</span><span class="p">,</span>
+            <span class="nt">&#34;type&#34;</span><span class="p">:</span> <span class="s2">&#34;shell&#34;</span><span class="p">,</span>
+            <span class="nt">&#34;command&#34;</span><span class="p">:</span> <span class="s2">&#34;lua54&#34;</span><span class="p">,</span>
+            <span class="nt">&#34;args&#34;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="s2">&#34;${file}&#34;</span>
+            <span class="p">],</span>
+            <span class="nt">&#34;group&#34;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&#34;kind&#34;</span><span class="p">:</span> <span class="s2">&#34;build&#34;</span><span class="p">,</span>
+                <span class="nt">&#34;isDefault&#34;</span><span class="p">:</span> <span class="kc">true</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+        </div>
+    
+        <div class="tabcontent" data-tabset="terminal" id="Pour Mac et Linux">
+        <div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+    <span class="nt">&#34;version&#34;</span><span class="p">:</span> <span class="s2">&#34;2.0.0&#34;</span><span class="p">,</span>
+    <span class="nt">&#34;tasks&#34;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="nt">&#34;label&#34;</span><span class="p">:</span> <span class="s2">&#34;Lancer Lua&#34;</span><span class="p">,</span>
+            <span class="nt">&#34;type&#34;</span><span class="p">:</span> <span class="s2">&#34;shell&#34;</span><span class="p">,</span>
+            <span class="nt">&#34;command&#34;</span><span class="p">:</span> <span class="s2">&#34;lua&#34;</span><span class="p">,</span>
+            <span class="nt">&#34;args&#34;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="s2">&#34;${file}&#34;</span>
+            <span class="p">],</span>
+            <span class="nt">&#34;group&#34;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&#34;kind&#34;</span><span class="p">:</span> <span class="s2">&#34;build&#34;</span><span class="p">,</span>
+                <span class="nt">&#34;isDefault&#34;</span><span class="p">:</span> <span class="kc">true</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+        </div>
+    
+
+
+<div class="note">
+    <strong>Explications :</strong> La tâche s&rsquo;appelle <code>Lancer Lua</code> et utilise une fenêtre de terminal (<code>shell</code>). Elle lance la commande <code>lua</code> (ou <code>lua54</code>) avec comme argument le nom du fichier actuellement ouvert dans l&rsquo;éditeur (<code>${file}</code>). Dans <code>group</code>, on dit que c&rsquo;est la tâche de build qui se lance par défaut quand on utilise le raccourci.
+</div>
+
+<p>Sauvegardez et retournez à votre script Lua. Vous pouvez maintenant cliquer sur <strong>Terminal</strong> &gt; <strong>Exécuter la tâche de build&hellip;</strong> ou encore mieux : utiliser le raccourci Ctrl + Shift + B !</p>
+<p>
+
+
+
+
+
+<figure style="flex-grow: 164; flex-basis: 393px">
+		<a href="/post/2021/utiliser-lua-dans-visual-studio-code/vscode-task.png" target="_blank" data-size="948x578"><picture>
+				
+				<img
+					src="/post/2021/utiliser-lua-dans-visual-studio-code/vscode-task.png"
+					width="948"
+					height="578"
+					loading="lazy"
+					decoding="async"
+					alt="&nbsp;"
+				/>
+			</picture>
+		</a>
+		
+	</figure></p>
+<p>Vous pouvez maintenant créer plusieurs fichiers Lua dans votre dossier et jongler facilement entre eux !</p>
+<h2 id="bonus--quelques-astuces-pour-débuter">Bonus : quelques astuces pour débuter</h2>
+<p>Tant que vous êtes là, je vais vous donner une liste de commandes pratiques pour écrire vos tous premiers programmes, comme ça, vous n&rsquo;aurez pas besoin de tout chercher sur Internet.</p>
+<h3 id="types-de-variables">Types de variables</h3>
+<p>Les types de variables les plus communs en Lua sont :</p>
+<ul>
+<li>les textes, ou <em>strings</em> en anglais, toujours entre guillemets ;</li>
+<li>les nombres ;</li>
+<li>les booléens, qui valent &ldquo;vrai&rdquo; ou &ldquo;faux&rdquo;, <code>true</code> ou <code>false</code> ;</li>
+<li>les tableaux, ou <em>arrays</em> en anglais, qui contiennent une liste de données.</li>
+</ul>
+<div class="highlight"><pre class="chroma"><code class="language-lua" data-lang="lua"><span class="n">nom</span> <span class="o">=</span> <span class="s2">&#34;Aurélien&#34;</span>
+<span class="n">annee</span> <span class="o">=</span> <span class="mi">2021</span> <span class="o">+</span> <span class="mi">10</span>
+<span class="n">booleen</span> <span class="o">=</span> <span class="kc">true</span>
+<span class="n">tableau</span> <span class="o">=</span> <span class="p">{</span><span class="mi">25</span><span class="p">,</span> <span class="s2">&#34;citrouille&#34;</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="kc">false</span><span class="p">}</span>
+
+<span class="n">print</span><span class="p">(</span><span class="n">annee</span><span class="p">)</span>      <span class="c1">--&gt; 2031</span>
+<span class="n">print</span><span class="p">(</span><span class="n">tableau</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> <span class="c1">--&gt; 25</span>
+<span class="n">print</span><span class="p">(</span><span class="n">tableau</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span> <span class="c1">--&gt; citrouille</span>
+</code></pre></div><p>Les opérations arithmétiques disponibles sont <code>+</code>, <code>-</code>, <code>*</code> et <code>/</code>.</p>
+<h3 id="commentaires">Commentaires</h3>
+<p>Tout ce qui est à droite de deux tirets <code>--</code> est un commentaire qui n&rsquo;est pas interprété par Lua. Très pratique pour expliquer ce que fait le code.</p>
+<div class="highlight"><pre class="chroma"><code class="language-lua" data-lang="lua"><span class="n">pommes</span> <span class="o">=</span> <span class="mi">5</span> <span class="c1">-- il y a 5 pommes</span>
+</code></pre></div><h3 id="afficher-du-texte">Afficher du texte</h3>
+<p><code>print()</code> est pratique pour afficher rapidement des valeurs, car il les espace et revient à la ligne automatiquement. Par contre, il ne permet pas d&rsquo;avoir un contrôle précis sur l&rsquo;affichage du contenu. Pour cela, il faut utiliser <code>io.write()</code> :</p>
+<div class="highlight"><pre class="chroma"><code class="language-lua" data-lang="lua"><span class="o">&gt;</span> <span class="n">print</span><span class="p">(</span><span class="s2">&#34;bon&#34;</span><span class="p">,</span> <span class="s2">&#34;jour&#34;</span><span class="p">)</span>
+<span class="n">bon</span>     <span class="n">jour</span>
+<span class="o">&gt;</span> <span class="n">io.write</span><span class="p">(</span><span class="s2">&#34;bon&#34;</span><span class="p">,</span> <span class="s2">&#34;jour&#34;</span><span class="p">)</span>
+<span class="n">bonjour</span>
+</code></pre></div><p><code>io.write()</code> ne revient pas automatiquement à la ligne ! Pour cela, il faut ajouter <code>\n</code> au sein du texte.</p>
+<div class="highlight"><pre class="chroma"><code class="language-lua" data-lang="lua"><span class="o">&gt;</span> <span class="n">io.write</span><span class="p">(</span><span class="s2">&#34;bon&#34;</span><span class="p">)</span> <span class="n">io.write</span><span class="p">(</span><span class="s2">&#34;jour</span><span class="se">\n</span><span class="s2">tout le monde !&#34;</span><span class="p">)</span>
+<span class="n">bonjour</span>
+<span class="n">tout</span> <span class="n">le</span> <span class="n">monde</span> <span class="err">!</span>
+</code></pre></div><h3 id="les-conditions">Les conditions</h3>
+<p>Les conditions sont très simples à utiliser puisque vous pouvez simplement traduire leurs mots-clés pour former une phrase en français :</p>
+<table>
+<thead>
+<tr>
+<th>Terme</th>
+<th>Traduction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>if</code></td>
+<td>si</td>
+</tr>
+<tr>
+<td><code>then</code></td>
+<td>alors</td>
+</tr>
+<tr>
+<td><code>else</code></td>
+<td>sinon</td>
+</tr>
+<tr>
+<td><code>elseif</code></td>
+<td>sinon, si</td>
+</tr>
+<tr>
+<td><code>end</code></td>
+<td>fin</td>
+</tr>
+</tbody>
+</table>
+<p>Voici quelques exemples :</p>
+<div class="highlight"><pre class="chroma"><code class="language-lua" data-lang="lua"><span class="kr">if</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="kr">then</span>
+    <span class="n">print</span><span class="p">(</span><span class="s2">&#34;a est inférieur à 0&#34;</span><span class="p">)</span>
+<span class="kr">end</span>
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-lua" data-lang="lua"><span class="kr">if</span> <span class="n">a</span> <span class="o">&lt;=</span> <span class="n">b</span> <span class="kr">then</span>
+    <span class="n">print</span><span class="p">(</span><span class="s2">&#34;a est plus petit ou égal à b&#34;</span><span class="p">)</span>
+<span class="kr">else</span>
+    <span class="n">print</span><span class="p">(</span><span class="s2">&#34;a est plus grand que b&#34;</span><span class="p">)</span>
+<span class="kr">end</span>
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-lua" data-lang="lua"><span class="n">operateur</span> <span class="o">=</span> <span class="n">io.read</span><span class="p">()</span>
+<span class="kr">if</span> <span class="n">operateur</span> <span class="o">==</span> <span class="s2">&#34;+&#34;</span> <span class="kr">then</span>
+    <span class="n">resultat</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+<span class="kr">elseif</span> <span class="n">operateur</span> <span class="o">==</span> <span class="s2">&#34;-&#34;</span> <span class="kr">then</span>
+    <span class="n">resultat</span> <span class="o">=</span> <span class="n">a</span> <span class="o">-</span> <span class="n">b</span>
+<span class="kr">elseif</span> <span class="n">operateur</span> <span class="o">==</span> <span class="s2">&#34;*&#34;</span> <span class="kr">then</span>
+    <span class="n">resultat</span> <span class="o">=</span> <span class="n">a</span> <span class="o">*</span> <span class="n">b</span>
+<span class="kr">elseif</span> <span class="n">operateur</span> <span class="o">==</span> <span class="s2">&#34;/&#34;</span> <span class="kr">then</span>
+    <span class="n">resultat</span> <span class="o">=</span> <span class="n">a</span> <span class="o">/</span> <span class="n">b</span>
+<span class="kr">else</span>
+    <span class="n">error</span><span class="p">(</span><span class="s2">&#34;Opérateur invalide&#34;</span><span class="p">)</span>
+<span class="kr">end</span>
+</code></pre></div><p>Les opérations relationnelles disponibles sont <code>&lt;</code>, <code>&gt;</code>, <code>&lt;=</code>, <code>&gt;=</code>, <code>==</code> et <code>~=</code> (non égal).</p>
+<h3 id="les-boucles">Les boucles</h3>
+<p>Une boucle <strong>while</strong> s&rsquo;exécute jusqu&rsquo;à ce que la condition soit fausse. Cet exemple utilise une boucle pour afficher tous les éléments d&rsquo;un tableau :</p>
+<div class="highlight"><pre class="chroma"><code class="language-lua" data-lang="lua"><span class="n">prenoms</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&#34;Jean&#34;</span><span class="p">,</span> <span class="s2">&#34;Miléna&#34;</span><span class="p">,</span> <span class="s2">&#34;Erika&#34;</span><span class="p">}</span>
+<span class="n">i</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="kr">while</span> <span class="n">prenoms</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="kr">do</span>
+    <span class="n">print</span><span class="p">(</span><span class="n">prenoms</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+    <span class="n">i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span>
+<span class="kr">end</span>
+</code></pre></div><p>Une condition fonctionne tant que son résultat est autre chose que <code>false</code> ou <code>nil</code>. Ici, <code>prenoms[i]</code> renvoie un texte, donc la condition continue jusqu&rsquo;à ce que <code>i</code> vale 4 : <code>prenoms[4]</code> renverra <code>nil</code> (qui représente l&rsquo;absence de valeur).</p>
+<p>Il existe deux autres types de boucle : <strong>repeat</strong> et <strong>for</strong>, que vous trouverez dans <a href="https://www.lua.org/pil/contents.html">le manuel</a>.</p>
+<hr>
+<p>Et voilà, cela devrait vous suffire pour écrire des petits programmes ! Pour plus de précisions, je vous conseille le <a href="https://www.lua.org/pil/contents.html">manuel de Lua</a>, dans lequel vous devriez vous retrouver assez facilement grâce au sommaire. Sinon, comme toujours, faites des recherches Google en anglais pour obtenir davantage de résultats. Bonne continuation !</p>
+
+
+        <p style="margin-top: 3em;">◂ <a href="/">Retour à l'accueil</a></p>
+        </article>
+    </div>
+<footer>
+    
+</footer>
+<script src="/custom.js"></script>
+</body>
+</html>

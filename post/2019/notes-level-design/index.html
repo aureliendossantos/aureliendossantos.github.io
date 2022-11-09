@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Aurélien Dos Santos">
+<title>Notes sur le level design</title>
+
+<link rel="stylesheet" href="/style.index.min.e9231004b2f882017b7eaad4a7e35e6b79983149d090e712682229a2b294828a.css" integrity="sha256-6SMQBLL4ggF7fqrUp&#43;Nea3mYMUnQkOcSaCIporKUgoo=">
+
+<body>
+    <div class="single">
+        <header>
+            <div class="header-contents">
+                <h1 class="title">Notes sur le level design</h1>
+                <p class="subtitle">Notes prises en regardant des vidéos de Craig Perko sur le level design de Nier et Fallout 4.</p>
+                <p class="byline">:date_long &ndash; <a href="/">Aurélien Dos Santos</a></p>
+            </div>
+        </header>
+        <article>
+
+        <p>Craig Perko publie des vidéos sur YouTube avec pour thème principal le développement de jeux vidéo : tutoriels de programmation, analyse de jeux, opinions sur le game design&hellip; Comme le pointait mon amie Erika, Craig Perko a parfois une vision différente des jeux et il utilise peu de <em>buzzwords</em>. Par exemple, il parle de <em>hinting</em> qui serait généralement plutôt appelé <em>player guidance</em>, parce que cela correspond mieux à son ressenti.</p>
+<p>Voici quelques notes que j&rsquo;ai prises en regardant ses vidéos sur Nier et Fallout 4.</p>
+<h1 id="fallout-4--design-de-lopen-world">Fallout 4 : Design de l&rsquo;open world</h1>
+<h2 id="point-de-départ">Point de départ</h2>
+<p>La heightmap détermine ce que le joueur voit, mais pas où il peut aller. C’est le rôle des meshes.​</p>
+<p>
+
+
+
+
+
+<figure style="flex-grow: 178; flex-basis: 427px">
+		<a href="/post/2019/notes-level-design/intro.png" target="_blank" data-size="1015x570"><picture>
+				
+				<img
+					src="/post/2019/notes-level-design/intro.png"
+					width="1015"
+					height="570"
+					loading="lazy"
+					decoding="async"
+					alt="&nbsp;"
+				/>
+			</picture>
+		</a>
+		
+	</figure></p>
+<p>Le jeu commence en hauteur pour nous montrer le prochain point (c’est le rôle de la heightmap). Cependant on est dissuadé de descendre tout droit par les rochers, barrières et tronc. Les meshes guident notre trajectoire vers un détour.​</p>
+<p>La heightmap est globalement en pente durant la première partie du jeu, même s’il y a des creux tels que la rivière en contrebas. Cela nous donne une vision claire de la suite très régulièrement.​</p>
+<h2 id="guider-le-joueur-vers-le-contenu">Guider le joueur vers le contenu</h2>
+<p>
+
+
+
+
+
+<figure style="flex-grow: 179; flex-basis: 430px">
+		<a href="/post/2019/notes-level-design/chemin.png" target="_blank" data-size="1014x565"><picture>
+				
+				<img
+					src="/post/2019/notes-level-design/chemin.png"
+					width="1014"
+					height="565"
+					loading="lazy"
+					decoding="async"
+					alt="&nbsp;"
+				/>
+			</picture>
+		</a>
+		
+	</figure></p>
+<p>Ici, ce n’est toujours pas la heightmap qui indique le chemin, à part pour la texture de terre battue. Elle est en fait assez plate et uniforme. C’est la végétation et les rochers tout autour qui forment une composition claire.​</p>
+<p>La végétation n’empêchera pas le joueur d’aller sur le côté, mais c’est assez pour lui dire qu’il n’y a rien là-bas, et c’est la grande astuce des jeux open world.​</p>
+<p>On dit souvent qu’un open world est un jeu où le joueur peut aller où il veut. En réalité, un open world est minutieusement balisé pour guider le joueur vers là où se trouve le contenu.​</p>
+<h2 id="premier-village">Premier village</h2>
+<p>
+
+
+
+
+
+<figure style="flex-grow: 177; flex-basis: 426px">
+		<a href="/post/2019/notes-level-design/ville-top.png" target="_blank" data-size="1920x1080"><picture>
+				
+				<img
+					src="/post/2019/notes-level-design/ville-top.png"
+					width="1920"
+					height="1080"
+					loading="lazy"
+					decoding="async"
+					alt="&nbsp;"
+				/>
+			</picture>
+		</a>
+		
+	</figure> 
+
+
+
+
+
+<figure style="flex-grow: 178; flex-basis: 427px">
+		<a href="/post/2019/notes-level-design/ville-foot.png" target="_blank" data-size="1015x570"><picture>
+				
+				<img
+					src="/post/2019/notes-level-design/ville-foot.png"
+					width="1015"
+					height="570"
+					loading="lazy"
+					decoding="async"
+					alt="&nbsp;"
+				/>
+			</picture>
+		</a>
+		
+	</figure></p>
+<p>Le premier village est simple vu du ciel, mais tout change depuis la perspective du joueur.​</p>
+<p>Comme la base est située en haut d’une colline et arrangée en arc-de-cercle, en arrivant à pied, on ne peut pas en voir les deux extrémités et elle paraît vaste. La légère pente montante suffit à bloquer notre vision tout en suggérant que le quartier continue.​</p>
+<p>Ce que le joueur peut voir est ce que le joueur peut comprendre. Bloquer sa vision est une technique efficace pour rendre un lieu plus grand et complexe.​</p>
+<p>Cet agencement est suffisant pour donner l’impression d’être perdu. Il n’y a pas besoin d’un lieu très grand, tant que l’on empêche le joueur d’en voir trop en même temps.​</p>
+<h1 id="le-hinting-dans-nier">Le hinting dans Nier</h1>
+<p>Ce que Craig Perko appelle hinting dans sa vidéo, que l’on pourrait traduire par indication, inclut toute sorte de construction qui attire le joueur plus loin dans le niveau, sans pour autant qu’il en soit conscient.</p>
+<p>C’est une collection de techniques à toujours garder en tête, car cela empêche les joueurs de se perdre ou de s’ennuyer. Lorsque c’est fait de façon subtile, cela évite la sensation d’être pris par la main à travers le niveau.</p>
+<h2 id="escalader-et-descendre">Escalader et descendre</h2>
+<p>Les joueurs aiment grimper et regarder en bas. C’est une impulsion naturelle que vous pouvez utiliser à votre avantage. La verticalité est donc une attraction efficace.</p>
+<p>Pour que cela fonctionne, le joueur doit bien comprendre qu’il peut emprunter ce chemin. Un ascenseur sera beaucoup moins parlant que des escaliers, par exemple.</p>
+<h2 id="éclairage">Éclairage</h2>
+<p>Les joueurs remarqueront facilement un endroit lumineux dans le noir.</p>
+<p>Gardez en tête que l’éclairage peut être plus ou moins visible en fonction de la position du joueur.</p>
+<p>
+
+
+
+
+
+  
+
+<figure style="flex-grow: 98; flex-basis: 236px">
+		<a href="/post/2019/notes-level-design/tuyau.png" target="_blank" data-size="685x694"><picture>
+				
+				<img
+					src="/post/2019/notes-level-design/tuyau.png"
+					width="685"
+					height="694"
+					loading="lazy"
+					decoding="async"
+					alt="Dans cette section, il faut suivre le tuyau, mais c’est moins clair qu’un chemin car sous certains angles on peut penser que c’est une barrière."
+				/>
+			</picture>
+		</a>
+		
+		<figcaption>Dans cette section, il faut suivre le tuyau, mais c’est moins clair qu’un chemin car sous certains angles on peut penser que c’est une barrière.</figcaption>
+		
+	</figure></p>
+<h2 id="chemins">Chemins</h2>
+<p>Les joueurs suivront naturellement les chemins pour peu qu’ils ressemblent à un chemin.</p>
+<p>Par exemple, ils suivront une route délabrée, un pont en bois, mais pourront avoir du mal à comprendre si des éléments plus originaux sont des chemins ou non.</p>
+<h2 id="utiliser-des-barrières">Utiliser des barrières</h2>
+<p>Les barrières telles que des décombres et des murs convainquent le joueur qu’il n’y a rien à voir par là-bas. Vous pouvez utiliser ce phénomène psychologique à votre avantage.</p>
+<p>Comme le joueur ira rarement tester les murs en s’approchant d’eux, vous pouvez créer des niveaux vastes sans avoir besoin de décorer les recoins inutiles.</p>
+<p>
+
+
+
+
+
+  
+
+<figure style="flex-grow: 178; flex-basis: 427px">
+		<a href="/post/2019/notes-level-design/coin1.png" target="_blank" data-size="1309x735"><picture>
+				
+				<img
+					src="/post/2019/notes-level-design/coin1.png"
+					width="1309"
+					height="735"
+					loading="lazy"
+					decoding="async"
+					alt="La vue depuis le coin n’est pas convaincante&amp;hellip;"
+				/>
+			</picture>
+		</a>
+		
+		<figcaption>La vue depuis le coin n’est pas convaincante&hellip;</figcaption>
+		
+	</figure> 
+
+
+
+
+
+  
+
+<figure style="flex-grow: 178; flex-basis: 427px">
+		<a href="/post/2019/notes-level-design/coin2.png" target="_blank" data-size="1308x734"><picture>
+				
+				<img
+					src="/post/2019/notes-level-design/coin2.png"
+					width="1308"
+					height="734"
+					loading="lazy"
+					decoding="async"
+					alt="&amp;hellip;mais la plupart des joueurs ne s’y aventureront pas."
+				/>
+			</picture>
+		</a>
+		
+		<figcaption>&hellip;mais la plupart des joueurs ne s’y aventureront pas.</figcaption>
+		
+	</figure></p>
+<p>Les coins attirent l’œil et peuvent être désagréables. Il est important de les remplir avec des barrières pour permettre au regard du joueur de les balayer de façon fluide.</p>
+<h2 id="signposting">Signposting</h2>
+<p>Utilisez des points de repère iconiques et autres indicateurs locaux pour attirer le joueur dans une direction.</p>
+<p>
+
+
+
+
+
+  
+
+<figure style="flex-grow: 178; flex-basis: 429px">
+		<a href="/post/2019/notes-level-design/horizon.png" target="_blank" data-size="1011x565"><picture>
+				
+				<img
+					src="/post/2019/notes-level-design/horizon.png"
+					width="1011"
+					height="565"
+					loading="lazy"
+					decoding="async"
+					alt="Si votre horizon ou vos murs sont déjà trop chargés, faites l’inverse : créez une ouverture dans le décor pour indiquer le chemin."
+				/>
+			</picture>
+		</a>
+		
+		<figcaption>Si votre horizon ou vos murs sont déjà trop chargés, faites l’inverse : créez une ouverture dans le décor pour indiquer le chemin.</figcaption>
+		
+	</figure></p>
+<p>
+
+
+
+
+
+  
+
+<figure style="flex-grow: 178; flex-basis: 429px">
+		<a href="/post/2019/notes-level-design/scene.png" target="_blank" data-size="1016x568"><picture>
+				
+				<img
+					src="/post/2019/notes-level-design/scene.png"
+					width="1016"
+					height="568"
+					loading="lazy"
+					decoding="async"
+					alt="Cette scène très efficace mêle plusieurs techniques de hinting : une descente satisfaisante à parcourir, une sortie encadrée par une structure en métal et visible de loin grâce au sol éclairé au milieu de l’obscurité."
+				/>
+			</picture>
+		</a>
+		
+		<figcaption>Cette scène très efficace mêle plusieurs techniques de hinting : une descente satisfaisante à parcourir, une sortie encadrée par une structure en métal et visible de loin grâce au sol éclairé au milieu de l’obscurité.</figcaption>
+		
+	</figure></p>
+<h2 id="dernières-observations">Dernières observations</h2>
+<p>Le hint indique où le prochain endroit intéressant se trouve. Même en comprenant cela, le joueur fera parfois un détour pour explorer ou chercher un trésor, et c’est normal.</p>
+<p>Cependant, il faut s’assurer que les hints restent visibles au fil de l’exploration. Parfois, on voit clairement l’objectif depuis une hauteur, puis en descendant, le changement de perspective efface le hint.</p>
+<p>
+
+
+
+
+
+  
+
+<figure style="flex-grow: 178; flex-basis: 428px">
+		<a href="/post/2019/notes-level-design/pdv.png" target="_blank" data-size="1015x569"><picture>
+				
+				<img
+					src="/post/2019/notes-level-design/pdv.png"
+					width="1015"
+					height="569"
+					loading="lazy"
+					decoding="async"
+					alt="Depuis la hauteur, on voit clairement des points de fuite et des signposts à l’horizon."
+				/>
+			</picture>
+		</a>
+		
+		<figcaption>Depuis la hauteur, on voit clairement des points de fuite et des signposts à l’horizon.</figcaption>
+		
+	</figure> 
+
+
+
+
+
+  
+
+<figure style="flex-grow: 178; flex-basis: 428px">
+		<a href="/post/2019/notes-level-design/pdv-bas.png" target="_blank" data-size="1015x569"><picture>
+				
+				<img
+					src="/post/2019/notes-level-design/pdv-bas.png"
+					width="1015"
+					height="569"
+					loading="lazy"
+					decoding="async"
+					alt="Depuis le bas, les éléments du décor se confondent et paraissent plats."
+				/>
+			</picture>
+		</a>
+		
+		<figcaption>Depuis le bas, les éléments du décor se confondent et paraissent plats.</figcaption>
+		
+	</figure></p>
+<p>
+
+
+
+
+
+  
+
+<figure style="flex-grow: 178; flex-basis: 429px">
+		<a href="/post/2019/notes-level-design/scene.png" target="_blank" data-size="1016x568"><picture>
+				
+				<img
+					src="/post/2019/notes-level-design/scene.png"
+					width="1016"
+					height="568"
+					loading="lazy"
+					decoding="async"
+					alt="Dans cette scène, le carré de lumière qui nous attire en contrebas&amp;hellip;"
+				/>
+			</picture>
+		</a>
+		
+		<figcaption>Dans cette scène, le carré de lumière qui nous attire en contrebas&hellip;</figcaption>
+		
+	</figure> 
+
+
+
+
+
+  
+
+<figure style="flex-grow: 154; flex-basis: 370px">
+		<a href="/post/2019/notes-level-design/scene-bas.png" target="_blank" data-size="678x439"><picture>
+				
+				<img
+					src="/post/2019/notes-level-design/scene-bas.png"
+					width="678"
+					height="439"
+					loading="lazy"
+					decoding="async"
+					alt="&amp;hellip;perd en efficacité quand on descend, car le sol est aplati par la perspective."
+				/>
+			</picture>
+		</a>
+		
+		<figcaption>&hellip;perd en efficacité quand on descend, car le sol est aplati par la perspective.</figcaption>
+		
+	</figure></p>
+<p>Le hinting doit mener à du contenu intéressant. Un hinting qui ne mène à rien est décevant.</p>
+
+
+        <p style="margin-top: 3em;">◂ <a href="/">Retour à l'accueil</a></p>
+        </article>
+    </div>
+<footer>
+    
+</footer>
+<script src="/custom.js"></script>
+</body>
+</html>

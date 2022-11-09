@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Aurélien Dos Santos">
+<title>Télécharger des vidéos YouTube en un clin d&#39;œil</title>
+
+<link rel="stylesheet" href="/style.index.min.e9231004b2f882017b7eaad4a7e35e6b79983149d090e712682229a2b294828a.css" integrity="sha256-6SMQBLL4ggF7fqrUp&#43;Nea3mYMUnQkOcSaCIporKUgoo=">
+
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Nunito:wght@700&display=swap');
+        body {
+            background-color: #f9f9f9;
+            font-family: 'Lato', sans-serif;
+        }
+        article, .header-contents {
+            color: #333333;
+            font-size: 17px;
+            line-height: 1.6;
+        }
+        blockquote, .note {
+            font-family: 'Lato', monospace;
+            color: #5c80c4;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Nunito', sans-serif;
+        }
+        .byline, .subtitle, figcaption, .sidenote {
+            color: #686868;
+        }
+        hr {
+            border-color: #686868;
+        }
+    </style>
+    
+
+<body>
+    <div class="single">
+        <header>
+            <div class="header-contents">
+                <h1 class="title">Télécharger des vidéos YouTube en un clin d&#39;œil</h1>
+                <p class="subtitle">Grâce à youtube-dl, un outil en lignes de commande.</p>
+                <p class="byline">:date_long &ndash; <a href="/">Aurélien Dos Santos</a></p>
+            </div>
+        </header>
+        <article>
+
+        <p>Pour illustrer mes vidéos, je dois récupérer beaucoup d&rsquo;illustrations de jeux vidéo que je trouve sur YouTube. Si vous êtes vidéaste et ne connaissez pas les outils de programmeur, vous êtes sans doute passé à côté d&rsquo;une astuce très pratique pour le faire efficacement !</p>
+<p>Pour télécharger des dizaines, voire des centaines de vidéos, utiliser les sites du type &ldquo;YouTube Downloader&rdquo; serait très fastidieux et il n&rsquo;est pas garanti qu&rsquo;ils donnent la plus haute qualité possible. J&rsquo;ai également vu des vidéastes filmer leur écran avec OBS pendant qu&rsquo;ils regardent la vidéo sur YouTube, mais franchement, je ne trouve pas ça terrible ! Encore une fois, ce n&rsquo;est pas un bon moyen pour récupérer la qualité d&rsquo;origine.</p>
+<p>Laissez-moi plutôt vous présenter youtube-dl, un outil en ligne de commande très puissant qui vous permet de télécharger rapidement les vidéos de beaucoup de sites. Cela demande 5 minutes de préparation qui vaudront, vous le verrez, sacrément le coup.</p>
+<h2 id="installer-youtube-dl">Installer youtube-dl</h2>
+<div class="note">
+    Ce guide est écrit pour Windows 10 mais le programme existe aussi sur Mac et Linux.
+</div>
+
+<p>youtube-dl s&rsquo;utilise dans l&rsquo;invite de commandes (aussi appelé terminal). Créez un dossier où vous stockerez tous les programmes à utiliser dans le terminal : je l&rsquo;ai personnellement placé à la racine de mon disque, à l&rsquo;adresse <code>C:\cmd-bins</code>.</p>
+<p>Téléchargez <a href="http://ytdl-org.github.io/youtube-dl/download.html">l&rsquo;exe de youtube-dl</a> dans ce dossier.</p>
+<div class="note">
+    Facultatif : placez également <code>ffmpeg.exe</code> que vous trouverez dans <a href="https://www.gyan.dev/ffmpeg/builds/ffmpeg-git-full.7z">cette archive</a> dans le dossier <code>cmd-bins</code>. C&rsquo;est un outil pratique et puissant dont youtube-dl se servira pour fusionner des pistes vidéo et audio téléchargées séparément, ce qui est parfois nécessaire pour obtenir la meilleure qualité possible.
+</div>
+
+<p>Il ne se passera rien si vous ouvrez directement <code>youtube-dl.exe</code> car il doit être utilisé depuis le terminal, et pour cela, vous devez l’ajouter à votre Path. Ouvrez les Paramètres système avancés, puis cliquez sur Variables d’environnement.</p>
+<p>
+
+
+
+
+
+<figure style="flex-grow: 257; flex-basis: 617px">
+		<a href="/post/2020/telecharger-des-videos-youtube/variables-d-environnement.png" target="_blank" data-size="707x275"><picture>
+				
+				<img
+					src="/post/2020/telecharger-des-videos-youtube/variables-d-environnement.png"
+					width="707"
+					height="275"
+					loading="lazy"
+					decoding="async"
+					alt="Paramètres système"
+				/>
+			</picture>
+		</a>
+		
+	</figure></p>
+<p>Dans Variables utilisateur ou Variables système, sélectionnez la ligne Path et cliquez sur Modifier. Ajoutez une ligne contenant <code>C:\cmd-bins</code> ou le chemin vers le dossier contenant youtube-dl s&rsquo;il est différent chez vous. Et voilà, c&rsquo;est installé !</p>
+<h2 id="configurer-youtube-dl">Configurer youtube-dl</h2>
+<p>Dans le chemin de l&rsquo;explorateur de fichiers, tapez <code>%appdata%</code> pour atteindre le dossier <code>AppData</code> de votre compte, puis créez un dossier <code>youtube-dl</code> avec à l&rsquo;intérieur un fichier <code>config.txt</code>.</p>
+<p>
+
+
+
+
+
+<figure style="flex-grow: 437; flex-basis: 1049px">
+		<a href="/post/2020/telecharger-des-videos-youtube/config-txt.png" target="_blank" data-size="494x113"><picture>
+				
+				<img
+					src="/post/2020/telecharger-des-videos-youtube/config-txt.png"
+					width="494"
+					height="113"
+					loading="lazy"
+					decoding="async"
+					alt="Emplacement du fichier config.txt"
+				/>
+			</picture>
+		</a>
+		
+	</figure></p>
+<p>Nous allons y préciser les paramètres que youtube-dl doit utiliser par défaut, afin de ne pas les réécrire à chaque fois. Le paramètre <code>-o</code> indique l&rsquo;emplacement et le nom du fichier, et le paramètre <code>-f</code> indique la qualité vidéo désirée. Voici le contenu de mon propre fichier <code>config.txt</code> :</p>
+<pre><code>-o &quot;D:/Documents/Montage video/Game Dev Alliance/youtube-dl/%(title)s.%(ext)s&quot;
+-f bestvideo[ext=mp4]+bestaudio/best
+</code></pre><p>Ici, le nom du fichier est simplement <code>%(title)s</code>, c&rsquo;est-à-dire le nom de la vidéo YouTube, puis j&rsquo;indique de mettre la bonne extension avec <code>%(ext)s</code> (c&rsquo;est important !).</p>
+<p>Le paramètre <code>-f</code> demande à télécharger la meilleure qualité vidéo disponible au format MP4 (car c&rsquo;est ce qui fonctionne le mieux pour mon logiciel de montage) et de l&rsquo;accompagner du meilleur fichier audio possible. <code>/best</code> indique que s&rsquo;il n&rsquo;existe pas de version MP4, on télécharge simplement la meilleure qualité possible dans n&rsquo;importe quel format.</p>
+<p>Sauvegardez le fichier puis ouvrez l&rsquo;invite de commandes en tapant <code>cmd</code> dans la barre de Windows. Pour télécharger <a href="https://www.youtube.com/watch?v=nfWlot6h_JM">ce clip de Taylor Swift</a>, écrivez simplement :</p>
+<pre><code>youtube-dl https://www.youtube.com/watch?v=nfWlot6h_JM
+</code></pre><figure>
+    <video src="youtube-dl-terminal.mp4" muted autoplay loop controls poster="" alt="En un clin d&#39;œil, je vous dis !" ></video>
+    
+    <figcaption>
+        <p>
+        En un clin d&#39;œil, je vous dis !
+        </p>
+    </figcaption>
+    
+</figure>
+
+<p>Vous pouvez aussi écrire le lien d&rsquo;une playlist ou d&rsquo;une chaîne YouTube pour télécharger plusieurs vidéos d&rsquo;un seul coup ! Mais ce n&rsquo;est pas tout : le programme fonctionne avec Vimeo et probablement <a href="http://ytdl-org.github.io/youtube-dl/supportedsites.html">n&rsquo;importe quel site auquel vous pouvez penser</a>.</p>
+<p>Pour aller <em>toujours plus vite</em>, j&rsquo;ai bricolé <a href="yt.cmd">ce petit outil</a> (à télécharger dans le même dossier que youtube-dl) avec ma compréhension très limitée de Batch, qui me donne les deux raccourcis suivants dans le terminal :</p>
+<pre><code>yt https://www.youtube.com/watch?v=nfWlot6h_JM
+</code></pre><p>Ceci télécharge la vidéo d&rsquo;après les paramètres de <code>config.txt</code>, donc dans la meilleure qualité possible.</p>
+<pre><code>yt https://www.youtube.com/watch?v=nfWlot6h_JM 1080
+</code></pre><p>Ceci télécharge la vidéo en 1080p au maximum. Pratique lorsque la vidéo est disponible en 4K mais que je n&rsquo;en ai pas besoin, car cela peut ralentir mon logiciel de montage !</p>
+<p>Avec un raccourci vers le terminal, je peux dégainer cet outil et télécharger une vidéo qui me plaît en une fraction de seconde ! J&rsquo;espère que cette astuce vous aidera autant que moi.</p>
+
+
+        <p style="margin-top: 3em;">◂ <a href="/">Retour à l'accueil</a></p>
+        </article>
+    </div>
+<footer>
+    
+</footer>
+<script src="/custom.js"></script>
+</body>
+</html>

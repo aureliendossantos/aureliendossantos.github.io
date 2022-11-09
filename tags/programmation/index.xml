@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Programmation on Aurélien Dos Santos</title>
+    <link>https://aureliendossantos.github.io/tags/programmation/</link>
+    <description>Recent content in Programmation on Aurélien Dos Santos</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Tue, 03 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://aureliendossantos.github.io/tags/programmation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Utiliser Lua dans Visual Studio Code</title>
+      <link>https://aureliendossantos.github.io/post/2021/utiliser-lua-dans-visual-studio-code/</link>
+      <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://aureliendossantos.github.io/post/2021/utiliser-lua-dans-visual-studio-code/</guid>
+      <description>Lua est un langage de programmation intéressant pour débuter et écrire ses premières lignes de code, en raison de son style neutre et très lisible. Lua est d&amp;rsquo;ailleurs souvent utilisé dans le jeu vidéo (World of Warcraft, Roblox&amp;hellip;) en tant que langage de script, car il est simple d&amp;rsquo;utilisation et pensé pour être intégré facilement à un programme.
+    La lune symbolise Lua (qui veut dire « lune » en portugais) car il est pensé pour être le langage satellite d&amp;rsquo;un programme.</description>
+    </item>
+    
+  </channel>
+</rss>

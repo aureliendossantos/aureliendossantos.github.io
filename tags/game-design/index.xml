@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Game design on Aurélien Dos Santos</title>
+    <link>https://aureliendossantos.github.io/tags/game-design/</link>
+    <description>Recent content in Game design on Aurélien Dos Santos</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Tue, 22 Oct 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://aureliendossantos.github.io/tags/game-design/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Notes sur le level design</title>
+      <link>https://aureliendossantos.github.io/post/2019/notes-level-design/</link>
+      <pubDate>Tue, 22 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://aureliendossantos.github.io/post/2019/notes-level-design/</guid>
+      <description>Craig Perko publie des vidéos sur YouTube avec pour thème principal le développement de jeux vidéo : tutoriels de programmation, analyse de jeux, opinions sur le game design&amp;hellip; Comme le pointait mon amie Erika, Craig Perko a parfois une vision différente des jeux et il utilise peu de buzzwords. Par exemple, il parle de hinting qui serait généralement plutôt appelé player guidance, parce que cela correspond mieux à son ressenti.</description>
+    </item>
+    
+  </channel>
+</rss>

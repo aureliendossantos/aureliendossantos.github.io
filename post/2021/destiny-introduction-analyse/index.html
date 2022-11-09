@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Aurélien Dos Santos">
+<title>L&#39;introduction de Destiny : analyse du level design</title>
+
+<link rel="stylesheet" href="/style.index.min.e9231004b2f882017b7eaad4a7e35e6b79983149d090e712682229a2b294828a.css" integrity="sha256-6SMQBLL4ggF7fqrUp&#43;Nea3mYMUnQkOcSaCIporKUgoo=">
+
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+        body {
+            background-color: #f0efdd;
+            font-family: 'Work Sans', 'Noto Sans', sans-serif;
+        }
+        article, .header-contents {
+            color: #404040;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+        blockquote, .note {
+            font-family: 'Work Sans', monospace;
+            color: #c45c7f;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Work Sans', sans-serif;
+        }
+        .byline, .subtitle, figcaption, .sidenote {
+            color: #686868;
+        }
+        hr {
+            border-color: #686868;
+        }
+    </style>
+    
+
+<body>
+    <div class="single">
+        <header class="background" style="background-image: linear-gradient(rgba(56, 48, 28, 0.394), rgba(75, 65, 35, 0.395)), url('mur-cosmodrome.jpg');">
+            <div class="header-contents">
+                <h1 class="title">L&#39;introduction de Destiny : analyse du level design</h1>
+                <p class="subtitle">Sept ans après sa sortie, Destiny peine toujours à être égalé quant à la qualité de son introduction. Extraits vidéo à l&#39;appui, je vous propose de l&#39;examiner pour mieux comprendre ce qui la rend aussi efficace.</p>
+                <p class="byline">:date_long &ndash; <a href="/">Aurélien Dos Santos</a></p>
+            </div>
+        </header>
+        <article>
+
+        <p>Destiny est un FPS sorti sur consoles en 2014 et dont vous avez sans doute déjà entendu parler, d&rsquo;abord en raison de son budget com' et puis parce que c&rsquo;est un jeu important : il a, sous bien des aspects, influencé l&rsquo;industrie du jeu vidéo. Quand je l&rsquo;ai découvert, j&rsquo;ai été impressionné dès l&rsquo;introduction, qui me fascine encore aujourd&rsquo;hui. A vrai dire, c&rsquo;est peut-être mon moment de jeu vidéo préféré.</p>
+<p>Il y aurait bien des louanges à faire pour tout ce qui constitue le premier contact du jeu &mdash; même le menu de téléchargement est mémorable &mdash; mais nous allons ici nous concentrer sur le design du niveau d&rsquo;introduction. En une quinzaine de minutes, il jongle avec aisance entre les éléments du cahier des charges, arrivant aussi bien à nous plonger dans l&rsquo;univers, à nous expliquer le gameplay et à nous faire vivre tout un panel de sensations que nous retrouverons plus tard dans le jeu. A la fin, on est captivé et on ne demande qu&rsquo;à en voir plus.</p>
+<p>Pour mieux comprendre ce niveau, je l&rsquo;ai fait essayer à plusieurs personnes, notamment des débutant·e·s n&rsquo;ayant pas du tout l&rsquo;habitude des FPS et étant intimidé·e·s à l&rsquo;idée de devoir manier deux joysticks. Malgré leur forte appréhension, cette introduction parvient toujours à les mettre en confiance : même si vous êtes une quiche avec une manette, vous aurez l&rsquo;impression d&rsquo;avoir accompli quelque chose de cool, et c&rsquo;est précisément cela que j&rsquo;aimerais étudier dans cet article. Vous n&rsquo;aurez pas vraiment l&rsquo;impression de suivre un tutoriel artificiel, mais bien de déjà vivre votre aventure &mdash; votre <em>légende</em>, comme le dit le slogan du jeu.</p>
+<div class="note">
+    Notez que ce niveau d&rsquo;introduction a ensuite été réutilisé dans Destiny 2, mais quelques changements rendent l&rsquo;expérience moins élégante et moins efficace, donc nous ne nous attarderons pas dessus. Egalement, j&rsquo;accorderai « le joueur » au masculin pour faciliter la lecture et vous prie de m&rsquo;excuser pour toute gêne occasionnée.
+</div>
+
+<h2 id="cinématique-dexposition">Cinématique d&rsquo;exposition</h2>
+<p>Avant de commencer, si vous souhaitez vous mettre dans l&rsquo;ambiance, je vous mets ici la vidéo qui se joue au tout début, juste après la création de votre personnage, et qui expose l&rsquo;univers. C&rsquo;est fait à la sauce Destiny, donc c&rsquo;est assez&hellip; flou. Mais c&rsquo;est très joli.</p>
+<div class="gallery wide">
+     <figure>
+    <video src="video-intro.webm" controls poster="th-video-intro.jpg" ></video>
+</figure>
+ 
+</div>
+<p>Dans la scène sur Mars, j&rsquo;ai trouvé les variations de couleur très intéressantes. Pour moi, cela accompagne les jump cuts (les sauts dans la vidéo) pour évoquer le passage du temps, les ellipses durant le voyage des trois astronautes. Cela donne aussi une impression de filtre « vieux film » en plus onirique, comme si la scène était le souvenir d&rsquo;une époque passée &mdash; ce qui est pour le moins à propos puisque la scène suivante nous présente des épaves de voiture qui semblent être là depuis un bon bout de temps.</p>
+<p>Le début du jeu se déroule dans un ancien cosmodrome, situé sur ce territoire autrefois appelé Russie :</p>
+<div class="gallery wide">
+     <figure>
+    <video src="cinematique-intro.webm" controls poster="th-cinematique-intro.jpg" ></video>
+</figure>
+ 
+</div>
+<p>C&rsquo;est bon, la partie peut commencer ! Comme j&rsquo;ai quelques centaines d&rsquo;heures sur Destiny au compteur, je pourrais expédier très rapidement les combats de ce niveau, mais je vais tenter de jouer moins méthodiquement et précisément, pour simuler ce que ferait quelqu&rsquo;un qui découvre le jeu. Gardez tout de même en tête qu&rsquo;un vrai débutant ne serait pas aussi efficace, ce qui n&rsquo;est pas bien grave puisque l&rsquo;introduction est faite pour ça, comme je vous le disais &mdash; cela ne ferait que rendre les affrontements plus dramatiques.</p>
+<h2 id="analyse-étape-par-étape">Analyse étape par étape</h2>
+<h3 id="entrée-dans-le-mur">Entrée dans le mur</h3>
+<p>Pendant les deux premières minutes, nous n&rsquo;avons pas d&rsquo;arme et nous contentons de suivre le chemin en nous imprégnant de l&rsquo;ambiance. Par les dialogues, les sons et les indications visuelles, le jeu donne un rythme relativement soutenu malgré un environnement plutôt reposant.</p>
+<div class="gallery wide">
+     <figure>
+    <video src="1.webm" controls poster="th1.jpg" ></video>
+</figure>
+ 
+</div>
+<p>Le mur donne beaucoup de caractère au décor, et c&rsquo;est aussi un bon point de repère : le grand renfoncement, très sombre, dessine comme une porte nous invitant à l&rsquo;explorer. Comme le niveau commence sur une pente descendante, on peut garder un oeil sur l&rsquo;objectif tout en regardant où l&rsquo;on marche. Il y a un certain sentiment d&rsquo;urgence, communiqué par le Spectre et par le level design qui dessine un couloir net avec le chemin et les voitures.</p>
+<div class="gallery full">
+     <p>
+
+
+
+
+
+<figure style="flex-grow: 177; flex-basis: 426px">
+		<a href="/post/2021/destiny-introduction-analyse/th1.jpg" target="_blank" data-size="1920x1080"><picture>
+				
+				<img
+					src="/post/2021/destiny-introduction-analyse/th1.jpg"
+					width="1920"
+					height="1080"
+					loading="lazy"
+					decoding="async"
+					alt="&nbsp;"
+				/>
+			</picture>
+		</a>
+		
+	</figure> 
+
+
+
+
+
+<figure style="flex-grow: 177; flex-basis: 426px">
+		<a href="/post/2021/destiny-introduction-analyse/chemin1.jpg" target="_blank" data-size="1920x1080"><picture>
+				
+				<img
+					src="/post/2021/destiny-introduction-analyse/chemin1.jpg"
+					width="1920"
+					height="1080"
+					loading="lazy"
+					decoding="async"
+					alt="&nbsp;"
+				/>
+			</picture>
+		</a>
+		
+	</figure> 
+
+
+
+
+
+<figure style="flex-grow: 177; flex-basis: 426px">
+		<a href="/post/2021/destiny-introduction-analyse/chemin3.jpg" target="_blank" data-size="1920x1080"><picture>
+				
+				<img
+					src="/post/2021/destiny-introduction-analyse/chemin3.jpg"
+					width="1920"
+					height="1080"
+					loading="lazy"
+					decoding="async"
+					alt="&nbsp;"
+				/>
+			</picture>
+		</a>
+		
+	</figure></p>
+ 
+</div>
+<p>Une fois en bas, une ouverture nous invite à apprécier la vue, puis le chemin continue, délimité par les abris et le sol clair, jusqu&rsquo;à la petite entrée que l&rsquo;on remarque finalement assez tard.</p>
+<p>La scène suivante attire notre attention sur le fonctionnement du radar, qui clignote en rouge sur un fond totalement noir en raison de l&rsquo;obscurité &mdash;  c&rsquo;est plutôt malin. Le jeu nous tease la présence d&rsquo;ennemis de façon graduelle : on commence par en entendre quelques-uns se balader dans les conduits autour de nous, avant de se rendre compte qu&rsquo;ils sont en fait beaucoup plus nombreux qu&rsquo;on ne le pensait&hellip;</p>
+<div class="gallery full">
+     <p>
+
+
+
+
+
+<figure style="flex-grow: 177; flex-basis: 426px">
+		<a href="/post/2021/destiny-introduction-analyse/radar1.jpg" target="_blank" data-size="1920x1080"><picture>
+				
+				<img
+					src="/post/2021/destiny-introduction-analyse/radar1.jpg"
+					width="1920"
+					height="1080"
+					loading="lazy"
+					decoding="async"
+					alt="&nbsp;"
+				/>
+			</picture>
+		</a>
+		
+	</figure> 
+
+
+
+
+
+<figure style="flex-grow: 177; flex-basis: 426px">
+		<a href="/post/2021/destiny-introduction-analyse/radar2.jpg" target="_blank" data-size="1920x1080"><picture>
+				
+				<img
+					src="/post/2021/destiny-introduction-analyse/radar2.jpg"
+					width="1920"
+					height="1080"
+					loading="lazy"
+					decoding="async"
+					alt="&nbsp;"
+				/>
+			</picture>
+		</a>
+		
+	</figure></p>
+ 
+</div>
+<p>Pendant que le Spectre remet le courant, le jeu nous laisse le contrôle de la caméra mais s&rsquo;assure que l&rsquo;on sache où regarder si l&rsquo;on veut voir l&rsquo;action. Au début, il fait complètement noir, à l&rsquo;exception du Spectre et d&rsquo;un néon orange au sol qui nous permet de ne pas être désorientés. Ensuite, les lumières s&rsquo;allument progressivement, accompagnées de bruit localisés, ce qui nous laisse le temps de nous retourner pour la révélaton de l&rsquo;armée de Déchus. Un son de grille et le mouvement du Spectre nous avertissent alors de l&rsquo;ouverture d&rsquo;un passage sur la droite.</p>
+<h3 id="premiers-affrontements">Premiers affrontements</h3>
+<p>On s&rsquo;enfonce un peu plus loin dans la structure pour récupérer notre première arme : le bon vieux Khvostov. En regardant à travers sa mire abîmée, on comprend qu&rsquo;il a connu d&rsquo;autres combats il y a bien longtemps. Mais pas le temps d&rsquo;y réfléchir : ni une ni deux, un premier ennemi se dresse devant nous.</p>
+<div class="gallery wide">
+     <figure>
+    <video src="2.webm" controls poster="th2.jpg" ></video>
+</figure>
+ 
+</div>
+<p>Cette dernière séquence est vraiment géniale. A peine avez-vous le temps de lire « Appuyez sur R1 » et de regarder votre manette pour poser le doigt dessus, que pile à ce moment-là, un ennemi surgit de nulle part dans un bruit inquiétant. Par réflexe, vous appuyez sur la touche, et voilà : vous avez fait votre premier frag de mêlée, sans même vraiment y penser, comme si la manette était déjà une extension de votre esprit &mdash; alors que nous ne sommes que dans le tuto ! Ça marche à tous les coups et c&rsquo;est vraiment satisfaisant.</p>
+<p>Au cours de ce tutoriel, toutes les touches sont indiquées par de grands textes au milieu de l&rsquo;écran. Malgré ce qu&rsquo;on pourrait penser, ils ne sont pas intrusifs car ils ne coupent pas le déroulement du jeu et n&rsquo;empêchent pas de voir ce qu&rsquo;il se passe derrière. De plus, ils sont faciles à lire car très courts, étant donné que les actions se passent d&rsquo;explications : on comprend tout de suite leur intérêt par le contexte. Enfin, fermer le texte est naturel puisqu&rsquo;il suffit d&rsquo;essayer l&rsquo;action, ce qui est bien plus intuitif que les nombreux jeux où il faut d&rsquo;abord fermer la fenêtre explicative puis se souvenir de l&rsquo;action à réaliser.</p>
+<p>
+
+
+
+
+
+  
+
+<figure style="flex-grow: 177; flex-basis: 426px">
+		<a href="/post/2021/destiny-introduction-analyse/ff7.webp" target="_blank" data-size="1920x1080"><picture>
+				
+				<img
+					src="/post/2021/destiny-introduction-analyse/ff7.webp"
+					width="1920"
+					height="1080"
+					loading="lazy"
+					decoding="async"
+					alt="Capture d&rsquo;écran d&rsquo;un tutoriel de FF7 Remake"
+				/>
+			</picture>
+		</a>
+		
+		<figcaption>Encore aujourd&rsquo;hui, de nombreux jeux, comme Final Fantasy VII Remake ici, nous retirent régulièrement le contrôle pour nous apprendre des actions très simples. Cela vient probablement en partie d&rsquo;une crainte que le grand public ne comprenne pas le jeu, mais c&rsquo;est au final contre-productif puisqu&rsquo;on intègre mieux l&rsquo;information en expérimentant directement.</figcaption>
+		
+	</figure></p>
+<p>Rencontre suivante :</p>
+<div class="gallery wide">
+     <figure>
+    <video src="3.webm" controls poster="th3.jpg" ></video>
+</figure>
+ 
+</div>
+<p>C&rsquo;est amusant de voir à quel point tous les méchants de l&rsquo;intro font des entrées en scène dramatiques. Bien sûr, cela paraîtrait très artificiel si cela arrivait aussi souvent dans la suite du jeu, mais comme à ce stade, le moindre ennemi nous émeut, cela fonctionne très bien.</p>
+<p>Le joueur arrive dans l&rsquo;arène depuis une position en hauteur. C&rsquo;est un procédé qui sera utilisé plusieurs fois au cours de l&rsquo;introduction, car cela nous permet de mieux appréhender la situation. On a une meilleure vue d&rsquo;ensemble du niveau, on est dans une position relativement sûre et on peut choisir quand on souhaite entrer dans le combat. Cette arène utilise d&rsquo;ailleurs énormément le contrôle de notre champ de vision pour guider l&rsquo;action. Je vous ai fait un schéma pour mieux vous expliquer :</p>
+<p>
+
+
+
+
+
+  
+
+<figure style="flex-grow: 132; flex-basis: 318px">
+		<a href="/post/2021/destiny-introduction-analyse/schema.webp" target="_blank" data-size="2022x1522"><picture>
+				
+				<img
+					src="/post/2021/destiny-introduction-analyse/schema.webp"
+					width="2022"
+					height="1522"
+					loading="lazy"
+					decoding="async"
+					alt="Schéma de l&rsquo;arène"
+				/>
+			</picture>
+		</a>
+		
+		<figcaption>Les carrés noirs représentent les grands piliers et les autres obstacles plus hauts que le personnage. Les ronds rouges indiquent la position de départ des ennemis.</figcaption>
+		
+	</figure></p>
+<p>Dans le couloir qui mène à l&rsquo;arène, les deux obstacles sur le côté ont deux fontions : ils brisent la monotonie visuelle et nous forcent à nous placer au milieu. Pendant qu&rsquo;on passe entre les deux, le champ de vision est resserré et on se concentre sur l&rsquo;entrée dans le mur, juste en face. A vrai dire, nous sommes si concentrés sur cette entrée que nous ne remarquons même pas l&rsquo;autre porte disponible sur notre droite, moins éclairée. Le jeu contrôle tellement bien l&rsquo;action que je n&rsquo;avais jamais réalisé son existence avant de dessiner ce schéma.</p>
+<p>Les 3 rebuts apparaissent devant nous alors que le vandale est caché par des obstacles et plus éloigné que les autres. On le verra en dernier, et c&rsquo;est aussi probablement celui que l&rsquo;on tuera en dernier. Comme par hasard, il est juste devant le pont que nous devons emprunter ensuite ! Ainsi, on peut continuer à explorer sans chercher son chemin et on reste dans le rythme. Placer les ennemis près de la sortie du niveau est une pratique fréquente dans beaucoup de jeux, mais c&rsquo;est particulièrement remarquable dans cette intro, où tout est fait pour que l&rsquo;on n&rsquo;ait pas à l&rsquo;idée de tergiverser.</p>
+<p>Le recul du Khvostov est difficile à contrôler, ce qui apporte aux affrontements un chaos aussi dramatique que satisfaisant, et puis cela permet de faire relativiser les mauvais joueurs : si l&rsquo;arme est aussi imprécise, alors je ne dois pas avoir besoin de savoir viser. A ce sujet, vous remarquerez que plus on avancera dans l&rsquo;intro, plus les ennemis apparaîtront depuis une position éloignée.</p>
+<div class="gallery wide">
+     <figure>
+    <video src="4.webm" controls poster="th4.jpg" ></video>
+</figure>
+ 
+</div>
+<p>Ici, on peut obtenir au hasard soit un sniper, soit un fusil à pompe. Juste après, le jeu nous présente un long couloir tout droit avec un ennemi qui apparait au fond. Avec le sniper, c&rsquo;est comme si le jeu nous disait « amuse-toi » : l&rsquo;ennemi apparaît pile dans le viseur. Par contre, on est plutôt impuissant dans cette situation avec le fusil à pompe, mais ce n&rsquo;est pas grave : deux ennemis apparaissent peu après juste devant nous pour nous plonger dans le combat quoi qu&rsquo;il arrive.</p>
+<p>La composition de l&rsquo;arène suivante, avec le grand drapeau et les murs en V, a quelque chose de particulièrement mémorable.</p>
+<div class="gallery wide">
+     <figure>
+    <video src="5.webm" controls poster="th5.jpg" ></video>
+</figure>
+ 
+</div>
+<p>Les ennemis vont utiliser les piliers à droite comme couverture &mdash; la partie gauche de l&rsquo;arène n&rsquo;est au final pas exploitée &mdash; ce qui vous attire vers la sortie, d&rsquo;où viennent encore d&rsquo;autres ennemis. Vous voyez pourquoi je disais que le jeu redouble d&rsquo;efforts pour que l&rsquo;on ne perde jamais son chemin. L&rsquo;affrontement étant généralement plus long et chaotique pour un débutant, le procédé paraît normalement plus subtil.</p>
+<p>Le couloir suivant est une sorte de SAS, dans lequel on peut prendre le temps d&rsquo;apprécier le décor et laisser la tension redescendre, avant de retrouver l&rsquo;air frais du monde extérieur et d&rsquo;observer une nouvelle mise en scène au loin.</p>
+<div class="gallery wide">
+     <figure>
+    <video src="6.webm" controls poster="th6.jpg" ></video>
+</figure>
+ 
+</div>
+<p>Cette séquence me rappelle quand j&rsquo;étais enfant et que mon ophtalmologiste me demandait de suivre la petite lumière. La fusée éclairante va d&rsquo;abord lentement en haut à gauche, puis le vaisseau retourne en bas à droite, au niveau de cette sorte d&rsquo;arche qui nous invite à la traverser &mdash; un classique. On pourrait théoriquement passer plus de temps à regarder le ciel pour voir un gros vaisseau passer au-dessus de notre tête, mais la plupart des gens avanceront au même rythme que moi.</p>
+<div class="gallery wide">
+     <figure>
+    <video src="7.webm" controls poster="th7.jpg" ></video>
+</figure>
+ 
+</div>
+<p>On ne s&rsquo;en doute pas en découvrant le jeu, mais cette scène en extérieur se déroule en fait dans une section de l&rsquo;open world, que l&rsquo;on pourra revisiter à loisir un peu plus tard. Quand on vient de passer l&rsquo;arche, on pourrait donc partir à droite pour découvrir une autre zone, mais en réalité on ne remarque même pas le passage, d&rsquo;une part parce que les ennemis nous attirent vers l&rsquo;avant, et d&rsquo;autre part parce qu&rsquo;il est en pente montante, ce qui obstrue notre champ de vision. De plus, il est jonché d&rsquo;obstacles qui pourraient s&rsquo;apparenter à une simple barrière si on n&rsquo;y regarde pas de plus près.</p>
+<div class="gallery full">
+     <p>
+
+
+
+
+
+  
+
+<figure style="flex-grow: 177; flex-basis: 426px">
+		<a href="/post/2021/destiny-introduction-analyse/open0.webp" target="_blank" data-size="1920x1080"><picture>
+				
+				<img
+					src="/post/2021/destiny-introduction-analyse/open0.webp"
+					width="1920"
+					height="1080"
+					loading="lazy"
+					decoding="async"
+					alt="En arrivant, la composition transforme le côté droit en une sorte de mur, nous invitant à regarder vers l&amp;rsquo;avant puis au fond à gauche."
+				/>
+			</picture>
+		</a>
+		
+		<figcaption>En arrivant, la composition transforme le côté droit en une sorte de mur, nous invitant à regarder vers l&rsquo;avant puis au fond à gauche.</figcaption>
+		
+	</figure> 
+
+
+
+
+
+  
+
+<figure style="flex-grow: 177; flex-basis: 426px">
+		<a href="/post/2021/destiny-introduction-analyse/open1.webp" target="_blank" data-size="1920x1080"><picture>
+				
+				<img
+					src="/post/2021/destiny-introduction-analyse/open1.webp"
+					width="1920"
+					height="1080"
+					loading="lazy"
+					decoding="async"
+					alt="Si l&amp;rsquo;on regarde tout de même à droite, notre regard va « glisser » le long des obstacles."
+				/>
+			</picture>
+		</a>
+		
+		<figcaption>Si l&rsquo;on regarde tout de même à droite, notre regard va « glisser » le long des obstacles.</figcaption>
+		
+	</figure> 
+
+
+
+
+
+  
+
+<figure style="flex-grow: 177; flex-basis: 426px">
+		<a href="/post/2021/destiny-introduction-analyse/open2.webp" target="_blank" data-size="1920x1080"><picture>
+				
+				<img
+					src="/post/2021/destiny-introduction-analyse/open2.webp"
+					width="1920"
+					height="1080"
+					loading="lazy"
+					decoding="async"
+					alt="Une fois en bas, la pente rend le passage encore moins visible."
+				/>
+			</picture>
+		</a>
+		
+		<figcaption>Une fois en bas, la pente rend le passage encore moins visible.</figcaption>
+		
+	</figure></p>
+ 
+</div>
+<p>Dans cet espace bien plus ouvert, on affronte plusieurs ennemis en combat rapproché pendant que d&rsquo;autres nous ciblent au sniper. Le combat étant plus lent si vous débutez, c&rsquo;est probablement ici que vous remarquerez pour la première fois qu&rsquo;il est possible d&rsquo;esquiver les tirs ennemis &mdash; une mécanique essentielle de Destiny.</p>
+<p>A la fin, l&rsquo;espace de jeu se resserre et plusieurs ennemis apparaissent en même temps, augmentant la tension d&rsquo;un cran. Alors qu&rsquo;on tue le dernier, notre soulagement est sublimé par une animation jouissive de <em>level up</em>. Un vrai plaisir.</p>
+<h3 id="tutoriel-de-level-up">Tutoriel de <em>level up</em></h3>
+<p>Un message nous informe que l&rsquo;on peut débloquer une compétence en allant dans le menu.</p>
+<div class="gallery wide">
+     <figure>
+    <video src="8.webm" controls poster="th8.jpg" ></video>
+</figure>
+ 
+</div>
+<p>Souvent, les tutoriels dans les menus interrompent le rythme du jeu, mais ici, il arrive à un moment idéal. Après la suite d&rsquo;affrontements de plus en plus intenses, suivi de l&rsquo;animation de level up comme récompense, la tension retombe enfin et c&rsquo;est avec plaisir que l&rsquo;on prend le temps de respirer un coup, et de comprendre ce que nous avons gagné.</p>
+<p>On dit souvent que la plupart des joueurs détestent lire de longs textes, et c&rsquo;est d&rsquo;autant plus vrai quand, comme ici, ils pourraient passer du temps à tuer des aliens à la place. Cela dit, on sait aussi que tout le monde adore débloquer des choses au niveau suivant. Dans le cas de Destiny, on peut tout à fait ignorer le texte explicatif puisque les éléments avec lesquels interagir sont suggérés par un clignotement bleu. Cela peut sembler être un choix anodin, mais beaucoup de jeux auraient à la place obscurci tout le reste de l&rsquo;écran pour ne garder visible que la case qu&rsquo;il faut utiliser, tout en affichant le satané texte explicatif en plein milieu. C&rsquo;est une solution maladroite puisqu&rsquo;elle désoriente le joueur et est bien trop restrictive : ce qui aurait pu donner l&rsquo;impression d&rsquo;explorer un menu devient alors une corvée. Destiny montre que l&rsquo;on peut très bien faire confiance au joueur et le laisser explorer le reste du menu s&rsquo;il le souhaite &mdash; et s&rsquo;il est impossible de lui faire confiance, c&rsquo;est peut-être un signe que le menu devrait être clarifié.</p>
+<figure>
+    <video src="thewitcher3.webm" autoplay muted loop controls poster="" alt="La première fois qu&#39;on entre dans un magasin de The Witcher 3, le contrôle nous est retiré pour nous informer que nous sommes bel et bien dans un magasin, avant de nous demander de retenir deux touches différentes sans que nous ne puissions les essayer sur le moment. En comparaison, dans Destiny, les touches utiles sont constamment affichées sur l&#39;interface." ></video>
+    
+    <figcaption>
+        <p>
+        La première fois qu&#39;on entre dans un magasin de The Witcher 3, le contrôle nous est retiré pour nous informer que nous sommes bel et bien dans un magasin, avant de nous demander de retenir deux touches différentes sans que nous ne puissions les essayer sur le moment. En comparaison, dans Destiny, les touches utiles sont constamment affichées sur l&#39;interface.
+        </p>
+    </figcaption>
+    
+</figure>
+
+<p>Le jeu attend que nous soyons sortis du menu pour jouer un petit dialogue du Spectre qui nous recadre en nous donnant un objectif. C&rsquo;est un petit coup de boost bien senti pour relancer la motivation alors que la tension est au plus bas. Et puis, nous venons de débloquer la grenade. On a qu&rsquo;une envie, c&rsquo;est de l&rsquo;essayer ! Justement, un petit groupe de Déchus inattentifs nous attend deux pas plus loin.</p>
+<div class="gallery wide">
+     <figure>
+    <video src="9.webm" controls poster="th9.jpg" ></video>
+</figure>
+ 
+</div>
+<p>Beaucoup de joueurs n&rsquo;arriveront pas à lancer la grenade correctement du premier coup, d&rsquo;autant plus que selon la classe, certaines grenades peuvent être difficiles à utiliser. C&rsquo;est un peu frustrant mais ce n&rsquo;est pas très grave : dans le combat suivant, le jeu nous rappellera d&rsquo;utiliser la grenade pour retenter notre chance. Notez comment on pouvait observer les ennemis dans une relative sécurité à travers les fenêtes. C&rsquo;est une autre façon de nous laisser le contrôle quant au début des hostilités.</p>
+<h3 id="combat-final">Combat final</h3>
+<div class="gallery wide">
+     <figure>
+    <video src="10.webm" controls poster="th10.jpg" ></video>
+</figure>
+ 
+</div>
+<p>C&rsquo;est la première fois que nous rencontrons un ennemi avec un bouclier ! Dans Destiny, les boucliers se régénèrent si on ne touche pas leur porteur pendant un certain temps. En soi, c&rsquo;est un adversaire assez facile à tuer, mais il est suffisamment intimidant pour un débutant, et son titre de Capitaine lui donne des allures de mini-boss entouré de larbins. Leur positionnement de départ est particulièrement intéressant : ils ne sont pas simplement placés dans l&rsquo;arène, mais bien sur le vaisseau. Ainsi, ce dernier n&rsquo;est pas relégué au rang de simple élément de décor que l&rsquo;on pourrait oublier, parce que la mise en scène lui donne une vraie consistance physique.</p>
+<figure>
+    <video src="vaisseau.webm" muted loop controls poster="" alt="Je vous la remets pour le plaisir !" ></video>
+    
+    <figcaption>
+        <p>
+        Je vous la remets pour le plaisir !
+        </p>
+    </figcaption>
+    
+</figure>
+
+<p>Au début, les trois ennemis paraissent tout à fait abordables, ce qui nous attire au centre de l&rsquo;arène. Mais ils sont bien vite rejoints par cinq ou six collègues qui nous forcent à nous replier. Nous avons à droite un espace relativement sûr &mdash; et en hauteur ! &mdash; les ennemis ayant plutôt tendance à se couvrir à gauche. C&rsquo;est là aussi à nous de déterminer quand nous souhaitons retourner taper dans le tas. Nous sommes ensuite récompensés par une cinématique que je vous laisse regarder.</p>
+<div class="gallery wide">
+     <figure>
+    <video src="11.webm" controls poster="th11.jpg" ></video>
+</figure>
+ 
+</div>
+<h2 id="conclusion">Conclusion</h2>
+<p>Cette intro est brillante grâce à un ensemble de petites attentions qui rendent l&rsquo;expérience très fluide. Pour nous accrocher, le jeu n&rsquo;a pas eu besoin d&rsquo;employer des moyens grandiloquents avec des grosses explosions et des cinématiques renversantes. Il y a bien sûr un tas de petites animations uniques, mais qui restent toujours dans une certaine retenue, une simplicité que l&rsquo;on retrouve dans le reste du jeu et qui fait sans doute partie de sa philosophie.</p>
+<p>Cette sobriété traduit, selon moi, la confiance du studio dans son oeuvre. En nous laissant le contrôle de l&rsquo;action sans interruption, l&rsquo;introduction laisse le gameplay se révéler librement, et formule la promesse que le jeu saura présenter de belles ambiances, raconter son univers et son histoire, sans pour autant avoir besoin de nous retirer le contrôle. Une promesse qui sera bel et bien respectée tout au long du jeu, ce qui force le respect.</p>
+<p>C&rsquo;est pour cela que j&rsquo;ai écrit cet article : je trouve inspirante la mentalité du studio et le fait que leur recette soit aussi accessible. Plutôt que de céder à la surenchère, l&rsquo;équipe de Destiny a su utiliser des ingrédients simples mais distillés avec justesse. Le tout est porté par un enjeu principal &mdash; trouver un vaisseau &mdash; très malin puisqu&rsquo;il résonne au fond de nous, dans notre âme d&rsquo;enfant. Alors que vous reprenez ce vieux vaisseau des mains de l&rsquo;ennemi, que vous l&rsquo;allumez pour la première fois et vous envolez vers l&rsquo;horizon dans une musique épique, il est impossible de ne pas être ému et sourire comme un gosse. La suite de l&rsquo;aventure n&rsquo;attend que vous.</p>
+
+
+        <p style="margin-top: 3em;">◂ <a href="/">Retour à l'accueil</a></p>
+        </article>
+    </div>
+<footer>
+    
+</footer>
+<script src="/custom.js"></script>
+</body>
+</html>

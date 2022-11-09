@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>notebook on Aurélien Dos Santos</title>
+    <link>https://aureliendossantos.github.io/palettes/notebook/</link>
+    <description>Recent content in notebook on Aurélien Dos Santos</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Fri, 02 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://aureliendossantos.github.io/palettes/notebook/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>L&#39;introduction de Destiny : analyse du level design</title>
+      <link>https://aureliendossantos.github.io/post/2021/destiny-introduction-analyse/</link>
+      <pubDate>Fri, 02 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://aureliendossantos.github.io/post/2021/destiny-introduction-analyse/</guid>
+      <description>Destiny est un FPS sorti sur consoles en 2014 et dont vous avez sans doute déjà entendu parler, d&amp;rsquo;abord en raison de son budget com&#39; et puis parce que c&amp;rsquo;est un jeu important : il a, sous bien des aspects, influencé l&amp;rsquo;industrie du jeu vidéo. Quand je l&amp;rsquo;ai découvert, j&amp;rsquo;ai été impressionné dès l&amp;rsquo;introduction, qui me fascine encore aujourd&amp;rsquo;hui. A vrai dire, c&amp;rsquo;est peut-être mon moment de jeu vidéo préféré.</description>
+    </item>
+    
+    <item>
+      <title>Le livre de Cayde-6</title>
+      <link>https://aureliendossantos.github.io/post/2019/livre-de-cayde-6/</link>
+      <pubDate>Sun, 22 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://aureliendossantos.github.io/post/2019/livre-de-cayde-6/</guid>
+      <description>Cayde-6 est un des rares personnages sympas du jeu. Les autres ne pensent qu&amp;rsquo;à sauver le monde et ça les rend un peu ronchon, mais ce gars-là est très attachant. J&amp;rsquo;ai donc préparé « Le livre de Cayde-6 » pour l&amp;rsquo;anniversaire de ma moitié, avec qui j&amp;rsquo;ai parcouru le jeu. J&amp;rsquo;y ai rassemblé tous les textes de lore que l&amp;rsquo;on peut trouver dans le jeu, avec de jolies illustrations.</description>
+    </item>
+    
+  </channel>
+</rss>

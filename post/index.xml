@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Aurélien Dos Santos</title>
+    <link>https://aureliendossantos.github.io/post/</link>
+    <description>Recent content in Posts on Aurélien Dos Santos</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Tue, 21 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://aureliendossantos.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sur la route</title>
+      <link>https://aureliendossantos.github.io/post/2022/sur-la-route/</link>
+      <pubDate>Tue, 21 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://aureliendossantos.github.io/post/2022/sur-la-route/</guid>
+      <description>  body { background-color: rgb(69, 143, 69); } .middle { display: block; margin: 200px auto; width: 400px; height: 300px; }      
+  
+   </description>
+    </item>
+    
+    <item>
+      <title>Utiliser Lua dans Visual Studio Code</title>
+      <link>https://aureliendossantos.github.io/post/2021/utiliser-lua-dans-visual-studio-code/</link>
+      <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://aureliendossantos.github.io/post/2021/utiliser-lua-dans-visual-studio-code/</guid>
+      <description>Lua est un langage de programmation intéressant pour débuter et écrire ses premières lignes de code, en raison de son style neutre et très lisible. Lua est d&amp;rsquo;ailleurs souvent utilisé dans le jeu vidéo (World of Warcraft, Roblox&amp;hellip;) en tant que langage de script, car il est simple d&amp;rsquo;utilisation et pensé pour être intégré facilement à un programme.
+    La lune symbolise Lua (qui veut dire « lune » en portugais) car il est pensé pour être le langage satellite d&amp;rsquo;un programme.</description>
+    </item>
+    
+    <item>
+      <title>Créer un portfolio ou un blog sans programmer avec Hugo</title>
+      <link>https://aureliendossantos.github.io/post/2021/creer-un-site-avec-hugo/</link>
+      <pubDate>Thu, 01 Jul 2021 00:35:02 +0200</pubDate>
+      
+      <guid>https://aureliendossantos.github.io/post/2021/creer-un-site-avec-hugo/</guid>
+      <description>Pourquoi Hugo ? Hugo est un générateur de site statique. Concrètement, Hugo prend des fichiers texte et les transforme en pages web en suivant un thème visuel. Ainsi, au quotidien, il vous suffit d&amp;rsquo;écrire dans des fichiers texte au format Markdown et de laisser Hugo générer le site au complet.
+    
+Avec un site statique, les pages HTML sont générées une seule fois lors de la publication du site et tous les visiteurs recevront la même page.</description>
+    </item>
+    
+    <item>
+      <title>L&#39;introduction de Destiny : analyse du level design</title>
+      <link>https://aureliendossantos.github.io/post/2021/destiny-introduction-analyse/</link>
+      <pubDate>Fri, 02 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://aureliendossantos.github.io/post/2021/destiny-introduction-analyse/</guid>
+      <description>Destiny est un FPS sorti sur consoles en 2014 et dont vous avez sans doute déjà entendu parler, d&amp;rsquo;abord en raison de son budget com&#39; et puis parce que c&amp;rsquo;est un jeu important : il a, sous bien des aspects, influencé l&amp;rsquo;industrie du jeu vidéo. Quand je l&amp;rsquo;ai découvert, j&amp;rsquo;ai été impressionné dès l&amp;rsquo;introduction, qui me fascine encore aujourd&amp;rsquo;hui. A vrai dire, c&amp;rsquo;est peut-être mon moment de jeu vidéo préféré.</description>
+    </item>
+    
+    <item>
+      <title>Vous ne devriez pas utiliser le GIF — il a été remplacé par la vidéo</title>
+      <link>https://aureliendossantos.github.io/post/2021/vous-ne-devriez-pas-utiliser-le-gif/</link>
+      <pubDate>Wed, 24 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://aureliendossantos.github.io/post/2021/vous-ne-devriez-pas-utiliser-le-gif/</guid>
+      <description>Le GIF, pour Graphics Interchange Format, a été inventé en 1987 (oui) par une équipe de geeks qui n&amp;rsquo;avaient probablement pas prévu que son usage exploserait des années plus tard. Le problème, c&amp;rsquo;est que ce qui était à l&amp;rsquo;origine un format efficace pour partager de toutes petites animations a été largement détourné dès que l&amp;rsquo;humanité a découvert que les extraits de The Office pouvaient être un moyen d&amp;rsquo;expression.
+Les gifs sont rapidement devenus trop lourds (tout en ayant une mauvaise qualité d&amp;rsquo;image), ralentissant énormément le chargement des pages, et ralentissant par la même occasion les machines peu puissantes.</description>
+    </item>
+    
+    <item>
+      <title>Hiver 2020</title>
+      <link>https://aureliendossantos.github.io/post/2020/mixtape-hiver-2020/</link>
+      <pubDate>Thu, 12 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://aureliendossantos.github.io/post/2020/mixtape-hiver-2020/</guid>
+      <description> Tracklist  Brian Eno – Always Returning The Durruti Column – Sketch for Summer Photay – Illusion of Seclusion Visible Cloaks – Wheel Against All Logic – This Old House Is All I Have Floating Points – Falaise Teebs, Thomas Stankiewicz – Atoms Song GODTET – Enumerating Resavoir – Phantasy Yves Tumor – Limerence Arrangement – Coconut Mango  </description>
+    </item>
+    
+    <item>
+      <title>FaireDesJeux.fr, le site de formations gratuites</title>
+      <link>https://aureliendossantos.github.io/post/2020/fairedesjeux.fr/</link>
+      <pubDate>Sat, 05 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://aureliendossantos.github.io/post/2020/fairedesjeux.fr/</guid>
+      <description>Après deux ans à faire vivre le wiki de Game Dev Alliance, nous avons constaté que le format encyclopédique nous enfermait et ne répondait pas aux attentes de la communauté. Les débutants cherchent plutôt des tutoriels guidés, mais il peut être difficile de savoir vers qui se tourner face aux formations payantes qui fleurissent sur des sites douteux, surtout en français.
+Notre réponse à cela est FaireDesJeux.fr, un site qui n&amp;rsquo;en est qu&amp;rsquo;à ses débuts mais sur lequel nous avons l&amp;rsquo;ambition de proposer des formations gratuites dans tous les aspects de la création de jeux, tout en apprenant aux lecteurs et lectrices à s&amp;rsquo;autonomiser une fois les bases acquises.</description>
+    </item>
+    
+    <item>
+      <title>Télécharger des vidéos YouTube en un clin d&#39;œil</title>
+      <link>https://aureliendossantos.github.io/post/2020/telecharger-des-videos-youtube/</link>
+      <pubDate>Wed, 19 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://aureliendossantos.github.io/post/2020/telecharger-des-videos-youtube/</guid>
+      <description>Pour illustrer mes vidéos, je dois récupérer beaucoup d&amp;rsquo;illustrations de jeux vidéo que je trouve sur YouTube. Si vous êtes vidéaste et ne connaissez pas les outils de programmeur, vous êtes sans doute passé à côté d&amp;rsquo;une astuce très pratique pour le faire efficacement !
+Pour télécharger des dizaines, voire des centaines de vidéos, utiliser les sites du type &amp;ldquo;YouTube Downloader&amp;rdquo; serait très fastidieux et il n&amp;rsquo;est pas garanti qu&amp;rsquo;ils donnent la plus haute qualité possible.</description>
+    </item>
+    
+    <item>
+      <title>Les peurs des créateurs et créatrices en herbe</title>
+      <link>https://aureliendossantos.github.io/post/2020/les-peurs-des-cr%C3%A9ateurs-et-cr%C3%A9atrices-d%C3%A9butantes/</link>
+      <pubDate>Sun, 19 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://aureliendossantos.github.io/post/2020/les-peurs-des-cr%C3%A9ateurs-et-cr%C3%A9atrices-d%C3%A9butantes/</guid>
+      <description>&lt;p&gt;Je discute parfois avec des jeunes qui débutent dans le développement de jeux, ou l&amp;rsquo;écriture, le dessin&amp;hellip; Ils et elles ont souvent des doutes qui les empêchent de progresser sereinement dans la création : la peur d&amp;rsquo;être nul·le, le piège de s&amp;rsquo;accrocher à ses premières idées&amp;hellip; j&amp;rsquo;ai connu ça aussi. Voici mes modestes conseils qui pourront peut-être vous débloquer et vous aider à aimer ce que vous faites.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Le livre de Cayde-6</title>
+      <link>https://aureliendossantos.github.io/post/2019/livre-de-cayde-6/</link>
+      <pubDate>Sun, 22 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://aureliendossantos.github.io/post/2019/livre-de-cayde-6/</guid>
+      <description>Cayde-6 est un des rares personnages sympas du jeu. Les autres ne pensent qu&amp;rsquo;à sauver le monde et ça les rend un peu ronchon, mais ce gars-là est très attachant. J&amp;rsquo;ai donc préparé « Le livre de Cayde-6 » pour l&amp;rsquo;anniversaire de ma moitié, avec qui j&amp;rsquo;ai parcouru le jeu. J&amp;rsquo;y ai rassemblé tous les textes de lore que l&amp;rsquo;on peut trouver dans le jeu, avec de jolies illustrations.</description>
+    </item>
+    
+    <item>
+      <title>Notes sur le level design</title>
+      <link>https://aureliendossantos.github.io/post/2019/notes-level-design/</link>
+      <pubDate>Tue, 22 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://aureliendossantos.github.io/post/2019/notes-level-design/</guid>
+      <description>Craig Perko publie des vidéos sur YouTube avec pour thème principal le développement de jeux vidéo : tutoriels de programmation, analyse de jeux, opinions sur le game design&amp;hellip; Comme le pointait mon amie Erika, Craig Perko a parfois une vision différente des jeux et il utilise peu de buzzwords. Par exemple, il parle de hinting qui serait généralement plutôt appelé player guidance, parce que cela correspond mieux à son ressenti.</description>
+    </item>
+    
+    <item>
+      <title>Quitter la barque</title>
+      <link>https://aureliendossantos.github.io/post/2018/quitter-la-barque/</link>
+      <pubDate>Wed, 04 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://aureliendossantos.github.io/post/2018/quitter-la-barque/</guid>
+      <description>Les premiers utilisateurs de RPG Maker étaient de véritables pionniers. A l’époque, le logiciel n’était distribué officiellement qu’au Japon, et le seul moyen de le traduire était de le hacker. Des geeks du monde entier se sont partagé des versions piratées aux traductions amatrices (mais de très bonne facture) et des petits microcosmes se sont formés, jusqu’à ce que le phénomène prenne véritablement de l’ampleur avec la sortie de RPG Maker 2000, un logiciel que je trouve, avec le recul, véritablement visionnaire pour son époque.</description>
+    </item>
+    
+    <item>
+      <title>Conseils express pour réaliser ses premiers films</title>
+      <link>https://aureliendossantos.github.io/post/2018/conseils-rapides-premier-film/</link>
+      <pubDate>Wed, 16 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://aureliendossantos.github.io/post/2018/conseils-rapides-premier-film/</guid>
+      <description>Votre histoire doit rester courte Filmez rapidement Ayez peu d&amp;rsquo;acteurs Utilisez des décors en accès libre  On oublie bien vite ces principes alors qu&amp;rsquo;on se laisse emporter par nos idées. Tenez-vous-y et vous devriez y arriver !</description>
+    </item>
+    
+    <item>
+      <title>Créer et partager des scènes en 3D avec MagicaVoxel</title>
+      <link>https://aureliendossantos.github.io/post/2018/magicavoxel/</link>
+      <pubDate>Wed, 09 May 2018 15:27:43 +0000</pubDate>
+      
+      <guid>https://aureliendossantos.github.io/post/2018/magicavoxel/</guid>
+      <description>Ce tutoriel est né de la collaboration de plusieurs membres du forum RPG Maker Alliance, à l&amp;rsquo;occasion d&amp;rsquo;un « challenge de la semaine » sur MagicaVoxel. Lorsque nous avons fermé le forum en 2019, ce tutoriel est alors devenu inaccessible. Je n&amp;rsquo;en suis pas l&amp;rsquo;auteur, mais il me paraît bon de le remettre en ligne quelque part !  La modélisation 3D vous semble sans doute hors d&amp;rsquo;atteinte, réservée aux pros et aux étudiant·e·s dans ce domaine.</description>
+    </item>
+    
+    <item>
+      <title>Nouveau design du wiki</title>
+      <link>https://aureliendossantos.github.io/post/2018/nouveau-design-du-wiki/</link>
+      <pubDate>Mon, 30 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://aureliendossantos.github.io/post/2018/nouveau-design-du-wiki/</guid>
+      <description>Le nouveau design de notre Encyclopédie sur RPG Maker est arrivé !
+    
+Il y a encore beaucoup de contenu à écrire, mais je suis très fier de la forme que prend le site. Le nouveau design, réalisé par Princesseuh, permet d&amp;rsquo;activer un dark mode et met en avant l&amp;rsquo;aspect collaboratif du wiki en simplifiant le processus. Sur toutes les pages, il est possible d&amp;rsquo;ajouter du contenu ou de corriger une faute en cliquant sur &amp;ldquo;Modifier cette page&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Sortie du forum et de l&#39;Encyclopédie</title>
+      <link>https://aureliendossantos.github.io/post/2018/sortie-du-forum/</link>
+      <pubDate>Fri, 16 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://aureliendossantos.github.io/post/2018/sortie-du-forum/</guid>
+      <description>Aujourd’hui est un grand jour ! C’est avec joie que je vous présente à la fois le forum, et l’Encyclopédie du Making ! L’objectif est de créer une véritable encyclopédie sur RPG Maker, avec des tutoriels sur une variété de sujets, mais aussi une liste des jeux emblématiques, et un historique de la communauté française. J’ai déjà posé les bases de certaines sections, pour que vous imaginiez ce que donnera le projet une fois qu’il sera plus abouti.</description>
+    </item>
+    
+    <item>
+      <title>Tiger</title>
+      <link>https://aureliendossantos.github.io/post/2017/tiger/</link>
+      <pubDate>Sun, 01 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://aureliendossantos.github.io/post/2017/tiger/</guid>
+      <description>Tiger est une histoire d&amp;rsquo;amour et de solitude. Deux mannequins occidentaux, fraîchement arrivés à Tokyo, se rencontrent et s&amp;rsquo;énamourent. En cette saison hivernale, la ville se fait discrète, voire imperméable. Il ne reste que le petit monde de Renee et Jack, qui déraille silencieusement alors que leur séjour se prolonge.
+Le film, réalisé en 2010, est disponible sur YouTube et Vimeo.
+Voir le film sur YouTube
+James McFay est réalisateur, acteur, compositeur et ancien mannequin.</description>
+    </item>
+    
+    <item>
+      <title>La magie de Tetris</title>
+      <link>https://aureliendossantos.github.io/post/2017/la-magie-de-tetris/</link>
+      <pubDate>Wed, 10 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://aureliendossantos.github.io/post/2017/la-magie-de-tetris/</guid>
+      <description>Et ce grâce à Puyo Puyo Tetris ! C&amp;rsquo;est un jeu qui mélange deux jeux. Il y a d&amp;rsquo;un côté Puyo Puyo, où l&amp;rsquo;on doit assembler des couleurs qui tombent du haut de l&amp;rsquo;écran, et bien sûr, le fameux Tetris sur lequel je vais me focaliser dans cet article.
+ Dans Puyo Puyo Tetris, les joueurs des deux bords peuvent s&amp;rsquo;affronter en même temps.
+  Tetris est un phénomène particulier.</description>
+    </item>
+    
+    <item>
+      <title>Trailer de SinaRun</title>
+      <link>https://aureliendossantos.github.io/post/2015/sinarun-trailer/</link>
+      <pubDate>Mon, 19 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://aureliendossantos.github.io/post/2015/sinarun-trailer/</guid>
+      <description>Mon amie Princesseuh a sorti son jeu SinaRun sur Steam, et je lui ai fait pour l&amp;rsquo;occasion un petit trailer d&amp;rsquo;Early Access.
+  C&amp;rsquo;était assez difficile à réaliser car je ne suis pas très bon au jeu ! J&amp;rsquo;ai dû m&amp;rsquo;y reprendre à de nombreuses reprises pour obtenir des rush sympas. Au final, il y a des petits défauts mais je suis content du rythme et il véhicule bien les sensations offertes par le jeu.</description>
+    </item>
+    
+  </channel>
+</rss>

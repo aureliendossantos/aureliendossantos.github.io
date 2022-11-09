@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>3D on Aurélien Dos Santos</title>
+    <link>https://aureliendossantos.github.io/tags/3d/</link>
+    <description>Recent content in 3D on Aurélien Dos Santos</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Wed, 09 May 2018 15:27:43 +0000</lastBuildDate><atom:link href="https://aureliendossantos.github.io/tags/3d/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Créer et partager des scènes en 3D avec MagicaVoxel</title>
+      <link>https://aureliendossantos.github.io/post/2018/magicavoxel/</link>
+      <pubDate>Wed, 09 May 2018 15:27:43 +0000</pubDate>
+      
+      <guid>https://aureliendossantos.github.io/post/2018/magicavoxel/</guid>
+      <description>Ce tutoriel est né de la collaboration de plusieurs membres du forum RPG Maker Alliance, à l&amp;rsquo;occasion d&amp;rsquo;un « challenge de la semaine » sur MagicaVoxel. Lorsque nous avons fermé le forum en 2019, ce tutoriel est alors devenu inaccessible. Je n&amp;rsquo;en suis pas l&amp;rsquo;auteur, mais il me paraît bon de le remettre en ligne quelque part !  La modélisation 3D vous semble sans doute hors d&amp;rsquo;atteinte, réservée aux pros et aux étudiant·e·s dans ce domaine.</description>
+    </item>
+    
+  </channel>
+</rss>

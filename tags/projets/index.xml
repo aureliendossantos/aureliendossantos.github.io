@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projets on Aurélien Dos Santos</title>
+    <link>https://aureliendossantos.github.io/tags/projets/</link>
+    <description>Recent content in Projets on Aurélien Dos Santos</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Sat, 05 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://aureliendossantos.github.io/tags/projets/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FaireDesJeux.fr, le site de formations gratuites</title>
+      <link>https://aureliendossantos.github.io/post/2020/fairedesjeux.fr/</link>
+      <pubDate>Sat, 05 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://aureliendossantos.github.io/post/2020/fairedesjeux.fr/</guid>
+      <description>Après deux ans à faire vivre le wiki de Game Dev Alliance, nous avons constaté que le format encyclopédique nous enfermait et ne répondait pas aux attentes de la communauté. Les débutants cherchent plutôt des tutoriels guidés, mais il peut être difficile de savoir vers qui se tourner face aux formations payantes qui fleurissent sur des sites douteux, surtout en français.
+Notre réponse à cela est FaireDesJeux.fr, un site qui n&amp;rsquo;en est qu&amp;rsquo;à ses débuts mais sur lequel nous avons l&amp;rsquo;ambition de proposer des formations gratuites dans tous les aspects de la création de jeux, tout en apprenant aux lecteurs et lectrices à s&amp;rsquo;autonomiser une fois les bases acquises.</description>
+    </item>
+    
+    <item>
+      <title>Le livre de Cayde-6</title>
+      <link>https://aureliendossantos.github.io/post/2019/livre-de-cayde-6/</link>
+      <pubDate>Sun, 22 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://aureliendossantos.github.io/post/2019/livre-de-cayde-6/</guid>
+      <description>Cayde-6 est un des rares personnages sympas du jeu. Les autres ne pensent qu&amp;rsquo;à sauver le monde et ça les rend un peu ronchon, mais ce gars-là est très attachant. J&amp;rsquo;ai donc préparé « Le livre de Cayde-6 » pour l&amp;rsquo;anniversaire de ma moitié, avec qui j&amp;rsquo;ai parcouru le jeu. J&amp;rsquo;y ai rassemblé tous les textes de lore que l&amp;rsquo;on peut trouver dans le jeu, avec de jolies illustrations.</description>
+    </item>
+    
+    <item>
+      <title>Nouveau design du wiki</title>
+      <link>https://aureliendossantos.github.io/post/2018/nouveau-design-du-wiki/</link>
+      <pubDate>Mon, 30 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://aureliendossantos.github.io/post/2018/nouveau-design-du-wiki/</guid>
+      <description>Le nouveau design de notre Encyclopédie sur RPG Maker est arrivé !
+    
+Il y a encore beaucoup de contenu à écrire, mais je suis très fier de la forme que prend le site. Le nouveau design, réalisé par Princesseuh, permet d&amp;rsquo;activer un dark mode et met en avant l&amp;rsquo;aspect collaboratif du wiki en simplifiant le processus. Sur toutes les pages, il est possible d&amp;rsquo;ajouter du contenu ou de corriger une faute en cliquant sur &amp;ldquo;Modifier cette page&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Sortie du forum et de l&#39;Encyclopédie</title>
+      <link>https://aureliendossantos.github.io/post/2018/sortie-du-forum/</link>
+      <pubDate>Fri, 16 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://aureliendossantos.github.io/post/2018/sortie-du-forum/</guid>
+      <description>Aujourd’hui est un grand jour ! C’est avec joie que je vous présente à la fois le forum, et l’Encyclopédie du Making ! L’objectif est de créer une véritable encyclopédie sur RPG Maker, avec des tutoriels sur une variété de sujets, mais aussi une liste des jeux emblématiques, et un historique de la communauté française. J’ai déjà posé les bases de certaines sections, pour que vous imaginiez ce que donnera le projet une fois qu’il sera plus abouti.</description>
+    </item>
+    
+    <item>
+      <title>Trailer de SinaRun</title>
+      <link>https://aureliendossantos.github.io/post/2015/sinarun-trailer/</link>
+      <pubDate>Mon, 19 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://aureliendossantos.github.io/post/2015/sinarun-trailer/</guid>
+      <description>Mon amie Princesseuh a sorti son jeu SinaRun sur Steam, et je lui ai fait pour l&amp;rsquo;occasion un petit trailer d&amp;rsquo;Early Access.
+  C&amp;rsquo;était assez difficile à réaliser car je ne suis pas très bon au jeu ! J&amp;rsquo;ai dû m&amp;rsquo;y reprendre à de nombreuses reprises pour obtenir des rush sympas. Au final, il y a des petits défauts mais je suis content du rythme et il véhicule bien les sensations offertes par le jeu.</description>
+    </item>
+    
+  </channel>
+</rss>

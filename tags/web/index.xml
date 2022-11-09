@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Web on Aurélien Dos Santos</title>
+    <link>https://aureliendossantos.github.io/tags/web/</link>
+    <description>Recent content in Web on Aurélien Dos Santos</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Thu, 01 Jul 2021 00:35:02 +0200</lastBuildDate><atom:link href="https://aureliendossantos.github.io/tags/web/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Créer un portfolio ou un blog sans programmer avec Hugo</title>
+      <link>https://aureliendossantos.github.io/post/2021/creer-un-site-avec-hugo/</link>
+      <pubDate>Thu, 01 Jul 2021 00:35:02 +0200</pubDate>
+      
+      <guid>https://aureliendossantos.github.io/post/2021/creer-un-site-avec-hugo/</guid>
+      <description>Pourquoi Hugo ? Hugo est un générateur de site statique. Concrètement, Hugo prend des fichiers texte et les transforme en pages web en suivant un thème visuel. Ainsi, au quotidien, il vous suffit d&amp;rsquo;écrire dans des fichiers texte au format Markdown et de laisser Hugo générer le site au complet.
+    
+Avec un site statique, les pages HTML sont générées une seule fois lors de la publication du site et tous les visiteurs recevront la même page.</description>
+    </item>
+    
+    <item>
+      <title>Vous ne devriez pas utiliser le GIF — il a été remplacé par la vidéo</title>
+      <link>https://aureliendossantos.github.io/post/2021/vous-ne-devriez-pas-utiliser-le-gif/</link>
+      <pubDate>Wed, 24 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://aureliendossantos.github.io/post/2021/vous-ne-devriez-pas-utiliser-le-gif/</guid>
+      <description>Le GIF, pour Graphics Interchange Format, a été inventé en 1987 (oui) par une équipe de geeks qui n&amp;rsquo;avaient probablement pas prévu que son usage exploserait des années plus tard. Le problème, c&amp;rsquo;est que ce qui était à l&amp;rsquo;origine un format efficace pour partager de toutes petites animations a été largement détourné dès que l&amp;rsquo;humanité a découvert que les extraits de The Office pouvaient être un moyen d&amp;rsquo;expression.
+Les gifs sont rapidement devenus trop lourds (tout en ayant une mauvaise qualité d&amp;rsquo;image), ralentissant énormément le chargement des pages, et ralentissant par la même occasion les machines peu puissantes.</description>
+    </item>
+    
+    <item>
+      <title>FaireDesJeux.fr, le site de formations gratuites</title>
+      <link>https://aureliendossantos.github.io/post/2020/fairedesjeux.fr/</link>
+      <pubDate>Sat, 05 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://aureliendossantos.github.io/post/2020/fairedesjeux.fr/</guid>
+      <description>Après deux ans à faire vivre le wiki de Game Dev Alliance, nous avons constaté que le format encyclopédique nous enfermait et ne répondait pas aux attentes de la communauté. Les débutants cherchent plutôt des tutoriels guidés, mais il peut être difficile de savoir vers qui se tourner face aux formations payantes qui fleurissent sur des sites douteux, surtout en français.
+Notre réponse à cela est FaireDesJeux.fr, un site qui n&amp;rsquo;en est qu&amp;rsquo;à ses débuts mais sur lequel nous avons l&amp;rsquo;ambition de proposer des formations gratuites dans tous les aspects de la création de jeux, tout en apprenant aux lecteurs et lectrices à s&amp;rsquo;autonomiser une fois les bases acquises.</description>
+    </item>
+    
+    <item>
+      <title>Télécharger des vidéos YouTube en un clin d&#39;œil</title>
+      <link>https://aureliendossantos.github.io/post/2020/telecharger-des-videos-youtube/</link>
+      <pubDate>Wed, 19 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://aureliendossantos.github.io/post/2020/telecharger-des-videos-youtube/</guid>
+      <description>Pour illustrer mes vidéos, je dois récupérer beaucoup d&amp;rsquo;illustrations de jeux vidéo que je trouve sur YouTube. Si vous êtes vidéaste et ne connaissez pas les outils de programmeur, vous êtes sans doute passé à côté d&amp;rsquo;une astuce très pratique pour le faire efficacement !
+Pour télécharger des dizaines, voire des centaines de vidéos, utiliser les sites du type &amp;ldquo;YouTube Downloader&amp;rdquo; serait très fastidieux et il n&amp;rsquo;est pas garanti qu&amp;rsquo;ils donnent la plus haute qualité possible.</description>
+    </item>
+    
+    <item>
+      <title>Nouveau design du wiki</title>
+      <link>https://aureliendossantos.github.io/post/2018/nouveau-design-du-wiki/</link>
+      <pubDate>Mon, 30 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://aureliendossantos.github.io/post/2018/nouveau-design-du-wiki/</guid>
+      <description>Le nouveau design de notre Encyclopédie sur RPG Maker est arrivé !
+    
+Il y a encore beaucoup de contenu à écrire, mais je suis très fier de la forme que prend le site. Le nouveau design, réalisé par Princesseuh, permet d&amp;rsquo;activer un dark mode et met en avant l&amp;rsquo;aspect collaboratif du wiki en simplifiant le processus. Sur toutes les pages, il est possible d&amp;rsquo;ajouter du contenu ou de corriger une faute en cliquant sur &amp;ldquo;Modifier cette page&amp;rdquo;.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>brown on Aurélien Dos Santos</title>
+    <link>https://aureliendossantos.github.io/palettes/brown/</link>
+    <description>Recent content in brown on Aurélien Dos Santos</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Mon, 20 Jul 2020 22:00:00 +0000</lastBuildDate><atom:link href="https://aureliendossantos.github.io/palettes/brown/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mon quartier</title>
+      <link>https://aureliendossantos.github.io/photos/2020/mon-quartier/</link>
+      <pubDate>Mon, 20 Jul 2020 22:00:00 +0000</pubDate>
+      
+      <guid>https://aureliendossantos.github.io/photos/2020/mon-quartier/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Les peurs des créateurs et créatrices en herbe</title>
+      <link>https://aureliendossantos.github.io/post/2020/les-peurs-des-cr%C3%A9ateurs-et-cr%C3%A9atrices-d%C3%A9butantes/</link>
+      <pubDate>Sun, 19 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://aureliendossantos.github.io/post/2020/les-peurs-des-cr%C3%A9ateurs-et-cr%C3%A9atrices-d%C3%A9butantes/</guid>
+      <description>&lt;p&gt;Je discute parfois avec des jeunes qui débutent dans le développement de jeux, ou l&amp;rsquo;écriture, le dessin&amp;hellip; Ils et elles ont souvent des doutes qui les empêchent de progresser sereinement dans la création : la peur d&amp;rsquo;être nul·le, le piège de s&amp;rsquo;accrocher à ses premières idées&amp;hellip; j&amp;rsquo;ai connu ça aussi. Voici mes modestes conseils qui pourront peut-être vous débloquer et vous aider à aimer ce que vous faites.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

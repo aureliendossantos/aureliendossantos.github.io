@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jeux on Aurélien Dos Santos</title>
+    <link>https://aureliendossantos.github.io/tags/jeux/</link>
+    <description>Recent content in Jeux on Aurélien Dos Santos</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Fri, 02 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://aureliendossantos.github.io/tags/jeux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>L&#39;introduction de Destiny : analyse du level design</title>
+      <link>https://aureliendossantos.github.io/post/2021/destiny-introduction-analyse/</link>
+      <pubDate>Fri, 02 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://aureliendossantos.github.io/post/2021/destiny-introduction-analyse/</guid>
+      <description>Destiny est un FPS sorti sur consoles en 2014 et dont vous avez sans doute déjà entendu parler, d&amp;rsquo;abord en raison de son budget com&#39; et puis parce que c&amp;rsquo;est un jeu important : il a, sous bien des aspects, influencé l&amp;rsquo;industrie du jeu vidéo. Quand je l&amp;rsquo;ai découvert, j&amp;rsquo;ai été impressionné dès l&amp;rsquo;introduction, qui me fascine encore aujourd&amp;rsquo;hui. A vrai dire, c&amp;rsquo;est peut-être mon moment de jeu vidéo préféré.</description>
+    </item>
+    
+    <item>
+      <title>Le livre de Cayde-6</title>
+      <link>https://aureliendossantos.github.io/post/2019/livre-de-cayde-6/</link>
+      <pubDate>Sun, 22 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://aureliendossantos.github.io/post/2019/livre-de-cayde-6/</guid>
+      <description>Cayde-6 est un des rares personnages sympas du jeu. Les autres ne pensent qu&amp;rsquo;à sauver le monde et ça les rend un peu ronchon, mais ce gars-là est très attachant. J&amp;rsquo;ai donc préparé « Le livre de Cayde-6 » pour l&amp;rsquo;anniversaire de ma moitié, avec qui j&amp;rsquo;ai parcouru le jeu. J&amp;rsquo;y ai rassemblé tous les textes de lore que l&amp;rsquo;on peut trouver dans le jeu, avec de jolies illustrations.</description>
+    </item>
+    
+    <item>
+      <title>Notes sur le level design</title>
+      <link>https://aureliendossantos.github.io/post/2019/notes-level-design/</link>
+      <pubDate>Tue, 22 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://aureliendossantos.github.io/post/2019/notes-level-design/</guid>
+      <description>Craig Perko publie des vidéos sur YouTube avec pour thème principal le développement de jeux vidéo : tutoriels de programmation, analyse de jeux, opinions sur le game design&amp;hellip; Comme le pointait mon amie Erika, Craig Perko a parfois une vision différente des jeux et il utilise peu de buzzwords. Par exemple, il parle de hinting qui serait généralement plutôt appelé player guidance, parce que cela correspond mieux à son ressenti.</description>
+    </item>
+    
+    <item>
+      <title>La magie de Tetris</title>
+      <link>https://aureliendossantos.github.io/post/2017/la-magie-de-tetris/</link>
+      <pubDate>Wed, 10 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://aureliendossantos.github.io/post/2017/la-magie-de-tetris/</guid>
+      <description>Et ce grâce à Puyo Puyo Tetris ! C&amp;rsquo;est un jeu qui mélange deux jeux. Il y a d&amp;rsquo;un côté Puyo Puyo, où l&amp;rsquo;on doit assembler des couleurs qui tombent du haut de l&amp;rsquo;écran, et bien sûr, le fameux Tetris sur lequel je vais me focaliser dans cet article.
+ Dans Puyo Puyo Tetris, les joueurs des deux bords peuvent s&amp;rsquo;affronter en même temps.
+  Tetris est un phénomène particulier.</description>
+    </item>
+    
+    <item>
+      <title>Trailer de SinaRun</title>
+      <link>https://aureliendossantos.github.io/post/2015/sinarun-trailer/</link>
+      <pubDate>Mon, 19 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://aureliendossantos.github.io/post/2015/sinarun-trailer/</guid>
+      <description>Mon amie Princesseuh a sorti son jeu SinaRun sur Steam, et je lui ai fait pour l&amp;rsquo;occasion un petit trailer d&amp;rsquo;Early Access.
+  C&amp;rsquo;était assez difficile à réaliser car je ne suis pas très bon au jeu ! J&amp;rsquo;ai dû m&amp;rsquo;y reprendre à de nombreuses reprises pour obtenir des rush sympas. Au final, il y a des petits défauts mais je suis content du rythme et il véhicule bien les sensations offertes par le jeu.</description>
+    </item>
+    
+  </channel>
+</rss>
